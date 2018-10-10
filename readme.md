@@ -1,4 +1,4 @@
-![avatar][base64str]
+![image][base64str]
 
 ## 后台服务测试
 
