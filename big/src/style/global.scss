@@ -1,0 +1,67 @@
+@import "global/reset";
+@import "global/common";
+
+// 按钮适配iPhone X
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+
+    /*增加底部适配层*/
+    .has-bottombar-fixed {
+        margin-bottom: .68rem;
+        &:after {
+            content: '';
+            z-index: 9998;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: .68rem;
+            background: #eee;
+        }
+        padding-bottom: 0 !important;
+    }
+    .has-bottombar {
+        // margin-bottom: .68rem;
+        &:after {
+            content: '';
+            z-index: 9998;
+            display: block;
+            width: 100%;
+            height: .68rem;
+            background: #eee;
+        }
+        padding-bottom: 0 !important;
+    }
+}
+
+input::placeholder,textarea::placeholder {
+    color: #999;
+    opacity: 1;
+    -webkit-text-fill-color: #999;
+    -webkit-opacity: 1;
+}
+
+input:disabled ,textarea:disabled{
+    color: #333;
+    opacity: 1;
+    -webkit-text-fill-color: #333;
+    -webkit-opacity: 1;
+}
+@keyframes moveHide {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes moveShow {
+    0% {
+       opacity: 0;
+    }
+
+    100% {
+       opacity: 1;
+    }
+}

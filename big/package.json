@@ -1,0 +1,32 @@
+{
+    "name": "qian",
+    "version": "1.0.0",
+    "description": "qian",
+    "main": "webpack.config.js",
+    "scripts": {
+        "build": "NODE_ENV=development NODE_TYPE=qian ./node_modules/.bin/guido build",
+        "watch": "NODE_ENV=development NODE_TYPE=qian ./node_modules/.bin/guido watch",
+        "publish": "znpm run clear && NODE_ENV=production NODE_TYPE=qian ./node_modules/.bin/guido publish",
+        "server": "NODE_ENV=server  NODE_TYPE=qian NODE_LOGIN=false ./node_modules/.bin/guido server",
+        "clear": "rm -rf ./dist/qian"
+    },
+    "author": "zcy",
+    "license": "ISC",
+    "devDependencies": {
+        "clipboard": "^2.0.1",
+        "connect-multiparty": "2.1.1",
+        "cookie-parser": "1.4.3",
+        "expose-loader": "0.7.5",
+        "express-http-proxy": "1.1.0",
+        "guido": "3.7.5",
+        "react": "16.4.2",
+        "react-dom": "16.4.2",
+        "superagent": "3.5.2",
+        "zzc-count-down": "1.0.3",
+        "zzc-design-mobile": "1.4.7"
+    },
+    "dependencies": {
+        "axios": "0.18.0",
+        "react-lazy-load": "3.0.13"
+    }
+}

@@ -1,0 +1,43 @@
+/*
+ * @Author: zhengchunyang 
+ * @Date: 2018-08-01 10:36:22 
+ * @Last Modified by: zhengchunyang
+ * @Last Modified time: 2018-11-20 23:40:14
+ */
+
+ @import '../../../../style/global.scss';
+ .index-layout {
+     background-color: #fff;
+     padding-bottom: 1rem;
+ }
+ 
+ 
+ .mt5 {
+     margin-top: 5px;
+ }
+ 
+ .clearfix:after,
+ .clearfix:before {
+     clear: both;
+     display: block;
+     content: "";
+     height: 0;
+     left: 0;
+     visibility: hidden;
+ }
+ 
+ .clearfix {
+     zoom: 1;
+ }
+ 
+ .fl {
+     float: left;
+ }
+ 
+ .fr {
+     float: right;
+ }
+ 
+ .fn-hide {
+     display: none !important;
+ }
