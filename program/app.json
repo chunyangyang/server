@@ -1,0 +1,75 @@
+{
+  "pages": [
+   
+    "pages/index/index",
+    "pages/evaluation/evaluation",
+    "template/submitSuccess/submitSuccess",
+    "pages/index/detail/detail",
+    "pages/index/detail/order/order",
+    "pages/index/detail/orderDetails/orderDetails",
+    "pages/index/nominate/nominate",
+    "pages/index/nominate/nominate_js",
+    "pages/myOrder/myOrder",
+    "pages/chat/chat",
+    "pages/chat/list",
+    "pages/chat/serviceList/serviceList",
+    "pages/about/about",
+    "pages/about/address/address",
+    "pages/about/address/addAress/addAress",
+    "pages/about/myCollection/myCollection",
+    "pages/about/coupon/coupon",
+    "pages/about/feedback/feedback",
+    "pages/technician/technician",
+    "pages/technician/balance/balance",
+    "pages/technician/TechnicianCertification/upload/upload",
+    "pages/technician/CertificationSuccess/CertificationSuccess",
+    "pages/technician/service/service",
+    "pages/technician/serviceRelease/serviceRelease",
+    "pages/technician/myRating/myRating",
+    "pages/technician/balance/record/record",
+    "pages/technician/TreasureList/TreasureList",
+    "pages/technician/TreasureList/waiter/waiter",
+    "pages/technician/Evaluation/Evaluation",
+    "pages/technician/InvitingFriends/InvitingFriends",
+    "pages/myOrder/myevaluate/success/success",
+    "pages/myOrder/myevaluate/myevaluate",
+    "pages/technician/releaseSuccess/releaseSuccess",
+    "pages/technician/MyStatistics/MyStatistics",
+    "pages/technician/TechnicianCertification/TechnicianCertification",
+    "template/loading/loading",
+    "pages/index/detail/allEvaluation/allEvaluation",
+    "pages/technician/TechnicianCertification/uploads/uploads"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "附近上门宝",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#60B7F9",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/image/index2.png",
+        "selectedIconPath": "/image/index.png"
+      },
+      {
+        "pagePath": "pages/chat/list",
+        "text": "消息",
+        "iconPath": "/image/logs.png",
+        "selectedIconPath": "/image/logs2.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "我的",
+        "iconPath": "/image/about.png",
+        "selectedIconPath": "/image/about2.png"
+      }
+    ]
+  }
+}

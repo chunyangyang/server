@@ -1,0 +1,68 @@
+<!--pages/index/detail/order/order.wxml-->
+
+<view class='order'>
+
+  <view class='order_main'>
+    <view class='main'>
+
+      <view class='main_view1'>
+        <navigator url='../../../about/address/address?select=1' hover-class='none' class="add">
+          <text class='mainView1'>{{info.address}}</text>
+          <text class="back"></text>
+        </navigator>
+
+        <view class='mainView2'>
+          <text class='mainView2_text1'>上门时间</text>
+          <view class="time">
+             <picker mode="multiSelector" value='{{dateTime1}}'  bindcolumnchange='changeDateTimeColumn1' range='{{dateTimeArray1}}'>
+            <view class='mainView2_text2'>{{dateTimeArray1[0][dateTime1[0]]}}-{{dateTimeArray1[1][dateTime1[1]]}}-{{dateTimeArray1[2][dateTime1[2]]}} {{dateTimeArray1[3][dateTime1[3]]}}:{{dateTimeArray1[4][dateTime1[4]]}}</view>
+          </picker>
+              <text class="back"></text>
+          </view>
+         
+        </view>
+      </view>
+
+      <view class='main_view2'>
+        <view class='mainView3'>
+          <view class='mainView3_main1'>
+            <view class='main1_img'>
+              <image class='M_img' src='{{info.service_image}}'></image>
+              <view class='M_text'>
+                <text class='m_text1'>{{info.technician_name}}</text>
+                <text class='m_text2'>{{info.service_title}}</text>
+                <text class='m_text3'>¥{{info.price}}</text>
+              </view>
+            </view>
+            <text class='main1_text1'>推拿理疗类型</text>
+            <button class='main1_text2'>{{info.mode_name}}</button>
+          </view>
+          <view class='mainView3_main2'>
+            <text class='m2_text'>服务方式</text>
+            <button class='main1_text2 m2_btu'>{{info.type_name}}</button>
+          </view>
+          <view class='mainView3_main3'>
+            <text class='main3_text'>购买数量</text>
+            <view class='main3_main'>
+              <image class='main3_img1' src='/image/jia1.png' bindtap='prev'></image>
+              <text class='m3_text'  >{{info.count}}</text>
+              <image class='main3_img2' src='/image/jia2.png' bindtap='next'></image>
+            </view>
+          </view>
+        </view>
+      </view>
+
+    </view>
+  </view>
+  <view class='footer'>
+    <view class='footer_view'>
+      <text class='footer_text1'>合计：</text>
+      <text class='footer_text2'>￥{{total}}</text>
+    </view>
+<!-- {{info.price}} -->
+      <button class='footer_btu' size='mini' bindtap='pay'>
+        <text>提交订单</text>
+      </button>
+      
+  </view>
+</view>

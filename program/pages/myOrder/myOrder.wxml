@@ -1,0 +1,17 @@
+<view class="myOrder">
+  <view class="tab">
+    <text 
+         class="{{curIndex==index?'active':''}}" 
+         wx:for="{{list}}" bindtap='clicktab' 
+         data-index="{{index}}"
+         wx:key="id"
+          >{{item}}</text> 
+  </view>
+  <all hidden="{{curIndex}}" list="{{listAll}}" count="{{count}}" ></all>
+  <service hidden="{{curIndex}}" list="{{listService}}" count="{{count}}"></service>
+  <pay hidden="{{curIndex}}" list="{{listPay}}" count="{{count}}"></pay>
+  <evaluate hidden="{{curIndex}}" list="{{listEvaluate}}" count="{{count}}"></evaluate>
+</view>
+<block wx:if="{{listAll.length==0 && listService.length==0 && listPay.length==0 && listEvaluat.length==0}}">
+<noData data="没有相关信息记录"/>
+</block>

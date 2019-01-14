@@ -1,0 +1,106 @@
+/* pages/index/nominate/nominate.wxss */
+@import "../../../common/iconFont.wxss";
+
+navigator{
+  width: 345px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 12px rgba(0,0,0,.13);
+  margin: 0 auto
+}
+.nom_main{
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+}
+.nom_img{
+  width: 160px;
+  height: 103px;
+  margin:15px 10px 15px 15px; 
+  border-radius:2px;
+  background: #ccc;
+}
+.nom_view{
+  flex-grow: 1;
+  padding-right: 13px;
+}
+.nom_left{
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 13px;
+}
+.n_l_view{
+  display: flex;
+  padding-bottom: 6px;
+  border-bottom:1px  solid #D5D4D4;
+}
+
+.l_text_img{
+  width: 7px;
+  height: 10px;
+}
+.icon-dizhi{
+  font-size: 12px;
+   color:#60B7F9;
+}
+.l_text_text{
+  font-size: 10px;
+  color:#60B7F9;
+}
+
+.content{
+display: flex;
+flex-direction: column;
+font-size: 11px;
+
+}
+/* .content text:first-child{
+  margin-top: 3px;
+} */
+.content text{
+  margin-top: 3px;
+}
+.main_text1{
+  
+  font-size: 14px;
+  font-weight:bold;
+  color:#60B7F9;
+  overflow:hidden;/* //超出一行文字自动隐藏 */
+  text-overflow:ellipsis;/*//文字隐藏后添加省略号 */
+  white-space:nowrap; /* //强制不换行 */
+}
+.main_text2{
+  width: 50px;
+  height: 10px;
+  line-height: 10px;
+  font-size: 10px;
+  font-family:PingFang-SC-Regular;
+  font-weight:400;
+  color:rgba(40,40,40,1);
+  margin-top: 10px;
+}
+.nom_bottom{
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0;
+}
+.main_text3{
+  color:#FE0202;
+  font-size: 13px;
+}
+.main_text4{
+  font-size: 10px;
+  margin-right: 10px;
+}

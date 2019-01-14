@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "技师",
+  "usingComponents":{
+    "noData":"/common/noData/noData"
+  }
+
+}

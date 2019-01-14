@@ -1,0 +1,5 @@
+<!--pages/region/region.wxml-->
+<view class='region-box' wx:for="{{items}}" wx:for-item="item"  wx:key="order"> 
+  <view class='title'>{{item.title}}</view>
+  <navigator class='item' url='../country/country?region={{item.countruId}}&country={{item.name}}' wx:for="{{item.country}}" wx:for-item="item" wx:key="country">{{item.name}}</navigator>
+</view>

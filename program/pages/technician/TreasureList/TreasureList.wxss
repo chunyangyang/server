@@ -1,0 +1,135 @@
+@import "../../../common/iconFont.wxss";
+.list{
+  height: 100%;
+}
+.tab{
+  display: flex;
+}
+.tab text{
+ display: block;
+ text-align: center;
+ width: 33.3333%;
+ padding: 12px 0;
+ color: #9D9C9C;
+ font-size:12px;
+ border-bottom:1px solid #D5D4D4;
+ border-top:1px solid #D5D4D4;
+}
+.tab .active{
+  border-bottom: 1px solid #61B7F9;
+  color: #60B7F9;
+  font-size: 13px;
+  font-weight: bold;
+}
+swiper{
+  height:100%; 
+}
+.li{
+  width: 345px;
+  height: 161px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 12px rgba(0,0,0,.13);
+  display: flex;
+  margin: 15px auto;
+}
+.li image{
+  width:90px;
+  height: 126px;
+  margin: 15px 15px 21px 15px;
+  background: #ccc;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.li .detail{
+  flex-grow: 1;
+}
+.detail .top{
+  display: flex;
+  justify-content: space-between;
+}
+.top{
+  margin: 18px 16px 0 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #D5D4D4;
+  font-size: 0;
+
+}
+.top text{
+  font-weight: bold;
+}
+.top text:nth-child(1){
+  font-size: 15px;
+  color: #60B7F9;
+}
+.top text:nth-child(2){
+  font-size: 13px;
+}
+.content{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.content .left{
+ width: 120px;
+ height: 75px;
+ font-size: 12px;
+ margin-top: 8px;
+ margin-left: 5px;
+ display: flex;
+ flex-direction: column;
+ overflow: hidden;
+}
+.content .left  view{
+ display: flex;
+ flex-wrap: wrap;
+ overflow: hidden;
+ text-overflow:ellipsis;
+}
+.content .left text:first-child{
+  margin-right: 5px;
+}
+.content .left  view:nth-child(2){
+  height: 40px;
+  
+}
+.content .right{
+  display: flex;
+  flex-direction: column;
+  margin-right: 27px;
+  
+}
+.content .right button{
+  padding: 0;
+  background: none;
+  line-height: 16px;
+
+}
+.content .right button:first-child{
+  margin-top: 28px;
+}
+.content .right button:nth-child(2){
+  margin-top: 15px;
+}
+.content .right button::after{
+  border:0;
+}
+.content .right text{
+  font-size: 15px;
+  color:#61B7F9;
+}
+.content .right text:nth-child(1){
+  margin-top: 33px;
+}
+.content .right text:nth-child(2){
+  margin-top: 18px;
+}
+swiper swiper-item:nth-child(3) .right button text{
+  color: #ACACAC;
+}
+swiper swiper-item:nth-child(3) .left text{
+  color: #ACACAC;
+}
+swiper swiper-item:nth-child(3) .top text{
+  color: #ACACAC;
+}

@@ -1,0 +1,31 @@
+.list{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 16px  15px 37px;
+  border-bottom: 1px solid #D7D7D7;
+}
+.put{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.put text{
+  font-size: 13px;
+  font-weight: bold;
+}
+.money {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+  font-weight: bold;
+}
+.time{
+  font-size: 10px;
+  color: #9C9C9C;
+  margin-top: 10px;
+  
+}
+.time text:nth-child(1){
+  margin-right: 11px;
+}

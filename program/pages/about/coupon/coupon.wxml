@@ -1,0 +1,78 @@
+<view class="coupon">
+  <view class="tab">
+    <text 
+         class="{{curIndex==index?'active':''}}" 
+         wx:for="{{list}}" bindtap='clicktab' 
+         data-index="{{index}}"
+         wx:key="id"
+          >{{item}}</text> 
+  </view>
+  <swiper duration="{{duration}}" current="{{curIndex}}" bindchange='bindChange'>
+    <swiper-item>
+      <view class="Coupon" style="background: url('{{backgroundUrl}}') no-repeat; background-size: 280px 87px;">
+        <view class="price">
+          <view>
+             <text>¥</text>
+             <text>20</text>
+          </view>
+        </view>
+       <view class="explain">
+          <view class="rule">
+            <text>使用规则</text>
+            <text class="iconfont icon-qianjinxiayige"></text>
+          </view>
+          <view class="content">
+            <text>20元足浴券</text>
+            <text>满150元可使用,仅限足浴服</text>
+            <text>2018.01.26-2018.09.30</text>
+          </view>
+            
+        </view>
+      </view>
+      <noData data="当前没有任何优惠卷"/>
+    </swiper-item>
+     <swiper-item>
+      <view class="Coupon" style="background: url('{{backgroundUrl}}') no-repeat; background-size: 280px 87px;">
+        <view class="price">
+          <view>
+             <text>¥</text>
+             <text>20</text>
+          </view>
+        </view>
+       <view class="explain">
+          <view class="rule">
+            <text>使用规则</text>
+            <text class="iconfont icon-qianjinxiayige"></text>
+          </view>
+          <view class="content">
+            <text>20元足浴券</text>
+            <text>满150元可使用,仅限足浴服</text>
+            <text>2018.01.26-2018.09.30</text>
+          </view>
+            
+        </view>
+      </view>
+    </swiper-item>
+     <swiper-item>
+      <view class="Coupon" style="background: url('{{backgroundUrl}}') no-repeat; background-size: 280px 87px;">
+        <view class="price">
+          <view>
+             <text>¥</text>
+             <text>20</text>
+          </view>
+        </view>
+       <view class="explain">
+          <view class="rule" style="margin-top:0;padding-bottom:13px">
+            <image src='/image/expired.png'></image>
+          </view>
+          <view class="content">
+            <text>20元足浴券</text>
+            <text>满150元可使用,仅限足浴服</text>
+            <text>2018.01.26-2018.09.30</text>
+          </view>
+            
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

@@ -1,0 +1,20 @@
+.fen {
+  display: flex;
+  font-size: 0;
+}
+.fen view{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.fen image{
+  width: 35px;
+  height: 34px;
+  margin: 7.5px;
+  display: inline-block;
+}
+.fen text{
+  font-size: 12px;
+  color: #110808;
+ 
+}

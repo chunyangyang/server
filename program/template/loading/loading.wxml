@@ -1,0 +1,19 @@
+<template name="loading">
+ <view class="LOAD">
+    <image src="/image/loading.gif" class="loading"></image>
+ </view>
+</template>
+<template name="loadingSuccess">
+ <view class="SUCCESS">
+    <view>
+      <image src="/image/loadingSuccess.png" class="loadSuccess"></image>
+    </view>
+ </view>
+</template>
+<template name="error">
+ <view class="ERROR">
+      <view>
+        <image src="/image/error.png" class="error"></image>
+      </view>    
+ </view>
+</template>

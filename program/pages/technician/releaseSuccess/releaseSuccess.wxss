@@ -1,0 +1,2 @@
+/* pages/technician/releaseSuccess/releaseSuccess.wxss */
+@import "../../../template/submitSuccess/submitSuccess";

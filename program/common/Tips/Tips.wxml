@@ -1,0 +1,9 @@
+<view class="tips" hidden="{{hidden}}">
+  <view class="content">
+    <text>{{text}}</text>
+  </view>
+  <view class="bottom">
+    <button bindtap='cancel'>取消</button>
+    <button bindtap="sure" open-type="getUserInfo" bindgetuserinfo="getUserInfo">确定</button>
+  </view>
+</view>

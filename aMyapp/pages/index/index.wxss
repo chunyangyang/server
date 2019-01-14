@@ -1,0 +1,9 @@
+/**index.wxss**/
+.car-type{
+  border: 1px solid #ccc;
+  border-radius: 8rpx;
+  padding-left: 8rpx;
+  font-size: 28rpx;
+  width: 400rpx;
+  margin: 30rpx;
+}

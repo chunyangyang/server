@@ -1,0 +1,138 @@
+/*
+ * @Author: zhengchunyang 
+ * @Date: 2018-08-01 10:36:22 
+ * @Last Modified by: zhengchunyang
+ * @Last Modified time: 2018-12-20 18:50:40
+ */
+
+ @import '../../../../style/global.scss';
+ .index-layout {
+    min-height: 100%;
+    // background-color: #f2f2f2;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+ }
+ #root, body, html {
+    height: 100%;
+    background: url('../../images/bg.jpg') repeat-y center;
+ 
+}
+ .mt5 {
+     margin-top: 5px;
+ }
+ 
+ .clearfix:after,
+ .clearfix:before {
+     clear: both;
+     display: block;
+     content: "";
+     height: 0;
+     left: 0;
+     visibility: hidden;
+ }
+ 
+ .clearfix {
+     zoom: 1;
+ }
+ 
+ .fl {
+     float: left;
+ }
+ 
+ .fr {
+     float: right;
+ }
+ 
+ .fn-hide {
+     display: none !important;
+ }
+
+.top-banner{
+    width: 100%;
+    height: 6.3rem;
+    background: url('../../images/top_banner.jpg') no-repeat center;
+    background-size: contain;  
+}
+.message{
+    padding: .3rem 0.3rem 0;
+    // overflow: hidden;
+    box-sizing: border-box;
+    color: #222222;
+    margin-top: -4.2rem;
+    // position: relative;
+    // top: -4rem;
+    .head{
+        position: relative;
+        z-index: 10;
+        height: .8rem;
+        text-align: center;
+        font-size: .36rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: .3rem;
+        &:before,&:after{
+            content: '';
+            height: 0.04rem;
+            background-color: #222;
+            width: 1rem;
+            position: absolute;
+        }
+        &:before{
+            left: 0.52rem;
+        }
+        &:after{
+            right:0.52rem;
+        }
+    }
+    .message-content{
+        background-color: #917462;
+        padding: 0 .3rem;
+        border-radius:0.08rem; 
+    }
+    
+    .box{
+        background: #fff;
+        position: relative;
+        top: -.3rem;
+        padding: 0.3rem;
+        border-radius:0.08rem; 
+        .content-box{
+            margin-bottom: 0.4rem;
+        }
+        .title-box{
+            display: flex;
+            align-items: center;
+            margin-bottom: .2rem;
+        }
+        .tips{
+            color:#917462;
+            font-size: .2rem;
+            margin-left: .2rem;
+        }
+        .title{
+            background-color: #917462;;
+            width: 1.4rem;
+            text-align: center;
+            color: #fff;
+            font-size: .24rem;
+            font-weight: 600;
+            // margin-bottom: .2rem;
+            border-radius: 0.08rem;
+            padding: .04rem 0;
+        }
+        .content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .name{
+                width: 1.2rem;
+                margin-bottom: 0.2rem;
+                // text-align: center;
+            }
+        }
+    }
+}

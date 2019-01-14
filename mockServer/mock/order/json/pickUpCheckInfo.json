@@ -1,0 +1,118 @@
+{
+  "code": 0,
+  "message": "success",
+  "data": {
+    "progressStatus": "pickUp",
+    "checkedItem": 5,
+    "totalItem": 5,
+    "follow": "Alice",
+    "is_follow_user": true,
+    "show_change_follow": false,
+    "checkList": [
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "Identification check",
+        "value": "1",
+        "link": "/mobile.php/order_vehicle/identification",
+        "styleType": "checkLink"
+      },
+      {
+        "checked": true,
+        "disabled": false,
+        "name": "Pickup Info",
+        "key": "pickup_info",
+        "value": "",
+        "link": "test",
+        "styleType": "checkLink",
+        "itemList": [
+          {
+            "key": "date",
+            "name": "Actual Pickup",
+            "value": "2016-12-9 12:00",
+            "start": "2016-12-06 13:00",
+            "end": "2016-12-10 13:00",
+            "type": "dateBox",
+            "editable": false
+          },
+          {
+            "key": "fuel",
+            "name": "Pick Up Fuel Mass",
+            "value": "",
+            "unit": "%",
+            "type": "fuelMass",
+            "editable": true,
+            "currentFuel": "9",
+            "totalFuel": "10"
+          },
+          {
+            "key": "mileage",
+            "name": "Mileage Out",
+            "value": "140",
+            "type": "editBox",
+            "unit": "KM",
+            "editable": false
+          },
+          {
+            "name": "Additional Service",
+            "value": "",
+            "type": "additionalService",
+            "link": "/theme/mobile/static/v3/dist-dev/pages/AdditionalService.html",
+            "disabled": false,
+            "list": [
+              {
+                "name": "Child Seat Child Seat Child Seat Child Seat",
+                "value": "50",
+                "num": 1,
+                "unit": "￥"
+              },
+              {
+                "name": "Free GPS ",
+                "value": "Free",
+                "num": 1
+              },
+              {
+                "name": "Free GPS ",
+                "value": "Free",
+                "num": 1
+              }
+            ]
+          },
+          {
+            "name": "Vehicle Condition",
+            "value": "",
+            "type": "vehicleCondition",
+            "disabled": false,
+            "link": "/theme/mobile/static/v3/dist-dev/pages/VehicleReport.html",
+            "list": [
+              {
+                "part": "right gate",
+                "remark": "有两条刮痕",
+                "charge": "",
+                "id": "",
+                "link": "123",
+                "damage": "Dent"
+              },
+              {
+                "part": "right gate",
+                "remark": "有两条刮痕",
+                "charge": "",
+                "id": "",
+                "link": "123123",
+                "damage": "Dent"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "checked": true,
+        "disabled": false,
+        "name": "Sign Rental Agreement",
+        "value": "",
+        "link": "/mobile.php/order_vehicle/identification",
+        "styleType": "checkLink"
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+<view class='nominate'>
+
+  <block wx:for="{{list}}" wx:key="key">
+    <navigator url='../detail/detail?id={{item.id}}' hover-class='none'>
+      <view class='nom_main'>
+        <image class='nom_img' src='{{item.image}}' ></image>
+        <view class='nom_view'>
+          <view class='nom_left'>
+            <view class='n_l_view'>
+              <text class='main_text1'>{{item.title}}</text>
+            </view>
+          </view>
+          <view class="content">
+            <text>服务类型:{{item.item.service_type}}</text>
+            <text>服务内容: {{item.item.service_mode}}</text>
+            <text>服务时长: {{item.item.duration}}</text>
+          </view>
+          <view class='nom_bottom'>
+            <text class='main_text3'>￥{{item.item.price}}</text>
+           
+            <view class='n_l_text'>
+                <button catchtap='Back' data-id="{{item.id}}">发送</button>
+            </view>
+          </view>
+        </view>
+      </view>
+    </navigator>
+  </block>
+</view>
+<block wx:if="{{list.length==0}}">
+<noData data="搜索不到任何商品信息"/>
+</block>

@@ -1,0 +1,6 @@
+/* pages/upload/upload.wxss */
+.tplImages{
+  border: 1px solid red;
+  margin: 0 auto;
+  display: block;
+}

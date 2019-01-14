@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/home",
+    "pages/user/user",
+    "pages/logs/logs",
+      "pages/server/server",
+    "pages/carList/carList"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f4f4f4",
+    "navigationBarTitleText": "买车顾问",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/home_02.png",
+        "iconPath": "images/home_01.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/home_02.png",
+        "iconPath": "images/home_01.png",
+        "pagePath": "pages/home/home",
+        "text": "精选"
+      },
+      {
+        "selectedIconPath": "images/my_02.png",
+        "iconPath": "images/my_01.png",
+        "pagePath": "pages/user/user",
+        "text": "我的"
+      }
+    ]
+  }
+}

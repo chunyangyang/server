@@ -1,0 +1,101 @@
+{
+  "code": 0,
+  "message": "success",
+  "data": {
+    "progressStatus": "prepare",
+    "checkedItem": 3,
+    "totalItem": 7,
+    "follow": null,
+    "is_follow_user": false,
+    "show_change_follow": true,
+    "checkList": [
+      {
+        "checked": true,
+        "disabled": false,
+        "name": "Select a Vehicle",
+        "value": "",
+        "link": "/mobile.php/order/choose",
+        "styleType": "checkLink"
+      },
+      {
+        "checked": false,
+        "disabled": true,
+        "msg":"you can't do this!!!",
+        "name": "Vehicle check",
+        "value": "",
+        "link": "/mobile.php/order_vehicle/check?order_id=90040339",
+        "styleType": "checkLink",
+        "itemList": [
+          {
+            "name": "",
+            "value": "",
+            "type": "vehiclePart",
+            "editable": false,
+            "list": [
+              {
+                "part": "right gate",
+                "remark": "有两条刮痕",
+                "charge": "",
+                "id": "",
+                "link": "123"
+              },
+              {
+                "part": "左车门",
+                "remark": "有两条刮痕,有两条刮痕,有两条刮痕,有两条刮痕,有两条刮痕,有两条刮痕有两条刮痕有两条刮痕有两条刮痕",
+                "charge": "",
+                "id": "",
+                "link": "123"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "checked": true,
+        "disabled": false,
+        "name": "Prepare AdditionalService",
+        "value": "",
+        "link": "/mobile.php/order_vehicle/additional_service",
+        "styleType": "checkLink",
+        "itemList": [
+          {
+            "name": "",
+            "value": "",
+            "type": "productGroup",
+            "editable": false,
+            "list": [
+              {
+                "name": "Child Seat",
+                "value": "50",
+                "num": "1",
+                "unit": "￥"
+              },
+              {
+                "name": "Free GPS ",
+                "value": "Free",
+                "num": 1,
+                "unit": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "checked": true,
+        "disabled": false,
+        "name": "Print Rental Agreement",
+        "value": "",
+        "link": "",
+        "styleType": "checkLink"
+      },
+      {
+        "checked": true,
+        "disabled": false,
+        "name": "Print License Translate",
+        "value": "",
+        "link": "",
+        "styleType": "checkLink"
+      }
+    ]
+  }
+}

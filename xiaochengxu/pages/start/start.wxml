@@ -1,0 +1,7 @@
+<view class='top-title'>
+  小程序测试API</view>
+
+<view class='nav-box'>
+  <navigator url='../upload/upload' class='item'>1.图片上传</navigator>
+  <navigator url='../map/map' class='item'>2.地理位置</navigator>
+</view>

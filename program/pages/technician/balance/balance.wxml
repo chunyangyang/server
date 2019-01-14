@@ -1,0 +1,29 @@
+<view class="balance">
+     <view class="money">
+      <image src='/image/money.png'></image>
+      <view class="number">
+        <text>￥</text><text>{{technician.money}}</text>
+      </view>
+      <view class="ban1"><button bindtap='click'>提现</button></view>
+      <navigator url="./record/record" class="record" hover-class='recordClick'>账单记录</navigator>
+     </view>
+    
+  <view class="model {{curIndex=='1'?'active':''}}" hidden='{{hidden}}'>
+    <view class="putForward">
+        <view class="header">
+          <text>微信到账</text>
+          <text>2小时内到账</text>
+        </view>
+        <view class="border">
+          <view class="tiQ"><text>可提现金额:￥{{technician.money}}</text></view>
+          <view class="numbers">
+             <text>￥</text>
+             <input bindinput="bindInput" type="number" maxlength="{{moneyLength}}" adjust-position='true'></input>
+          </view> 
+          <view class="ban">
+            <button bindtap='Putforward'  disabled='{{disabled}}' bindtap="Sure">提现</button>
+          </view>
+        </view>
+    </view>
+  </view>
+</view>

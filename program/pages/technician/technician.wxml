@@ -1,0 +1,95 @@
+<view class="technician">
+   <view class="my">
+      <view class="left">
+        <image  src="{{technician.avatar}}"></image>
+      </view>
+      <view class="right">
+        <view >
+          <text class="username" >{{technician.name}}</text>
+        </view>
+
+        <view class="middle">
+
+          <block wx:if="{{technician.name_certification == 1}}">
+          <view>
+            <image src="/image/shiming.png"></image><text>实名认证</text>
+          </view>
+          </block>
+
+          <block wx:if="{{technician.weixin_certification == 1}}">
+          <view>
+            <image src="/image/weixin.png"></image><text>微信认证</text>      
+          </view>
+          </block>
+        
+        </view>
+        <view class="bottom">
+            <view>
+            <image src="/image/dan.png"></image><text>{{technician.order_count}}</text><text>单</text>
+            </view>
+            <view>
+              <image src="/image/haoping.png"></image><text>{{technician.order_good_percent}}%</text><text>好评</text>      
+            </view>
+        </view>
+
+      </view>
+   </view>
+    <view class="list">
+        <block wx:if="{{technician.name_certification == 1}}">
+          <view class="listItem">
+            <text class="title">我的认证</text>
+            <view>
+              <text>已认证</text><text></text>
+            </view>
+          </view> 
+        </block>
+
+        <block wx:else>
+
+          <navigator class="listItem" url="./TechnicianCertification/TechnicianCertification">
+            <text class="title">我的认证</text>
+            <view>
+                <text>未认证</text><text></text>
+            </view>
+          </navigator> 
+        
+        </block>
+
+
+          <navigator class="listItem" url="./service/service">
+            <text class="title">服务管理</text>
+             <view>
+                <text></text><text></text>
+            </view>
+          </navigator> 
+           <navigator class="listItem" url="./balance/balance">
+            <text class="title">我的余额</text>
+            <view>
+                <text>{{technician.money}}</text><text></text>
+            </view>
+          </navigator> 
+          <navigator class="listItem" url="./TreasureList/TreasureList">
+            <text class="title">我的宝单</text>
+             <view>
+                <text>查看全部宝单</text><text></text>
+            </view>
+          </navigator> 
+          <navigator class="listItem" url="./MyStatistics/MyStatistics">
+            <text class="title">我的统计</text>
+            <text ></text>
+          </navigator> 
+          <navigator class="listItem" url="./Evaluation/Evaluation">
+            <text class="title">我的评价</text>
+            <text ></text>
+          </navigator> 
+          <navigator class="listItem" url="./InvitingFriends/InvitingFriends">
+            <text class="title">邀请新技师</text>
+            <view>
+                <text>邀请成功有红包</text><text></text>
+            </view>
+          </navigator> 
+     </view>
+    <view class="switch" >
+      <button bindtap='switchingUser'>切换用户端</button>
+    </view> 
+</view>

@@ -1,0 +1,88 @@
+<view class="about">
+    <view class="userInfo">
+      <block wx:if="{{userInfo && userInfo.avatarUrl != ''}}">
+        <image class="userImg" src="{{userInfo.avatarUrl}}"></image>
+        
+        <text class="username">{{userInfo.nickName}}</text>
+      </block>
+      <block wx:else>
+        <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">注册/登录</button>
+      </block>
+    </view>
+    <view class="myOrder">
+      <view class="listHeader">
+        <text class="title">我的订单</text>
+        <navigator class="check" hover-class='none' url="/pages/myOrder/myOrder?index=0&count={{orderCountList.all}}">  
+          <text>查看全部订单 </text>
+          <text></text>
+          <text class="biaoqian" wx:if="{{orderCountList.all}}">{{orderCountList.all}}</text>
+       </navigator>
+      </view>
+      <view class="orderlist">
+        <navigator hover-class='none' url="../myOrder/myOrder?index=1&count={{orderCountList.status1}}">
+          <text></text>
+          <text>待服务</text>
+          <text class="biao" wx:if="{{orderCountList.status1}}">{{orderCountList.status1}}</text>
+        </navigator>
+        <navigator hover-class='none' url="../myOrder/myOrder?index=2&count={{orderCountList.status2}}">
+          <text></text>
+          <text>待付款</text>
+          <text class="biao" wx:if="{{orderCountList.status2}}">{{orderCountList.status2}}</text>
+        </navigator>
+        <navigator hover-class='none' url="../myOrder/myOrder?index=3&count={{orderCountList.status3}}">
+          <text></text>
+          <text>待评价</text>
+          <text class="biao" wx:if="{{orderCountList.status3}}">{{orderCountList.status3}}</text>
+        </navigator>
+      </view>
+     </view>
+
+     <view class="list">
+          <navigator class="listItem" url="./address/address">
+            <text class="title">我的地址管理</text>
+            <text ></text>
+          </navigator> 
+           <navigator class="listItem" url="./myCollection/myCollection">
+            <text class="title">我的收藏</text>
+            <text ></text>
+          </navigator> 
+<!--
+          <navigator class="listItem" url="./coupon/coupon">
+            <text class="title">我的优惠券</text>
+            <text ></text>
+          </navigator> 
+-->
+          <navigator class="listItem" url="../technician/myRating/myRating">
+            <text class="title">我的评价</text>
+            <text ></text>
+          </navigator> 
+
+<!--
+          <navigator class="listItem" url="">
+            <text class="title">用户须知</text>
+            <text ></text>
+          </navigator> 
+-->
+
+          <button class="listItem" open-type="contact" session-from="weapp">
+            <text class="title">联系客服</text>
+            <text ></text>
+          </button> 
+          <navigator class="listItem" url="./feedback/feedback">
+            <text class="title">意见反馈</text>
+            <text ></text>
+          </navigator> 
+     </view>
+<!--
+  <block wx:if="{{userInfo.is_technician == 1}}">
+    <navigator class="listItem" url="../technician/technician">
+      <view class="switch"><button>切换技师端</button></view>
+    </navigator>
+  </block>
+  <block wx:else>
+    <navigator class="listItem" url="../technician/TechnicianCertification/TechnicianCertification">
+      <view class="switch"><button>成为技师</button></view>
+    </navigator>
+  </block>
+-->
+</view>

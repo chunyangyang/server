@@ -1,0 +1,48 @@
+
+.zzc-head{
+    height: 150rpx;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 30rpx;
+    background-color: #fff;
+    box-sizing: border-box;
+    margin-bottom: 20rpx;
+}
+
+.zzc-head .txt{
+    flex: 1;
+    margin-left: 30rpx;
+      
+}
+.txt .zzc-txt{
+    font-size: 34rpx;
+    margin-bottom: 10rpx;
+}
+.txt .zzc-server{
+    font-size: 30rpx;
+    color: #888;
+}
+.img-box{
+    width: 90rpx;
+    height: 90rpx;
+    background-color: #DDE0E6;
+    border-radius: 16rpx;
+    border: 1px solid #DDE0E6;
+}
+.right{
+    flex: 1;
+    text-align: right;
+}
+.nav-link{
+    width: 132rpx;
+    height: 60rpx;
+    border: 1px solid #108EE9;
+    border-radius: 6rpx;
+    text-align: center;
+    display: block;
+    float: right;
+    line-height: 60rpx;
+    font-size: 26rpx;
+    color: #108EE9;
+}

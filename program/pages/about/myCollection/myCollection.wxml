@@ -1,0 +1,38 @@
+<block wx:for="{{list}}" wx:key="key">
+  <view class="tabItem" style="{{item.is_del == 1 ? 'display:none;' : ''}}">
+    <navigator url="../../index/detail/detail?id={{item.service_id}}" hover-class="none">
+      <image src="{{item.image}}"></image>
+    </navigator>
+    <view class="orderDetail">
+      <view class="top">
+        <navigator url="../../index/detail/detail?id={{item.service_id}}" hover-class="none">
+          <text>{{item.title}}</text>
+        </navigator>
+        <button class='collectionCancelBtn' bindtap='setCollection' data-id='{{item.service_id}}'>取消收藏</button>
+      </view>
+      <navigator url="../../index/detail/detail?id={{item.service_id}}" hover-class="none">
+        <view class="content">
+          <view class="Servicetime">
+            <text>服务类型:</text>
+            <text>{{item.mode_name}}</text>
+          </view>
+          <view class="Servicetime">
+            <text>服务时长:</text>
+            <text>{{item.duration}}</text>
+          </view>
+          <view class="Servicetime">
+            <text>服务方式:</text>
+            <text>{{item.type_name}}</text>
+          </view>
+          <view class="price">
+            <text>￥</text>
+            <text class="money">{{item.price}}</text>
+          </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</block>
+<block wx:if="{{list.length==0}}">
+<noData data="没有相关信息记录"/>
+</block>

@@ -1,0 +1,87 @@
+/* pages/evaluation/evaluation.wxss */
+@import "../../template/submitSuccess/submitSuccess";
+.tab{
+  display: flex;
+  border-bottom: 1px solid #D5D4D4;
+}
+.tab view{
+  width: 50%;
+  text-align: center;
+  font-size: 14px;
+}
+.tab text{
+  display: inline-block;
+  padding: 10px 20px;
+}
+.tabActive{
+  color: #61B7F9;
+  border-bottom: 1px solid #61B7F9;
+}
+.contentList{
+  margin: 15px;
+  border: 1px solid #eee;
+  box-shadow: 1px 1px 5px #999;
+  overflow: hidden;
+}
+.userImg{
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin: 15px 15px 30px 15px;
+  border-radius: 50%;
+  background-color: #999;
+  overflow: hidden;
+}
+.userImg image{
+  width: 100%;
+  height: 100%;
+}
+.userMsgBox{
+  margin-top: 15px;
+}
+.range{
+  color: #61B7F9
+}
+.userEvaluation{
+  display: flex;
+  
+}
+.starsBox{
+  margin:0 10px;
+  display: flex;
+  /* vertical-align: middle; */
+}
+.stars{
+  width: 14px;
+  height: 13px;
+  display: inline-block;
+  line-height: 25px;
+}
+.stars image{
+  width: 100%;
+  height: 100%;
+}
+.evaluationCount{
+  color: #F5DA46;
+  line-height: 22px;
+  margin-left: 10px;
+}
+
+.userName{
+  font-size: 14px;
+  display: flex;
+}
+.sexIcon{
+  width: 9px;
+  height: 14px;
+  line-height: 23px;
+  margin-left: 5px;
+}
+.sexIcon image{
+  width: 100%;
+  height: 100%;
+}
+.fontSize12{
+  font-size: 12px;
+  line-height: 20px;
+}

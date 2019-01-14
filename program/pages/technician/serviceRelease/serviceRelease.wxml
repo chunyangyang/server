@@ -1,0 +1,54 @@
+<!--pages/technician/serviceRelease/serviceRelease.wxml-->
+<view class='serviceRelease'>
+  <view class='serviceRelease_title'>
+    <text class='title_text'>标题</text>
+    <input placeholder='请输入您要发布的服务标题'adjust-position='true'type='text'></input>
+  </view>
+
+  <view class='serviceRelease_main'>
+    <!-- <text class='main_text1'>内容</text> -->
+    <textarea  class='main_text2' placeholder='请输入您要发布的服务内容'maxlength='140'auto-height='true'></textarea >
+  </view>
+  
+  <view class='serviceRelease_ensure'>
+    <text class='ensure_text1 ensure_t'>保障</text>
+    <image class='ensure_img1' src='/image/tu.png'></image>
+    <text class='ensure_text1'>未服务随时退</text>
+    <image class='ensure_img1' src='/image/rmb.png'></image>
+    <text class='ensure_text1'>无额外收费</text>
+  </view>
+
+  <view class='serviceRelease_ser'>
+    <text class='ser_service1'>服务方式</text>
+    <text class='ser_service2'>上门服务</text>
+  </view>
+  
+  <view class='serviceRelease_ser'>
+    <text class='ser_service1'>价格</text>
+    <!-- <text class='ser_service3'>¥198</text> -->
+    <view class='ser_service3'>     
+      <input placeholder='198'adjust-position='true'type='number'maxlength='5'></input>
+      <text>¥</text>
+    </view>  
+  </view>
+
+  <view class='serviceRelease_ser'>
+    <text class='ser_service1'>服务时长</text>
+    <!-- <text class='ser_service2'>60分钟</text> -->
+    <view  class='ser_service4'>
+    <input placeholder='60'adjust-position='true'type='number'maxlength='3'></input>
+      <text>分钟</text>
+    </view>
+  </view>
+
+  <view class='serviceRelease_img'>
+    <text class='ser_service1'>上传照片</text>
+    <view class='ser_service2'>
+      <image bindtap='uploadImg' src='{{images}}' style=''></image>
+    </view> 
+  </view>
+
+  <navigator url='../releaseSuccess/releaseSuccess'>
+    <button class='btu'>发布</button>
+  </navigator>
+</view>

@@ -1,0 +1,104 @@
+@import "../../../common/iconFont.wxss";
+page{
+  background: #F0EEEE;
+  
+}
+.address{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+.address text{
+  color: #282828;
+}
+.btn{
+  display: flex;
+  justify-content: center;
+}
+.add{
+  width: 300px;
+  height: 40px;
+  background:#60B7F9;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.add text{
+     font-size: 13px;
+      color: #fff;
+}
+.add .icon-add_icon{
+  font-size: 15px;
+  color: #fff;
+  margin-right: 6px;
+  margin-top: 2px;
+}
+.li:first-child{
+  margin-top: 10px;
+}
+.li{
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+ 
+}
+
+.li .header{
+ display: flex;
+ justify-content: space-between;
+ overflow: hidden;
+ align-items: center;
+}
+
+.li .header .name{
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 32px;
+  margin-left: 16px;
+}
+.li .header .phone{
+  font-size: 13px;
+  margin-right: 44px;
+}
+.adres{
+  padding: 0 0 10px 0;
+  font-size: 12px;
+  border-bottom: 1px solid #E9E5E5;
+
+}
+.adres text{
+  margin-left: 16px;
+}
+.bottom{
+  height: 40px;
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+  font-size: 12px;
+}
+.bottom .defalut text{
+  color:#60B7F9;
+}
+.bottom .icon-xuanxiangkuangqueding{
+  
+  margin-right: 7px;
+  font-size: 13px;
+}
+.bottom .right{
+  
+  margin-right: 33px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.bottom .right .set{
+  padding-right:26px; 
+}
+.bottom .right .icon-icon-,.bottom .right .icon-shanchu{
+  padding-right: 7px;
+}

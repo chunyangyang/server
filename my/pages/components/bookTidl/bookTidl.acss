@@ -1,0 +1,26 @@
+.banner{
+    display: flex;
+    align-items: center;
+    height: 100rpx;
+    background: #FFEEE6;
+    padding: 0 30rpx;
+}
+.banner .banner-txt{
+    font-size: 24rpx;
+    color: #888888;
+    line-height: 36rpx;
+}
+.banner .banner-txt text{
+   color: #FF5B05;
+}
+.free-tidl{
+    width: 216rpx;
+    height: 60rpx;
+    background: #FF5B05;
+    border-radius: 6rpx;
+    font-size: 26rpx;
+    color: #FFFFFF;
+    line-height: 60rpx;
+    border: none;
+     margin-left: 42rpx;;
+}

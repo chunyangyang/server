@@ -1,0 +1,42 @@
+<!--pages/carList/carList.wxml-->
+<view class="carlist-layout">
+  <view class="top-box">
+   所有车型
+  </view>
+  <view class='lists-box'>
+    <view class='item'>
+      <image class='item-icon' src='/images/car.jpg'></image>
+      <view class='item-message'>
+        <view>
+          <text>车型:</text>
+          <text class='txt'>大众</text>
+        </view>
+        <view>
+          <text>价格:</text>
+          <text class='txt'>18-20万</text>
+        </view>
+        <view>
+          <text>配置:</text>
+          <text class='txt'>舒适型</text>
+        </view>
+      </view>
+    </view>
+    <view class='item'>
+      <image class='item-icon' src='/images/car.jpg'></image>
+      <view class='item-message'>
+         <view>
+          <text>车型:</text>
+          <text class='txt'>大众</text>
+        </view>
+        <view>
+          <text>价格:</text>
+          <text class='txt'>18-20万</text>
+        </view>
+        <view>
+          <text>配置:</text>
+          <text class='txt'>舒适型</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

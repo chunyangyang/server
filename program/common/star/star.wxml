@@ -1,0 +1,9 @@
+<!-- 星星 -->
+<view class="fen">
+    <block wx:for="{{one_2}}" wx:key="id">
+       <view><image src="/image/star.png" catchtap="clickTap" id="{{index+1}}" data-in="star"></image><text style="display:{{index+1==one_2?'block':'none'}}">{{Comment}}</text></view>
+    </block>
+    <block wx:for="{{two_2}}" wx:key="id">
+       <view><image src="/image/no-star.png" catchtap="clickTap" id="{{index+1}}" data-in="starg"></image><text ></text></view>
+    </block>
+</view>

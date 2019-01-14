@@ -1,0 +1,241 @@
+/*
+ * @Author: zhengchunyang 
+ * @Date: 2018-08-01 10:36:22 
+ * @Last Modified by: zhengchunyang
+ * @Last Modified time: 2019-01-12 22:27:06
+ */
+
+@import '../../../../style/global.scss';
+body{    background: #f5f5f5;}
+body{
+    max-width: 750px;
+    // margin: 0 auto;
+}
+.pay-form {
+    width: 100%;
+    background: #fff;
+    margin-bottom: .4rem;
+    padding: .8rem 0 .2rem
+}
+.pay-title {
+    font-size: .36rem;
+    margin: .54rem 0 .3rem;
+    font-weight: 700;
+    text-align: left;
+    padding-left: .4rem;
+}
+
+.pay-form .form-inp {
+    width: 6.7rem;
+    height: .7rem;
+    line-height: .7rem;
+    font-size: .32rem;
+    margin: 0 auto .6rem
+}
+
+.pay-form .form-inp input {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: none;
+    border-radius: .04rem;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: .32rem;
+}
+
+.choice-pay {
+    background: #fff;
+    padding: .4rem 0 2rem
+}
+
+.choice-hd {
+    width: 6.7rem;
+    height: 4.14rem;
+    margin: auto;
+    position: relative
+}
+
+.choice-hd img {
+    width: 100%
+}
+
+.choice-hd h3 {
+    color: #fff;
+    font-size: .9rem;
+    position: absolute;
+    top: 1.67rem;
+    left: .56rem;
+    font-weight: 400
+}
+
+.choice-hd h3 span {
+    font-size: .44rem
+}
+
+.choice-list {
+    width: 6.7rem;
+    margin: 0 auto .64rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.choice-list li {
+    color: #323232;
+    font-size: .28rem;
+    border: .02rem solid #b7b7b7;
+    border-radius: .02rem;
+    width: 2.14rem;
+    height: .7rem;
+    line-height: .7rem;
+    text-align: center
+}
+
+.choice-list li.active {
+    color: #4479e2;
+    border-color: #4479e2
+}
+
+.choice-row {
+    color: #323232;
+    font-size: .36rem;
+    padding-bottom: .3rem;
+    width: 6.7rem;
+    margin: auto
+}
+
+.choice-row span {
+    color: #fb560a
+}
+
+.choice-row .choice-detail {
+    display: inline-block;
+    margin-left: .24rem;
+    font-size: .24rem;
+    color: #666
+}
+
+.choice-row .choice-detail .iconfont {
+    font-size: .24rem
+}
+
+.choice-desc {
+    margin: auto;
+    padding-right: .3rem;
+    line-height: 1.4
+}
+
+.choice-desc,.choice-tip {
+    color: #999;
+    font-size: .24rem;
+    width: 6.7rem
+}
+
+.choice-tip {
+    margin: .36rem auto .3rem;
+    overflow: hidden
+}
+
+.choice-tip .iconfont {
+    float: left;
+    margin-right: .08rem
+}
+
+.choice-tip .icon-checked {
+    color: #4479e2
+}
+
+.choice-tip a {
+    color: #1c1c1c
+}
+
+.choice-tip p {
+    float: left;
+    width: 6.2rem
+}
+
+.choice-pag {
+    color: #999;
+    font-size: .24rem;
+    margin: 0 0 .4rem;
+    text-align: center
+}
+.iconfont-check{
+    &::before{
+        content: '';
+        display: block;
+        width: 0.28rem;
+        height: 0.28rem;
+        border: 1px solid #999;
+        border-radius:0.08rem; 
+        position: relative;
+        top: 0.04rem;
+    }
+    &.icon-checked{
+        position: relative;
+        &::before{
+            border-color: #4479e2;
+        }
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            background-color: #fff;
+            top: 50%;
+            width: .16rem;
+            height: 0.06rem;
+            border-bottom: 2px solid #4479e2;
+            border-left: 2px solid #4479e2;
+            left: .06rem;
+            z-index: 10;
+            // margin-top: -.02rem;
+            transform: translateY(-50%) rotate(-45deg);
+        }
+    }
+}
+
+.modal-text{
+    // padding: .5rem;
+    .text{
+        text-align: center;
+        font-size: .28rem;
+        padding-bottom: .2rem;
+    }
+    .img-box{
+        padding: .2rem 1.4rem;
+    }
+}
+ .submit-box{
+     padding: .3rem;
+     cursor: pointer;
+ }
+ .pay-tab{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     height: .8rem;
+     font-size: .3rem;
+     border-bottom: 1px solid #dde0e6;
+     span{
+         flex: 1;
+         &.active{
+           color: #4E7CDD;
+           font-weight: 600;
+         }
+     }
+ }
+ .pay .zds-modal-box .zds-modal-body{
+     min-height: auto;
+     max-height: 5.4rem;
+ }
+ 

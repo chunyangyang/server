@@ -1,0 +1,10 @@
+{
+  "code": 0,
+  "message": "error happen",
+  "data": {
+    "progressStatus": "return",
+    "checkedItem": "3",
+    "totalItem": "5",
+    "follow": "superadmin"
+  }
+}

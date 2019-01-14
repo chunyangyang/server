@@ -1,0 +1,205 @@
+/*
+ * @Author: zhengchunyang 
+ * @Date: 2018-08-01 10:36:22 
+ * @Last Modified by: zhengchunyang
+ * @Last Modified time: 2019-01-12 22:27:19
+ */
+
+@import '../../../../style/global.scss';
+body{background-color: #fff;}
+body{
+    max-width: 750px;
+    // margin: 0 auto;
+}
+.quota {
+    height: 100%;
+    background: #fff
+}
+
+.quota-mn {
+    width: 6.7rem;
+    margin: auto;
+    padding-top: .4rem
+}
+
+.quota-title {
+    color: #1c1c1c;
+    font-size: .48rem;
+    line-height: 1;
+    margin-bottom: .2rem
+}
+
+.quota-desc {
+    font-size: .24rem;
+    color: #848c9c;
+    line-height: 1
+}
+
+.quota .quota-item {
+    padding-top: .6rem
+}
+
+.quota .quota-item span {
+    color: #b7b7b7;
+    font-size: .24rem
+}
+
+.quota .quota-item .quota-sel {
+    padding-left: 0;
+    border-bottom: 1px solid #e5e5e5
+}
+
+.quota .quota-item .quota-sel .am-list-extra {
+    color: #1c1c1c;
+    font-size: .36rem;
+    text-align: left;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%
+}
+
+.quota .quota-item .quota-sel .am-list-arrow {
+    position: absolute;
+    right: 0
+}
+
+.quota .btn-confirm {
+    width: 5.94rem;
+    height: .9rem;
+    line-height: .9rem;
+    border-radius: .45rem;
+    margin-top: 1.1rem
+}
+
+.quota-loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #061f3d;
+    padding-top: 2rem
+}
+
+.quota-layer {
+    width: 5.54rem;
+    height: 5.55rem;
+    position: relative;
+    margin: 0 auto 2.5rem
+}
+
+.quota-layer img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto
+}
+
+.quota-layer .layer-inner {
+    width: 5.08rem;
+    height: 5.08rem;
+    -webkit-animation: rotateRight 6s linear both infinite;
+    -o-animation: rotateRight 6s linear both infinite;
+    animation: rotateRight 6s linear both infinite
+}
+
+.quota-layer .layer-warp {
+    -webkit-animation: rotateLeft 6s linear both infinite;
+    -o-animation: rotateLeft 6s linear both infinite;
+    animation: rotateLeft 6s linear both infinite
+}
+
+.quota-layer h4 {
+    color: #eceff3;
+    font-size: .8rem;
+    line-height: 5.55rem;
+    text-align: center
+}
+
+.quota-loading h3 {
+    color: #eceff3;
+    font-size: .48rem;
+    text-align: center;
+    width: 100%;
+    font-weight: 400
+}
+
+@-webkit-keyframes rotateRight {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    to {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn)
+    }
+}
+
+@-o-keyframes rotateRight {
+    0% {
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    to {
+        -o-transform: rotate(1turn);
+        transform: rotate(1turn)
+    }
+}
+
+@keyframes rotateRight {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    to {
+        -webkit-transform: rotate(1turn);
+        -o-transform: rotate(1turn);
+        transform: rotate(1turn)
+    }
+}
+
+@-webkit-keyframes rotateLeft {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    to {
+        -webkit-transform: rotate(-1turn);
+        transform: rotate(-1turn)
+    }
+}
+
+@-o-keyframes rotateLeft {
+    0% {
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    to {
+        -o-transform: rotate(-1turn);
+        transform: rotate(-1turn)
+    }
+}
+
+@keyframes rotateLeft {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    to {
+        -webkit-transform: rotate(-1turn);
+        -o-transform: rotate(-1turn);
+        transform: rotate(-1turn)
+    }
+}

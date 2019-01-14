@@ -1,0 +1,143 @@
+page{
+  background: #F9F9F9;
+}
+
+.my{
+  margin:1px 0 5px 0;
+  height: 145px;
+  width: 100%;
+  background:#fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.my .left{
+  width: 51px;
+  height: 51px;
+  background: #61B7F9;
+  border-radius: 50%;
+  margin-right: 10px;
+  overflow: hidden;
+}
+.left image{
+  width: 100%;
+  height: 100%;
+  
+}
+.right{
+  display: flex;
+  flex-direction: column;
+  font-size: 0;
+}
+.right image{
+  width: 10px;
+  height: 10px;
+  
+}
+.right text{
+  font-size: 9px;
+  color: #B6B6B6;
+}
+.right .username{
+  font-size: 14px;
+  font-weight: bold;
+  color: #282828;
+  
+}
+.right .middle,.right .bottom{
+  display: flex;
+  margin: 5px 0 6px 0;
+}
+.right .middle image,.right .bottom image{
+  margin-right: 6px;
+}
+.right .middle text,.right .bottom  text{
+  margin-bottom: 7px;
+}
+.right .middle view{
+  margin-right: 10px;
+}
+.right .bottom view:nth-child(1) text{
+  color: #61B7F9;
+}
+.right .bottom view:nth-child(2) text{
+  color: #FF6E6E;
+}
+.right .bottom view:nth-child(1),.right .bottom view:nth-child(2){
+  margin-right: 21px;
+}
+
+.right .bottom{
+  position: relative;
+}
+.right .bottom::after{
+  content: "";
+  width: 1px;
+  height: 10px;
+  background: #D4D4D4;
+  position: absolute;
+  right:50%;
+  margin-right: 15px;
+}
+.list{
+
+  font-size:12px;
+  color:#282828;
+}
+.list .listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  background: #fff;
+  border-bottom: 1px solid #faf9f9;
+  box-sizing: border-box;
+}
+.list .listItem .title{
+  padding-left: 15px;
+}
+.list .listItem:nth-child(4) view text:nth-child(1){
+  color: #D8D8D8;
+}
+.list .listItem:nth-child(7) view text:nth-child(1){
+  color: #FF1F1F;
+}
+.list .listItem view{
+  
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+.list .listItem view text:nth-child(1){
+  margin-right: 10px;
+  margin-bottom: 3px;
+  font-size: 9px;
+}
+.list .listItem view text:nth-child(2){
+  width: 6px;
+  height:11px;
+  background: url('http://smb.fjsmb.com/static/lib/img/back.png') no-repeat center center;
+  background-size: 6px 11px;
+  transform: rotate(180deg);
+  margin-right: 15px;
+}
+.list .listItem text:nth-child(2){
+  width: 6px;
+  height:11px;
+  background: url('http://smb.fjsmb.com/static/lib/img/back.png') no-repeat center center;
+  background-size: 6px 11px;
+  transform: rotate(180deg);
+   margin-right: 15px;
+}
+.switch{
+  margin-top: 103px;
+}
+.switch button{
+  background: #61B7F9;
+  width: 345px;
+  height: 31px;
+  color: #fff;
+  border-radius: 5px;
+  line-height: 31px;
+  font-size:13px; 
+}

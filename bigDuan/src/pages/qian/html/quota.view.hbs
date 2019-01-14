@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="">
+    <meta name="keywords" content="{seo.keyword}">
+    <meta name="description" content="{seo.description}">
+    <title>金钱猫</title>
+    {{> '../../../modules/public/head.hbs'}}
+    {{> '../../../modules/public/rem.hbs'}}
+    <link rel="stylesheet" href="../css/quota.css">
+</head>
+
+
+<body>
+    <script>
+        window.serverData = {
+          
+        }
+
+    </script>
+    <div id="root">
+        {{> '../../../modules/public/loading.hbs'}}
+    </div>
+    {{> '../../../modules/public/common.hbs'}}
+    {{> '../../../modules/public/fastclick.hbs'}}
+
+    <script src="../js/react-runtime.js"></script>
+    <script src="../js/quota.js"></script>
+</body>
+
+</html>

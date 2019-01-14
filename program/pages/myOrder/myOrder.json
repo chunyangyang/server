@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "我的订单",
+  "usingComponents":{
+      "all":"./all/all",
+      "service":"./service/service",
+      "pay":"./pay/pay",
+      "evaluate":"./evaluate/evaluate",
+      "noData":"../../common/noData/noData"
+  }
+}

@@ -1,0 +1,50 @@
+<import src="../components/lifeServer/lifeServer.axml" />
+<import src="../components/bookTidl/bookTidl.axml" />
+<view class="page-result">
+    <template is="lifeServer"/>
+    <view class="result-tj-box">
+        <view class="result-tj-head">
+            <view>
+                <image class="result-head-icon" src="/images/result_head.png" mode="aspectFit" />
+                <text class="result-head-id">粤A748HL</text>
+            </view>
+            <text class="result-head-time">更新时间：2018-01-17 10:06</text>
+        </view>
+        <view class="result-tj-content">
+            <view class="result-tj-content-item">
+                <view class="number">7</view>
+                <view>违章数</view>
+            </view>
+            <view class="result-tj-content-item">
+                <view class="number">2227</view>
+                <view>待罚款(元)</view>
+            </view>
+            <view class="result-tj-content-item">
+                <view class="number">7</view>
+                <view>扣分</view>
+            </view>
+        </view>
+    </view>
+    <!-- 列表 -->
+    <view class="result-list-box">
+        <view class="result-list-item">
+            <view class="left-icon">
+                <text class="result-order">1</text>
+                <image class="result-order-icon" src="/images/result_order.png" mode="aspectFit" />
+            </view>
+            <view class="right-list">
+                <view class="right-list-item">
+                    <text class="item-left">时间：</text>
+                    <text class="item-right">2017-01-18  12:12:00</text>
+                </view>
+                <view class="right-list-item">
+                    <text class="item-left">地点：</text>
+                    <text class="item-right">2017-01-18  12:12:00</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="book-tidl">
+        <template is="bookTidl"/>
+    </view>
+</view>

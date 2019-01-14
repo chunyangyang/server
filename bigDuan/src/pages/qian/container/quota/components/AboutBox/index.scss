@@ -1,0 +1,21 @@
+.about-box {
+    width: 6.8rem;
+    margin: auto;
+    padding-top: .42rem;
+    text-align: left;
+    h3 {
+        color: #333;
+        font-size: .34rem;
+        padding-left: .2rem;
+        border-left: .04rem solid #4479e2;
+        margin-bottom: .3rem;
+    }
+    p {
+        color: #666;
+        font-size: .28rem;
+        line-height: 1.4;
+    }
+    a {
+        color: #4479e2;
+    }
+}

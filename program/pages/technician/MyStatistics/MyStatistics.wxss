@@ -1,0 +1,66 @@
+.list{
+  width: 345px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  box-shadow: 0 1px 3px rgba(0,0,0,.35);
+  margin: 25px auto;
+}
+.statis{
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.time{
+  font-size: 9px;
+}
+.content{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+  position: relative;
+}
+.content::after{
+  position: absolute;
+  content:"";
+  width: 1px;
+  height: 108px;
+  background: #D5D4D4;
+  margin-top: 25px;
+}
+.content view{
+  height: 78px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0;
+}
+.content view text:first-child{
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.content view text:nth-child(2){
+  font-size: 12px;
+  
+}
+.content view:first-child,.content view:nth-child(2){
+  border-bottom:1px solid #D5D4D4;
+}
+
+.PraiseRate{
+  color: #FF6E6E;
+}
+.TotalMono{
+  color: #61B7F9;
+}
+.AbnormalSingle{
+  color: #FFAB3D;
+}

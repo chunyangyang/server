@@ -1,0 +1,65 @@
+<import src="../components/lifeServer/lifeServer.axml" />
+<import src="../components/bookTidl/bookTidl.axml" />
+<view class="page-index">
+    <!-- <lifestyle publicId="2014081400008008" /> -->
+    <template is="lifeServer"/>
+    <view class="query-listbox">
+        <form onSubmit="" onReset="">
+            <view class="item">
+                <label>车牌号 </label>
+                <picker onChange="bindPickerChange" value="{{index}}" range="{{array}}">
+                    <view class="row">
+                        <view class="row-extra">{{array[index]}} </view>
+                        <image class="row-arrow" src="/images/row_right.png" mode="aspectFill" />
+                    </view>
+                </picker>
+                <input onBlur="getCarPlateInfo" value="{{carOrder}}" data-name="carOrder" type="text" placeholder="车牌号码" />
+            </view>
+            <view class="item item-width">
+                <label>车辆识别代码 </label>
+                <input type="text" value="{{enginenum}}" onBlur="changeValue" name="enginenum" data-name="enginenum" placeholder="{{enginenumlen}}" />
+                <view class="item-right" onTap="showDriverTpl" data-src="/images/driver_vin.png">
+                    <image class="temple-question" src="/images/question_icon.png" mode="aspectFill" />
+                </view>
+            </view>
+            <view class="item item-width">
+                <label>发动机号</label>
+                <input type="text" value="{{framenum}}" data-name="framenum" onBlur="changeValue" name="framenum" placeholder="{{framenumlen}}" />
+                <view class="item-right" onTap="showDriverTpl" data-src="/images/driver_engine.png">
+                    <image class="temple-question" src="/images/question_icon.png" mode="aspectFill" />
+                </view>
+            </view>
+            <view class="item item-width item-width-img-code">
+                <label>验证码</label>
+                <input type="text" value="{{captchaValue}}" data-name="captchaValue" name="captcha" onBlur="changeValue" placeholder="请输入图形验证码" />
+                <view class="item-right-code">
+                    <image class="img-code" onTap="getImagesCode" src="{{captcha}}" mode="aspectFill" />
+                </view>
+            </view>
+            <view class="query-botton-box">
+                <button type="primary" onTap="getViolateRecord" hover-class="defaultTap"> 查询违章 </button>
+                <text class="query-txt">以上信息仅用于交管局查询，我们将严格保密</text>
+            </view>
+            <view class="bottom-box">
+                <template is="bookTidl"/>
+                <view class="book-tab">
+                    <view class="tab-search">
+                        <image class="search-icon" src="/images/search.png" mode="aspectFill" />
+                        <text>违章查询</text>
+                    </view>
+                    <view class="tab-tidl">
+                        <image class="tidl-icon" src="/images/tidl.png" mode="aspectFill" />
+                        <text>国际驾照</text>
+                    </view>
+                </view>
+            </view>
+            <!-- 示例 -->
+            <view class="driver-tpl-box" a:if=" {{driverTpl}}">
+                <view class="driver-tpl-content">
+                    <image class="driver-img" src="{{driverTplSrc}}" mode="aspectFill" />
+                    <button class="close-driver" type="default" onTap="closeDriverTpl"> 确定 </button>
+                </view>
+            </view>
+        </form>
+    </view>
+</view>

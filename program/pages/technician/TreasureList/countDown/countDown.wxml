@@ -1,0 +1,22 @@
+<!--pages/countDown/countDown.wxml-->
+<view>
+  <view class='header'>
+    <text class='title'>距离服务结束还有</text>
+  </view>
+  <view class='timeWrap'>
+    <view>{{Hour}}</view>
+    <view>{{hour}}</view>
+    <text>时</text>
+    <view>{{Min}}</view>
+    <view>{{min}}</view>
+    <text>分</text>
+    <view>{{Sec}}</view>
+    <view>{{sec}}</view>
+    <text>秒</text>
+  </view>
+  <view class='useWrap'>
+    <button class='start' bindtap='startCountDown'> 
+      <text>{{countBool ? '计时中' : '开始使用'}}</text>
+    </button>
+  </view>
+</view>

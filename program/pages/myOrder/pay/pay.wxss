@@ -1,0 +1,6 @@
+@import "../myOrder.wxss";
+
+.pay{
+  background: #61B7F9;
+  color: #fff;
+}

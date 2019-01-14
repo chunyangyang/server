@@ -1,0 +1,31 @@
+<view>
+  <block wx:for='{{msgsList}}' wx:key='key'>
+    <view class='msgWrap' bindtap="toChat" data-id='{{item.chat_id}}'>
+      <view class='msgImgBox'>
+        <image class='msgImg' src='{{item.avatar_url}}'></image>
+      </view>
+      <view class='msgDescribe'>
+        <view class='msgUserBox'>
+          <text class='msgUser'>{{item.name}}</text>
+          <text class='msgTime'>{{item.update_time}}</text>
+          <!-- <view class="distance"><text class="iconfont icon-dizhi"></text><text >{{item.distance}}</text></view> -->
+        </view>
+        <view class='msgContent'>
+          <!-- 消息内容 -->
+          <!-- <text wx:if="{{item.message.type == 'image'}}">[图片]</text>
+          <text wx:elif="{{item.message.type == 'voice'}}">[语音]</text>
+          <text wx:elif="{{item.message.type == 'service'}}">[转发]</text> -->
+          <view class='msgText textOverflow'>{{item.content}}</view>
+          <block wx:if="{{item.unread_count > 0}}">
+          <view class='{{item.unread_count > 99 ? "maxMsgCountIcon" : "msgCountIcon"}}'>
+            {{item.unread_count > 99 ? '99+' : item.unread_count}}
+          </view>
+          </block>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+<block wx:if="{{msgsList.length==0}}">
+<noData data="没有聊天信息记录"/>
+</block>

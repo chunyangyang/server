@@ -1,0 +1,32 @@
+<!--pages/index/nominate/nominate_js.wxml-->
+<!-- <text>pages/index/nominate/nominate_js.wxml</text> -->
+<view class='nominate'>
+  <view class='nom_title'>
+    <text class='nom_text1'></text>
+    <text class='nom_text2'>{{title}}</text>
+  </view>
+
+  <block wx:for="{{list}}" wx:for-item="items" wx:key="key1">
+    <view class='nom_main'>
+      <block wx:for="{{items}}" wx:key="key2">
+        <navigator url='../nominate/nominate?technician={{item.id}}' hover-class='none'>
+          <view class='main'>
+            <image class='nom_img' src='{{item.avatar}}' mode="widthFix"></image>
+            <view class='nom_view'>
+              <view class='nom_left'>
+                <text class='main_text1'>{{item.name}}</text>
+                <text class='main_text2'>{{item.profession}}</text>
+                <text class='main_text3'>{{item.description}}</text>
+              </view>
+              <view class="adress">
+                <text class="iconfont icon-dizhi"></text>
+                <text>{{item.distance}}</text>
+              </view>
+            </view>
+           
+          </view>
+        </navigator>
+      </block>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="">
+    <meta name="keywords" content="{seo.keyword}">
+    <meta name="description" content="{seo.description}">
+    <title>金钱猫</title>
+    {{> '../../../modules/public/head.hbs'}}
+    {{> '../../../modules/public/rem.hbs'}}
+    <link rel="stylesheet" href="../css/about.css">
+</head>
+
+
+<body>
+    <script>      
+        window.serverData = {            
+            pageData:[
+                {
+                    title: '免责声明',
+                    content: '免责声明 content'
+                },
+                {
+                    title: '联系我们',
+                    content: '平台介绍content'
+                },
+                {
+                    title: '投诉建议',
+                    content: '点击<a href="https://www.wjx.top/jq/22364637.aspx">https://www.wjx.top/jq/22364637.aspx</a>'
+                }
+            ]
+        }
+    
+    </script>
+    <div id="root">
+        {{> '../../../modules/public/loading.hbs'}}
+    </div>
+    {{> '../../../modules/public/common.hbs'}}
+    {{> '../../../modules/public/fastclick.hbs'}}
+
+    <script src="../js/react-runtime.js"></script>
+    <script src="../js/about.js"></script>
+</body>
+
+</html>

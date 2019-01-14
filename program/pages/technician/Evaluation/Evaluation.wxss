@@ -1,0 +1,82 @@
+.population{
+  height: 115px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top:1px solid #D5D4D4;
+}
+
+.population view{
+  display: flex;
+  margin-left: 120px;
+  padding: 3px;
+}
+.population view text{
+  font-size: 9px;
+  margin-right: 20px;
+}
+.population view:first-child text{
+  margin-right: 15px
+}
+.population view image{
+  width: 10px;
+  height: 9px;
+  margin-right: 5px;
+}
+.title{
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  font-size: 11px;
+  background:#F9F9F9;
+}
+.title text{
+  margin-left: 15px;
+}
+.li{
+  height: 94px;
+  border-bottom:1px solid #F9F9F9;
+}
+.top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 16px 0 20px;
+}
+.top .left{
+  display: flex;
+  align-items: center;
+}
+.top .left .userImg{
+  background: #61B7F9;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.top .left .name{
+  font-size: 12px;
+  margin: 0 16px 0 11px;
+}
+
+.top .left .star{
+  font-size: 0;
+}
+.top .left .star image{
+  width: 10px;
+  height: 9px;
+  margin-right: 5px;
+}
+.top .date{
+  font-size: 9px;
+  color: #676767;
+}
+.content{
+  font-size: 11px;
+  margin-top:31px;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.content text{
+  margin-left: 51px; 
+}

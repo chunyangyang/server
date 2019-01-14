@@ -1,0 +1,45 @@
+/*
+ * @Author: zhengchunyang 
+ * @Date: 2018-08-01 10:36:22 
+ * @Last Modified by: zhengchunyang
+ * @Last Modified time: 2019-01-12 22:27:13
+ */
+
+@import '../../../../style/global.scss';
+body{background-color: #fff;}
+body{
+    max-width: 750px;
+    // margin: 0 auto;
+}
+.profile-user {
+    height: 2.76rem;
+    overflow: hidden;
+    background: url(../../images/profile_bgc.png) #4479e2;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    color: #fff;
+    padding: 1.25rem 0 0 1.6rem;
+    line-height: 1;
+    font-size: .48rem;
+    box-sizing: border-box;
+}
+
+.profile-tab {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.profile-credit {
+    width: 100%;
+    margin: .2rem 0 0
+}

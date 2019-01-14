@@ -1,0 +1,14 @@
+.top-title{
+  text-align: center;
+  padding: 30rpx;
+  border-bottom: 1px solid #ddd;
+}
+.nav-box{
+  padding: 30rpx;
+  text-align: center;
+}
+ .item{
+    background: #ccc;
+     margin-top: 30rpx;
+    border-radius: 8rpx;
+ }

@@ -1,0 +1,330 @@
+<!--pages/index/detail/detail.wxml-->
+<!-- <template name="detail"> -->
+<view class='head'>
+  <view class="swiper-container">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{duration}}" current="{{swiperCurrent}}" bindchange="changeGoodsSwip" class="swiperBox">
+      <!-- 循环  -->
+      <block wx:for="{{detail.images}}" wx:key="unique">
+        <swiper-item>
+          <image mode='widthFix' src="{{item}}" style='width: 100%; height: 125pt;'  />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+</view>
+
+<!-- 介绍说明 -->
+<view class='introduction'>
+  <text class='title'>{{detail.title}}</text>
+  <view class='price'>
+    <text class='price_text1'>￥{{detail.items[0].price}}</text>
+    <text class='price_text2'>查看服务价目表</text>
+    <text class='condition_text3'>已售{{detail.order_count}}</text>
+  </view>
+  <view class='button1'>
+    {{detail.items[0].type_name}}
+  </view>
+  <view class='in_text'>
+    <text class=''>价格透明，拒绝乱收费，全程保障安全，查看收费/退款详细说明</text>
+  </view>
+  <view class='guarantee'>
+    <text class='guarantee_text1'>保障</text>
+    <block wx:for="{{detail.guarantee}}" wx:key="unique">
+      <image class='guarantee_img1' src='{{item.image}}'></image>
+      <text class='guarantee_text2'>{{item.name}}</text>
+    </block>
+  </view>
+  <view class='choice'>
+    <text class='choice_text1'>已选</text>
+    <text class='choice_text2'>{{detail.items[0].mode_name}}/{{detail.items[0].duration}}/{{detail.items[0].type_name}}/{{detail.items[0].count}}件</text>
+  </view>
+</view>
+
+<block wx:if="{{detail.comment.comment}}">
+
+  <view class='evaluation'>
+    <view class='eval_title'>
+      <text class='title-text1'>用户评价</text>
+      <view class='eva' style='margin-top: 3px;'>
+        <block wx:if="{{detail.comment_grade >= 2}}">
+          <image class='evaluate_img' src='/image/xx1.png'></image>
+        </block>
+        <block wx:elif="{{detail.comment_grade === 1}}">
+          <image class='evaluate_img' src='/image/xx3.png'></image>
+        </block>
+        <block wx:else>
+          <image class='evaluate_img' src='/image/xx2.png'></image>
+        </block>
+
+        <block wx:if="{{detail.comment_grade >= 4}}">
+          <image class='evaluate_img' src='/image/xx1.png'></image>
+        </block>
+        <block wx:elif="{{detail.comment_grade == 3}}">
+          <image class='evaluate_img' src='/image/xx3.png'></image>
+        </block>
+        <block wx:else>
+          <image class='evaluate_img' src='/image/xx2.png'></image>
+        </block>
+
+        <block wx:if="{{detail.comment_grade >= 6}}">
+          <image class='evaluate_img' src='/image/xx1.png'></image>
+        </block>
+        <block wx:elif="{{detail.comment_grade == 5}}">
+          <image class='evaluate_img' src='/image/xx3.png'></image>
+        </block>
+        <block wx:else>
+          <image class='evaluate_img' src='/image/xx2.png'></image>
+        </block>
+
+        <block wx:if="{{detail.comment_grade >= 8}}">
+          <image class='evaluate_img' src='/image/xx1.png'></image>
+        </block>
+        <block wx:elif="{{detail.comment_grade == 7}}">
+          <image class='evaluate_img' src='/image/xx3.png'></image>
+        </block>
+        <block wx:else>
+          <image class='evaluate_img' src='/image/xx2.png'></image>
+        </block>
+
+        <block wx:if="{{detail.comment_grade >= 10}}">
+          <image class='evaluate_img' src='/image/xx1.png'></image>
+        </block>
+        <block wx:elif="{{detail.comment_grade == 9}}">
+          <image class='evaluate_img' src='/image/xx3.png'></image>
+        </block>
+        <block wx:else>
+          <image class='evaluate_img' src='/image/xx2.png'></image>
+        </block>
+
+      </view>
+      <text class='evaluate_text1'>{{detail.comment_grade}}({{detail.comment_count}})</text>
+    </view>
+
+    <block wx:if="{{detail.comment.tabs.length>0}}">
+      <view class='indicator'>
+        <block wx:for="{{detail.comment.tabs}}" wx:key="unique">
+          <view class='ind_text1'>
+            <text class=''>{{item.name}} {{item.count}}</text>
+          </view>
+        </block>
+      </view>
+    </block>
+
+    <view class='user'>
+      <text class='user_text'>{{detail.comment.comment.nickName}}</text>
+      <view class='user_img'>
+
+        <block wx:if="{{detail.comment.comment.grade >= 2}}">
+          <image class='evaluate_img' src='/image/xx1.png'></image>
+        </block>
+        <block wx:elif="{{detail.comment.comment.grade === 1}}">
+          <image class='evaluate_img' src='/image/xx3.png'></image>
+        </block>
+        <block wx:else>
+          <image class='evaluate_img' src='/image/xx2.png'></image>
+        </block>
+
+        <block wx:if="{{detail.comment.comment.grade >= 4}}">
+          <image class='evaluate_img' src='/image/xx1.png'></image>
+        </block>
+        <block wx:elif="{{detail.comment.comment.grade == 3}}">
+          <image class='evaluate_img' src='/image/xx3.png'></image>
+        </block>
+        <block wx:else>
+          <image class='evaluate_img' src='/image/xx2.png'></image>
+        </block>
+
+        <block wx:if="{{detail.comment.comment.grade >= 6}}">
+          <image class='evaluate_img' src='/image/xx1.png'></image>
+        </block>
+        <block wx:elif="{{detail.comment.comment.grade == 5}}">
+          <image class='evaluate_img' src='/image/xx3.png'></image>
+        </block>
+        <block wx:else>
+          <image class='evaluate_img' src='/image/xx2.png'></image>
+        </block>
+
+        <block wx:if="{{detail.comment.comment.grade >= 8}}">
+          <image class='evaluate_img' src='/image/xx1.png'></image>
+        </block>
+        <block wx:elif="{{detail.comment.comment.grade == 7}}">
+          <image class='evaluate_img' src='/image/xx3.png'></image>
+        </block>
+        <block wx:else>
+          <image class='evaluate_img' src='/image/xx2.png'></image>
+        </block>
+
+        <block wx:if="{{detail.comment.comment.grade >= 10}}">
+          <image class='evaluate_img' src='/image/xx1.png'></image>
+        </block>
+        <block wx:elif="{{detail.comment.comment.grade == 9}}">
+          <image class='evaluate_img' src='/image/xx3.png'></image>
+        </block>
+        <block wx:else>
+          <image class='evaluate_img' src='/image/xx2.png'></image>
+        </block>
+      </view>
+    </view>
+    <view class='content'>
+      <text class='content_text'>{{detail.comment.comment.content}}</text>
+    </view>
+
+    <view class='summary'>
+      <text class='summary_text'>{{detail.comment.comment.add_time}} 服务类型：{{detail.comment.comment.mode_name}}，服务时长：{{detail.comment.comment.duration}} 服务方式：{{detail.comment.comment.type_name}}</text>
+    </view>
+
+    <navigator url='./allEvaluation/allEvaluation?id={{detail.id}}' class='mini' hover-class='none'>
+      查看全部评价
+    </navigator>
+
+  </view>
+
+</block>
+
+
+<view class='userinfo'>
+  <view class='userinfo_viem'>
+    <image class='userinfo_img1' src='{{detail.technician.avatar}}'></image>
+    <view class='userinfo_name'>
+      <view class='name'>{{detail.technician.name}}</view>
+      <view class='name_mechanism'>
+
+        <block wx:if="{{detail.technician.name_certification === 1}}">
+          <view class='mechanism'>
+            <image class='mechanism_img' src='/image/rem.png'></image>
+            <view class='mechanism-view'>实名认证</view>
+          </view>
+        </block>
+
+        <block wx:if="{{detail.technician.weixin_certification === 1}}">
+          <view class='mechanism'>
+            <image class='mechanism_img' src='/image/wx.png'></image>
+            <view class='mechanism-view'>微信认证</view>
+          </view>
+        </block>
+
+        <!-- <view class='mechanism'>
+            <image class='mechanism_img' src=''></image>
+            <view class='mechanism-view'>芝麻信用</view>
+          </view> -->
+      </view>
+      <text class='viem_text'>{{detail.technician_address}}</text>
+    </view>
+  </view>
+  <view class='service'>
+    <view class='service-text'>
+      <view class='text'>
+        <text class='s_text2'>{{detail.technician.service_total}}</text>
+        <text class='s_text3'>全部服务</text>
+      </view>
+    </view>
+    <view class='service-text service1'>
+      <view class='text'>
+        <text class='s_text2'>{{detail.technician.order_count}}</text>
+        <text class='s_text3'>服务次数</text>
+      </view>
+    </view>
+    <view class='service-text'>
+      <view class='text'>
+        <text class='s_text2'>{{detail.technician.good_percent}}%</text>
+        <text class='s_text3'>好评率</text>
+      </view>
+    </view>
+  </view>
+
+    <button class='mini1' size='mini' bindtap='clickTel'>电话联系</button>
+  
+</view>
+
+<view class='remind'>
+  <text class='remind_text'>如遇虚假，诈骗等信息请立即举报！</text>
+  <image class='remind_img' src='/image/jb.png'></image>
+</view>
+
+<!--  -->
+ <view class='_price'>
+  <view class='_price_tetx'>
+    <text style='display: block;margin-left: 15px;'>服务价目表</text>
+  </view>
+  <view class='table'>
+    <view class='table_tr1'>
+      <view class='table_th1'>项目</view>
+      <view class='table_th2'>价格</view>
+    </view>
+    <block wx:for="{{detail.items}}" wx:key="unique">
+      <view class='table_tr2'>
+        <view class='table_td1'>{{item.mode_name}}</view>
+        <view class='table_td2'>{{item.price}}元/次</view>
+      </view>
+    </block>
+  </view>
+</view>
+
+<!--  -->
+<view class='details'>
+  <view class='details_view1'>
+    <text class='details_text1'>服务详情</text>
+  </view>
+  <view class='details_view2'>
+    <text class='details_text2'>{{detail.description}}</text>
+  </view>
+</view>
+
+<!--  -->
+<view class='_details'>
+  <view class='_details_view1'>
+    <text class='_details_text1'>下单详情需知</text>
+  </view>
+  <view class='_details_view2'>
+    <view class='known'>
+      <text class='known_text'>1. 使用FJ上门宝前，请充分了解并同意《FJ上门宝用户协议》。交易前充分沟通，明确
+包括但不限于服务项，金额，服务时间等具体细节</text>
+    </view>
+    <view class='known'>
+      <text class='known_text'>2. FJ上门宝由第三方提供，强烈建议您在上门宝平台通过在线支付完成所有交易，并保
+留相应的证据以利于售后维权。</text>
+    </view>
+    <view class='known'>
+      <text class='known_text'>3. 如遇服务质量问题，可通过客服举报或投诉客服电话xxxxxxxxxxxx</text>
+    </view>
+  </view>
+</view>
+
+<!--  -->
+<view class='reservation'>
+  <view class='reservation_view1'>
+
+    <block wx:if="{{detail.is_me == 0}}">
+      <navigator url='../../chat/chat?to_uid={{detail.technician.uid}}&item_id={{itemId}}&price={{detail.items[0].price}}&title={{detail.title}}' hover-class='none'>
+        <view class='res_view'>
+          <view class='res_v'>
+            <image class='reservation_img1' src='/image/qq.png'></image>
+            <text class='res_text'>咨询</text>
+          </view>
+        </view>
+      </navigator>
+    </block>
+
+    <view class='res_view' bindtap='collect'>
+      <view class='res_v'>
+        <image class='reservation_img1' src='{{collectImg}}'></image>
+        <text class='res_text'>收藏</text>
+      </view>
+    </view>
+
+    <button class='res_view2' open-type='share'>
+      <view class='res_v2'>
+        <image class='reservation_img2' src='/image/fx.png'></image>
+        <text class='res_text2'>分享</text>
+      </view>
+    </button>
+
+  </view>
+  <navigator url='./order/order?id={{itemId}}' hover-class='none' class="yuyue">
+    <view class='reservation_btu'>
+      <button class='res_btu' >立即预约</button>
+    </view>
+  </navigator>
+</view>
+<!-- </template> -->

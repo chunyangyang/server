@@ -1,0 +1,152 @@
+<view class='news' style="margin-bottom:{{marginBottom}}">
+
+  <!-- <block wx:if="{{serviceItem.item_id}}">
+  <view class="infos">
+    <view class="lf">
+      <text class="title">{{serviceItem.title}}</text>
+      <text class="price">¥{{serviceItem.price}}</text>
+    </view>
+    <view class="right">
+      <navigator url="/pages/index/detail/order/order?id={{serviceItem.item_id}}">立即下单</navigator>
+    </view>
+  </view>
+  </block> -->
+
+
+  <!-- <view class='xiahuaxian1 xiahuaxia'></view> -->
+  <view class="historycon" bindtap='sendData'>
+    <scroll-view scroll-y="true" scroll-top="{{scrollTop}}" scroll-with-animation="true" class="history" wx:for="{{chatItems}}" wx:key='' >
+
+      <block wx:if="{{item.create_time}}">
+      <view>
+        <view class="time" >
+          <text style="margin-right:5px;">{{item.create_time}}</text>
+          <!-- <text class="iconfont icon-dizhi" ></text>
+          <text > {{distance}}</text> -->
+        </view>
+      </view>
+      </block>
+  
+      <block wx:if="{{item.mode==1}}">
+        <view class='my_right' >
+     
+          <view class='page_row my'>
+          
+             <!-- 已读未读 -->
+            <!-- <block wx:if="{{item.is_read == 1}}">
+            <view class="reading">
+            <text>已读</text>
+            </view>
+            </block>
+
+            <block wx:else>
+            <view class="reading">
+            <text>未读</text>
+            </view>
+            </block> -->
+           
+            <!-- 1:表示文本，2：图片，3：语音 -->
+
+            <text wx:if="{{item.type=='1'}}" class='new_txt mys'>{{item.content}}</text>
+
+            <image wx:if="{{item.type=='3'}}" src='{{item.content}}' class='new_imgtent' bindtap="previewImage" data-src="{{item.content}}"></image>
+
+            <button wx:if="{{item.type=='3'}}" data-src="{{item.content}}" data-sindex="{{item.index}}" bindtap="clickVoice"></button>
+
+            <!-- <view wx:if="{{item.type=='service'}}"  class="service">
+                 <navigator url='/pages/index/detail/detail?id={{item.content.id}}' hover-class='none' class="nav">
+                  <view class='nom_main'>
+                    <image class='nom_img' src='{{item.content.image}}'></image>
+                    <view class='nom_view'>
+                      <view class='nom_left'>
+                        <view class='n_l_view'>
+                          <text class='main_text1'>{{item.content.title}}</text>
+                        </view>
+                      </view>
+                      <view class="content">
+                        <text>服务类型:{{item.content.item.service_type}}</text>
+                        <text>服务内容: {{item.content.item.service_mode}}</text>
+                        <text>服务时长: {{item.content.item.duration}}</text>
+                      </view>
+                      <view class='nom_bottom'>
+                        <text class='main_text3'>￥{{item.content.item.price}}</text>
+                        <view class='n_l_text'>
+
+                        </view>
+                      </view>
+                    </view>
+                  </view>
+                 </navigator>    
+            </view> -->
+           
+            <view wx:if="{{item.type!='image'}}" class='sanjiao my'></view>
+             <image class="userImg mys" src="{{my_user.avatarUrl}}"></image>
+          
+            
+            <image class='new_img' wx:if='{{item.show_rignt == "是自己的内容，显示在右边，右边渲染 nickname_owner，head_owner"}}' src='{{item.head_owner}}'></image>
+             <image class='new_img' wx:if='{{item.show_rignt == "是自己的内容，显示在右边，右边渲染 nickname_open，head_open"}}' src='{{item.head_open}}'></image>
+
+          </view>
+            
+        </view>
+      </block>
+      <block wx:else>
+        <view class='you_left'>
+          <view class='page_row you'>
+          
+            <image class="userImg yous" src="{{to_user.avatarUrl}}"></image>
+            <image class='new_img' wx:if='{{item.show_rignt == "不是自己的内容，显示在左边，左边渲染 nickname_owner，head_owner"}}' src='{{item.head_owner}}'></image>
+            <image class='new_img' wx:if='{{item.show_rignt == "不是自己的内容，显示在左边，左边渲染 nickname_open，head_open"}}' src='{{item.head_open}}'></image>
+                      
+            <!-- 1:表示文本，2：图片，3：语音 -->
+            <view wx:if="{{item.type=='1'}}" class='sanjiao you'></view>
+
+            <text wx:if="{{item.type=='1'}}" class='new_txt yous'>{{item.content}}</text>
+
+            <image wx:if="{{item.type=='2'}}" src='{{item.content}}' class='new_imgtent' style="height:{{height}}" bindload='loadImg' mode="widthFix" lazy-load="true"  bindtap="previewImage" data-src="{{item.content}}"></image>
+
+
+            <audio wx:if="{{item.type=='3'}}" class="audio" src="{{item.content}}"></audio>
+
+
+            <button wx:if="{{item.type=='3'}}" data-src="{{item.content}}" data-sindex="{{item.index}}" bindtap="clickVoice" ></button>
+            
+
+            <!-- <view wx:if="{{item.type=='service'}}" class="service">
+                <navigator url='/pages/index/detail/detail?id={{item.content.id}}' hover-class='none' class="nav">
+                  <view class='nom_main'>
+                    <image class='nom_img' src='{{item.content.image}}'></image>
+                    <view class='nom_view'>
+                      <view class='nom_left'>
+                        <view class='n_l_view'>
+                          <text class='main_text1'>{{item.content.title}}</text>
+                        </view>
+                      </view>
+                      <view class="content">
+                        <text>服务类型:{{item.content.item.service_type}}</text>
+                        <text>服务内容: {{item.content.item.service_mode}}</text>
+                        <text>服务时长: {{item.content.item.duration}}</text>
+                      </view>
+                      <view class='nom_bottom'>
+                        <text class='main_text3'>￥{{item.content.item.price}}</text>
+                        <view class='n_l_text'>
+
+                            <button>立即预约</button>
+                        </view>
+                      </view>
+                    </view>
+                  </view>
+                 </navigator>     
+            </view> -->
+
+
+          </view> 
+        </view>
+      </block>
+       
+    </scroll-view>
+  </view>
+</view>
+<import src="../../modules/chat-input/chat-input.wxml" />
+<template is="chat-input" data="{{inputObj:inputObj,textMessage:textMessage,showVoicePart:true}}" />
+

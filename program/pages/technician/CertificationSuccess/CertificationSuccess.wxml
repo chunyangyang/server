@@ -1,0 +1,10 @@
+<view>
+  <view class="success">
+    <view class="img">
+      <image src="/image/check.gif"></image>
+    </view>
+    <text>已提交认证</text>
+  </view>
+
+  <view bindtap="toTechnician">跳 转 至 技 师 端</view>
+</view>

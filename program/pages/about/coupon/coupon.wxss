@@ -1,0 +1,117 @@
+@import "/common/iconFont.wxss";
+page{
+  background: #FAF9F9;
+  height: 100%;
+}
+.coupon{
+  height: 100%;
+}
+.coupon .tab{
+  height: 48px;
+  line-height: 48px;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #EDEDED;
+  
+}
+.coupon .tab text{
+  width:33.333%;
+  height: inherit;
+  font-size: 12px;
+  text-align: center;
+  
+}
+.coupon .tab .active{
+  border-bottom: 1px solid #61B7F9;
+}
+swiper{
+  height: 100%;
+}
+swiper-item{
+  display: flex;
+  justify-content: center;
+}
+
+
+/* 未使用 */
+.Coupon{
+  width: 280px;
+  height: 87px;
+  margin: 15px 0 30px 0;
+  display: flex;
+}
+
+.Coupon .price{
+  width:100px; 
+  height: inherit;
+  display: flex;
+  justify-content: center;
+}
+.Coupon .price view{
+  display: flex;
+  align-items: center;
+}
+.Coupon .price text{
+  text-shadow: 1px 1px 2px rgba(7, 1, 2, .5);
+  font-weight: bold;
+  
+}
+.Coupon .price text:first-child{
+  font-size: 15px;
+  color: #fff;
+  margin-top: 18px;
+  letter-spacing: 3px;
+}
+.Coupon .price text:nth-child(2){
+  font-size: 43px;
+  color: #fff;
+}
+.Coupon .explain{
+  flex-grow: 1;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+}
+.explain .rule{
+  font-size: 8px;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  margin: 5px 11px 0 0;
+  position: relative;
+}
+.explain .rule image{
+  width: 49px;
+  height: 49px;
+  position: absolute;
+  right: 0;
+  top:0;
+}
+.explain .icon-qianjinxiayige{
+  font-size: 8px;
+}
+
+.explain .content{
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+.explain .content text{
+  color: #fff;
+  
+}
+.explain .content text:nth-child(1){
+  font-size: 12px;
+  margin:14px 0 10px 0;
+}
+.explain .content text:nth-child(2){
+  font-size: 9px;
+  margin-bottom: 5px;
+}
+.explain .content text:nth-child(3){
+  font-size: 8px;
+  text-align: right;
+  margin-right: 16px;
+}

@@ -1,0 +1,66 @@
+{
+  "code": 0,
+  "message": "success",
+  "data": {
+    "carType": "COMPACT(VIOS)",
+    "registrationNumber": "43322",
+    "currency": "THB",
+    "report": {
+      "id": "6",
+      "oid": "5046",
+      "order_id": "90040339",
+      "vehicle_id": "595",
+      "part_id": "15",
+      "part": "",
+      "site": "1",
+      "order_type": "pickup",
+      "damage_type": "dent",
+      "payment_type": "insurance_covers",
+      "remark": "1",
+      "price": "10.00",
+      "reference": "",
+      "operator_id": "33",
+      "operator_name": "33",
+      "is_del": "0",
+      "file": [
+        "d563f8f1cb5d2b3308d8cfa607323a85"
+      ]
+    },
+    "part": "Side view mirror, left",
+    "damageType": [
+      {
+        "name": "Dent",
+        "key": "dent",
+        "select": true
+      },
+      {
+        "name": "Scratch",
+        "key": "scratch",
+        "select": false
+      },
+      {
+        "name": "Chip",
+        "key": "chip",
+        "select": false
+      },
+      {
+        "name": "Scuff",
+        "key": "scuff",
+        "select": false
+      },
+      {
+        "name": "Hole",
+        "key": "hole",
+        "select": false
+      }
+    ],
+    "insuranceList":[
+      {"name":"是","key": "1","select": true},
+      {"name":"否","key": "0","select": false}
+    ],
+    "easyPayList":[
+      {"name":"是","key": "1","select": true},
+      {"name":"否","key": "0","select": false}
+    ]
+  }
+}

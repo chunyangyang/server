@@ -1,0 +1,8 @@
+<view class="Friends">
+  <image
+      src='/image/Invitation.jpg' 
+      style="height:{{imageHeight}}px;margin-top:1px" 
+      bindload="imageLoad"
+  ></image>
+  <button hover-class='none'></button>
+</view>

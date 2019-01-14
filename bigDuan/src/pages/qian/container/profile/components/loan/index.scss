@@ -1,0 +1,349 @@
+.loan {
+    width: 6.7rem;
+    padding: .4rem 0 1rem;
+    margin: auto
+}
+
+
+.loan-title {
+    color: #999;
+    font-size: .24rem;
+    margin-bottom: .16rem
+}
+
+.loan-card {
+    padding-bottom: .4rem
+}
+
+.loan-card.history .loan-box .loan-bage .first,.loan-card.history .loan-box .loan-bage .third {
+    color: #1c1c1c
+}
+
+.loan-card.history .loan-box .loan-btns {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.loan-card.history .loan-box .loan-btns .btn-contact {
+    display: none
+}
+
+.loan-card.history .loan-box .loan-btns .btn-plan {
+    width: 3.5rem
+}
+
+.loan-card.auth .loan-box .loan-btns .btn-plan {
+    display: none
+}
+
+.loan-card.auth .loan-box .loan-btns .btn-submit {
+    display: block
+}
+
+.loan-card.refund .loan-box .loan-btns {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.loan-card.refund .loan-box .loan-btns .btn {
+    display: none
+}
+
+.loan-card.refund .loan-box .loan-btns .btn-pay {
+    width: 3.5rem;
+    display: block
+}
+
+.loan-card.rebate .loan-box {
+    height: 2.4rem
+}
+
+.loan-card.rebate .loan-btns {
+    display: none
+}
+
+.loan-box {
+    height: 3.3rem;
+    margin: 0 auto;
+    padding: .58rem .35rem 0;
+    -webkit-box-shadow: 0 .05rem .2rem 0 rgba(0,0,0,.15);
+    box-shadow: 0 .05rem .2rem 0 rgba(0,0,0,.15);
+    border-radius: .1rem;
+    background: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.loan-box.loan-hd {
+    height: 2.66rem;
+    margin-bottom: .4rem
+}
+
+.loan-box .loan-info {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.loan-box .loan-info li {
+    float: left;
+    height: .5rem;
+    line-height: .5rem
+}
+
+.loan-box .loan-info .first,.loan-box .loan-info .second {
+    width: 1.7rem
+}
+
+.loan-box .loan-info .third {
+    width: 1.4rem
+}
+
+.loan-box .loan-info .last {
+    width: 1.2rem
+}
+
+.loan-box .loan-bage {
+    margin-bottom: .22rem;
+    overflow: hidden
+}
+
+.loan-box .loan-bage .first {
+    color: #4479e2;
+    font-weight: 700;
+    font-size: .36rem
+}
+
+.loan-box .loan-bage .second {
+    font-size: .36rem
+}
+
+.loan-box .loan-bage .third {
+    color: #fb560a;
+    font-size: .3rem
+}
+
+.loan-box .loan-bage .third.active {
+    color: #4479e2
+}
+
+.loan-box .loan-bage .third.refund {
+    color: #1c1c1c
+}
+
+.loan-box .loan-list {
+    color: #999;
+    font-size: .24rem
+}
+
+.loan-btns {
+    height: 1.1rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-top: 1px solid #e5e5e5
+}
+
+.loan-btns .btn {
+    color: #4479e2;
+    font-size: .28rem;
+    line-height: .66rem;
+    width: 2.8rem;
+    height: .66rem;
+    border: 1px solid #4479e2;
+    background: transparent;
+    display: block;
+    text-align: center
+}
+
+.loan-btns .btn-pay,.loan-btns .btn-submit {
+    color: #fb560a;
+    border-color: #fb560a;
+    display: none
+}
+
+.loan-hd {
+    display: block;
+    padding: .32rem .4rem 0
+}
+
+.loan-hd h3 {
+    font-size: .36rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-bottom: .3rem;
+    height: .6rem;
+    border-bottom: 1px solid #e5e5e5
+}
+
+.loan-hd h3 span {
+    color: #8f929f;
+    font-size: .24rem;
+    margin-left: .36rem
+}
+
+.loan-hd .loan-box-ft {
+    height: 1.74rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative
+}
+
+.loan-hd .text {
+    color: #999;
+    font-size: .24rem
+}
+
+.loan-hd .text h5 {
+    color: #4479e2;
+    font-size: .48rem;
+    margin-top: .2rem
+}
+
+.loan-hd .btn-loan {
+    color: #fff;
+    font-size: .3rem;
+    background: #4479e2;
+    width: 2.44rem;
+    height: .74rem;
+    line-height: .74rem;
+    display: block;
+    border-radius: .74rem;
+    text-align: center;
+    position: absolute;
+    right: 0
+}
+
+.loan-history {
+    padding-top: .4rem
+}
+
+.loan-history-title {
+    height: .3rem;
+    position: relative;
+    margin-bottom: .36rem
+}
+
+.loan-history-title .line,.loan-history-title h4 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto
+}
+
+.loan-history-title .line {
+    height: 1px;
+    background: #e5e5e5
+}
+
+.loan-history-title h4 {
+    color: #999;
+    font-size: .3rem;
+    width: 1.6rem;
+    background: #f5f5f5;
+    text-align: center;
+    font-weight: 400
+}
+
+.loan-modal {
+    width: 6.2rem
+}
+
+.loan-modal .loan-modal-box {
+    text-align: left;
+    padding: .4rem 0
+}
+
+.loan-modal .loan-modal-box .loan-modal-item {
+    color: #323232;
+    font-size: .28rem;
+    line-height: 1;
+    margin-bottom: .2rem
+}
+
+.loan-modal .loan-modal-box .loan-modal-item span {
+    color: #528ce4;
+    margin: 0 .1rem
+}
+
+.loan-modal .loan-modal-box .loan-modal-item a {
+    color: #528ce4
+}
+
+.contact-box{
+    overflow: hidden;
+    font-size: .26rem;
+    width: 4rem;
+    margin: 0 auto;
+    padding-top: .5rem;
+    .text{
+        float: left;
+        margin-right: .2rem;
+        font-weight: 600;
+        color: #108ee9;
+        text-align: center;
+        margin-bottom: 0.2rem;
+    }
+    .contact-box-item{
+        float: left;
+        color: #e25c44;
+        width: 2rem;
+        margin: 0 auto;
+        font-size: .2rem;
+        span{
+            margin-right: .1rem;
+            width: 0.2rem;
+            height: 0.2rem;
+            float: left;
+        }
+       .wechat{
+           margin-bottom: .1rem;
+
+           span{
+               background: url('./wechat_icon.png') no-repeat center;            
+               background-size: contain;
+           }
+       }
+       .qq{
+           span{
+               background: url('./qq_icon.png') no-repeat center;
+               background-size: contain;
+           }
+       }
+    }
+}

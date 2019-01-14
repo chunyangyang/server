@@ -1,0 +1,12 @@
+{
+  
+    "navigationBarTitleText": "附近上门宝",
+    "navigationBarBackgroundColor": "#61B7F9",
+    "navigationBarTextStyle": "white",
+    "usingComponents":{
+        "Tips":"../../common/Tips/Tips"
+    },
+  	"enablePullDownRefresh":true,
+    "backgroundTextStyle":"dark"
+    
+}

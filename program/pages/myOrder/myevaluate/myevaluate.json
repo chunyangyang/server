@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "评价",
+  "usingComponents":{
+    "star":"/common/star/star",
+    "select":"/common/LabelSelection/LabelSelection"
+  }
+}

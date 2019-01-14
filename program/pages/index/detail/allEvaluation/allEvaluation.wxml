@@ -1,0 +1,21 @@
+<view class="allEvaluation">
+<block wx:for="{{list}}" wx:key="key">
+  <view class="listItem">
+    <view class="top">
+      <view class="user">
+        <image src="{{item.avatarUrl}}"></image>
+        <view >
+          <text class="username">{{item.nickName}}</text>
+          <text class="program">服务项目：{{item.mode_name}}/{{item.type_name}}/{{item.duration}}</text>
+        </view>
+      </view>
+      <view class="time">
+        <text>{{item.add_time}}</text>
+      </view>
+    </view>
+    <view class="main">
+      <text>{{item.content}}</text>
+    </view>
+  </view>
+</block>
+</view>

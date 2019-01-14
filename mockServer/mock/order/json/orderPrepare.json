@@ -1,0 +1,30 @@
+{
+  "code": 0,
+  "message": "success",
+  "data": {
+    "link": "http://localhost:8080/theme/mobile/static/v3/dist-dev/pages/OrderDetail.html",
+    "goodsLink": "http://rdev.zuzuche.com/mobile.php/order_payment/goods?order_id=8807919600&type=charge",
+    "chargeConfirmed": true,
+    "orderNumber": "170588",
+    "thirdPartName": "ZZC",
+    "thirdPartNumber": "77667997",
+    "driverSurname": "WANG",
+    "driverName": "YING",
+    "carType": "FULLSIZE SUV(PAJERO SPORT)",
+    "registrationNumber": "กว7391",
+    "phoneAreaCode": "86",
+    "phone": "13070238489",
+    "msgNum": 5,
+    "isEasy": true,
+    "driverFullName":"陈佳佳",
+    "pickUpPlace": "Christchurch Airport",
+    "pickUpTime": "2016-12-26 10:30",
+    "returnPlace": "Christchurch Airport",
+    "returnTime": "2016-12-26 10:30",
+    "chargeType": "￥",
+    "additionalCharge": "4342",
+    "status":"2"
+  }
+}
+
+

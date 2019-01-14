@@ -1,0 +1,142 @@
+.form-layout-box {
+    background-color: #fff;
+    .form-item{
+        padding: 0 0 0 .3rem;
+    }
+    .item {
+        width: 100%;
+        font-size: .28rem;
+        position: relative;
+        background-color: #fff;
+    }
+    .item-name {
+        font-size: .28rem;
+    }
+    .all-line-input-box {
+        width: 100%;
+        height: 100%;
+    }
+    .clear {
+        display: inline-block;
+        width: .3rem;
+        height: .3rem;
+        // background: url('../../../images/clear.png') no-repeat;
+        background-size: cover;
+        position: absolute;
+        right: 0;
+        bottom: .2rem;
+    }
+    .error-tips {
+        .error {
+            color: #F34B3C;
+        }
+        .item {
+            border-bottom: 1px solid #F34B3C;
+        }
+    }
+    .focus {
+        .item {
+            border-bottom: 1px solid #3555ba;
+        }
+    }
+
+    .normal-input {
+        width: 100%;
+        height: 100%;
+        display: block;
+        font-size: .3rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: #333;
+        padding-right: .58rem;
+        box-sizing: border-box;
+    }
+
+    .border-bottom {
+        border-bottom: 1px solid #dde0e6;
+    }
+
+    .error {
+        font-size: .24rem;
+        color: #f88795;
+        height: .34rem;
+    }
+
+    .templete-title {
+        display: inline-flex;
+        font-size: .24rem;
+        color: #4E7CDD;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        right: 0;
+    }
+
+    .item-inline {
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        .item-name {
+            display: inline-flex;
+            width: 1.72rem;
+            height: 1rem;
+            align-items: center;
+            color: #666;
+
+            &.big-label {
+                margin-right: 0.3rem;
+            }
+            &.textare-laber{
+                height: 1.4rem;
+            }
+        }
+       
+        .all-line-input-box{
+            flex: 1;
+            height: 1rem;
+        }
+        .texarea{
+            flex: 1;
+            height: 1rem;
+            .normal-texarea{
+                height: 100%;
+                width: 100%;
+                font-size: .28rem;
+                color: #333;
+                box-sizing: border-box;  
+                padding-right: .58rem;   
+            }   
+        }
+        .driver-number {
+            width: 3.52rem;
+        }
+        .middle-input {
+            height: 1rem;
+            width: 3.7rem;
+           flex: initial;
+        }
+        .normal-input {
+            font-size: .28rem;
+        }
+        .arrow {
+            display: block;
+            width: .16rem;
+            height: .16rem;
+            border-right: 0.03rem solid #ADADAD;
+            border-bottom: 0.03rem solid #ADADAD;
+            position: absolute;
+            top: 50%;
+            right: 0.3rem;
+            transform: translateY(-50%) rotate(-45deg);
+        }
+        .templete-title {
+            height: 100%;         
+            right: 0.1rem;
+
+        }
+    }
+
+   
+    
+}

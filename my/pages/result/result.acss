@@ -1,0 +1,84 @@
+@import '../components/lifeServer/lifeServer.acss';
+@import '../components/bookTidl/bookTidl.acss';
+.page-result{
+    width: 750rpx;
+    color: #000000;
+}
+.result-tj-box{
+    background-color: #fff;
+    margin-bottom: 20rpx;
+}
+.result-tj-head{
+    display: flex;
+    align-items: center;
+    height: 94rpx;
+    border-bottom: 1rpx solid #dde0e6;
+    padding: 0 30rpx;
+    justify-content: space-between;
+}
+.result-head-icon{
+    width: 32rpx;
+    height: 36rpx;
+    margin-right: 20rpx;
+    vertical-align: top;
+}
+.result-head-id{
+    font-size: 30rpx;
+}
+.result-head-time{
+    font-size: 24rpx;
+    color: #888;
+}
+.result-tj-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 260rpx;
+}
+.result-tj-content-item{
+    flex: 1;
+    text-align: center;
+}
+.result-tj-content-item .number{
+    font-size: 60rpx;
+    margin-bottom: 50rpx;
+}
+
+/* 结果表 */
+.result-list-item{
+    background-color: #fff;
+    margin-bottom: 20rpx;
+    height: 390rpx;
+    display: flex;
+    align-content: center;
+    padding: 30rpx;
+    box-sizing: border-box;
+}
+.result-list-item .left-icon{
+    position: relative;
+    margin-right: 20rpx;
+}
+.result-list-item .left-icon .result-order{
+    position: absolute;
+    font-size: 24rpx;
+    color: #fff;
+    left: 50%;
+    top: 5rpx;
+    transform: translate(-50%,0);
+}
+.result-list-item .result-order-icon{
+    width: 32rpx;
+    height: 36rpx;
+}
+.right-list .right-list-item{
+    font-size: 30rpx;
+    margin-bottom: 30rpx;
+}
+.right-list .right-list-item .item-left{
+    color: #888;
+}
+.book-tidl{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}

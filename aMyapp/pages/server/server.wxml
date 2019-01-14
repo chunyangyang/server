@@ -1,0 +1,12 @@
+<!--pages/server/server.wxml-->
+<view class='server-layout'>
+<view class='server-title'>发布需求：</view>
+  <form class='form-box'>
+    <view>
+          <input class='item' type='text' placeholder="请输入你想买的车型" auto-focus/>
+             <input class='item' type='number' placeholder="请输入您的电话号码"/>
+           <input class='item' type='text' placeholder="请输入您的预算金额"/>
+    </view>
+    <button>发布</button>
+  </form>
+</view>

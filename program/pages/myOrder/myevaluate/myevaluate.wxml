@@ -1,0 +1,17 @@
+<view>
+ <form bindsubmit="formSubmit">
+    <view class="evaluate">
+      <text >我的评价</text>
+      <star  bind:myEvent="onMyEvent" data-value="{{value}}"></star>
+    </view>
+    <select bind:selectEvent="selectEvent"  order_id="{{order_id}}"/>
+    <view class="pingyu">
+      <text>写几句评语</text>
+        <textarea maxlength="200" name="textarea"></textarea>
+        <button  formType="submit">完成</button>
+    </view>
+  </form>
+    <view class="total" animation="{{animationData}}" style="display:{{display}}">
+      <text >亲！麻烦评价下吧</text>
+    </view>
+</view>

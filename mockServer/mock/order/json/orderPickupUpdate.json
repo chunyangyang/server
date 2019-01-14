@@ -1,0 +1,220 @@
+{
+  "code": 0,
+  "message": "error happen !!!",
+  "data": {
+    "checklist": {
+      "checked": 0,
+      "disabled": false,
+      "value": "",
+      "styleType": "checkLink",
+      "type": "pickup_info",
+      "key": "pickup_info",
+      "editable": true,
+      "name": "Pickup Info",
+      "itemList": [
+        {
+          "name": "Actual Pickup",
+          "value": "2017-10-10 10:00",
+          "type": "dateBox",
+          "start": "2016-11-22 02:30",
+          "end": "2016-11-28 01:00",
+          "editable": true
+        },
+        {
+          "name": "Pick Up Fuel Mass",
+          "value": "50",
+          "type": "fuelMass",
+          "unit": "%",
+          "editable": true,
+          "currentFuel": "9",
+          "totalFuel": "18"
+        },
+        {
+          "name": "Mileage Out",
+          "value": "20",
+          "key": "mileage",
+          "type": "editBox",
+          "unit": "km",
+          "editable": true
+        },
+        {
+          "name": "Additional Service",
+          "value": "",
+          "type": "productGroup",
+          "link": "https://rdev.zuzuche.com/mobile.php/order_pickup/order_extra?order_id=90040339",
+          "editable": false,
+          "list": [
+            {
+              "link": "extra://rdev.zuzuche.com/mobile.php/order?order_id=90040339",
+              "name": "Free GPS",
+              "value": "Free",
+              "num": "1"
+            },
+            {
+              "link": "extra://rdev.zuzuche.com/mobile.php/order?order_id=90040339",
+              "name": "GPS",
+              "value": 1000,
+              "num": "1",
+              "unit": "¥"
+            },
+            {
+              "link": "extra://rdev.zuzuche.com/mobile.php/order?order_id=90040339",
+              "name": "Booster Seat",
+              "value": 1500,
+              "num": "1",
+              "unit": "¥"
+            },
+            {
+              "link": "extra://rdev.zuzuche.com/mobile.php/order?order_id=90040339",
+              "name": "Pre-paid Fuel",
+              "value": 1500,
+              "num": "1",
+              "unit": "¥"
+            },
+            {
+              "link": "extra://rdev.zuzuche.com/mobile.php/order?order_id=90040339",
+              "name": "Infant Car Seat",
+              "value": 1500,
+              "num": "1",
+              "unit": "¥"
+            },
+            {
+              "link": "extra://rdev.zuzuche.com/mobile.php/order?order_id=90040339",
+              "name": "Thailand Happy Tourist SIM Card",
+              "value": 250,
+              "num": "1",
+              "unit": "¥"
+            }
+          ]
+        },
+        {
+          "name": "Vehicle Condition",
+          "value": "",
+          "type": "vehiclePart",
+          "disabled": true,
+          "list": [
+            {
+              "remark": "测试测试",
+              "price": "10.00",
+              "part": "Side view mirror",
+              "site": "left",
+              "link": "https://rdev.zuzuche.com/mobile.php/order_vehicle/damage?order_id=90040339&order_type=pickup&id=5"
+            },
+            {
+              "remark": "1",
+              "price": "10.00",
+              "part": "Side view mirror",
+              "site": "left",
+              "link": "https://rdev.zuzuche.com/mobile.php/order_vehicle/damage?order_id=90040339&order_type=pickup&id=6"
+            },
+            {
+              "remark": "Ffdfcvghgg",
+              "price": "177.00",
+              "part": "Boot",
+              "site": "none",
+              "link": "https://rdev.zuzuche.com/mobile.php/order_vehicle/damage?order_id=90040339&order_type=pickup&id=7"
+            },
+            {
+              "remark": "Ffdfcvghgg",
+              "price": "177.00",
+              "part": "Boot",
+              "site": "none",
+              "link": "https://rdev.zuzuche.com/mobile.php/order_vehicle/damage?order_id=90040339&order_type=pickup&id=8"
+            },
+            {
+              "remark": "Ffdfcvghgg",
+              "price": "177.00",
+              "part": "Boot",
+              "site": "none",
+              "link": "https://rdev.zuzuche.com/mobile.php/order_vehicle/damage?order_id=90040339&order_type=pickup&id=9"
+            },
+            {
+              "remark": "Ffdfcvghgg",
+              "price": "177.00",
+              "part": "Boot",
+              "site": "none",
+              "link": "https://rdev.zuzuche.com/mobile.php/order_vehicle/damage?order_id=90040339&order_type=pickup&id=10"
+            },
+            {
+              "remark": "Ffdfcvghgg",
+              "price": "177.00",
+              "part": "Boot",
+              "site": "none",
+              "link": "https://rdev.zuzuche.com/mobile.php/order_vehicle/damage?order_id=90040339&order_type=pickup&id=11"
+            },
+            {
+              "remark": "Ffdfcvghgg",
+              "price": "177.00",
+              "part": "Boot",
+              "site": "none",
+              "link": "https://rdev.zuzuche.com/mobile.php/order_vehicle/damage?order_id=90040339&order_type=pickup&id=12"
+            },
+            {
+              "remark": "Ffdfcvghgg",
+              "price": "177.00",
+              "part": "Boot",
+              "site": "none",
+              "link": "https://rdev.zuzuche.com/mobile.php/order_vehicle/damage?order_id=90040339&order_type=pickup&id=13"
+            },
+            {
+              "remark": null,
+              "price": "0.00",
+              "part": "Rare door",
+              "site": "right",
+              "link": "https://rdev.zuzuche.com/mobile.php/order_vehicle/damage?order_id=90040339&order_type=pickup&id=17"
+            },
+            {
+              "remark": null,
+              "price": "88.00",
+              "part": "Door Handles",
+              "site": "left side,rear",
+              "link": "https://rdev.zuzuche.com/mobile.php/order_vehicle/damage?order_id=90040339&order_type=pickup&id=18"
+            },
+            {
+              "remark": null,
+              "price": "1.00",
+              "part": "Bonnet",
+              "site": "none",
+              "link": "https://rdev.zuzuche.com/mobile.php/order_vehicle/damage?order_id=90040339&order_type=pickup&id=22"
+            },
+            {
+              "remark": null,
+              "price": "1.00",
+              "part": "Bonnet",
+              "site": "none",
+              "link": "https://rdev.zuzuche.com/mobile.php/order_vehicle/damage?order_id=90040339&order_type=pickup&id=23"
+            },
+            {
+              "remark": null,
+              "price": "1.00",
+              "part": "Bonnet",
+              "site": "none",
+              "link": "https://rdev.zuzuche.com/mobile.php/order_vehicle/damage?order_id=90040339&order_type=pickup&id=24"
+            },
+            {
+              "remark": "看看咯哦在我 来咯欢迎来咯欢迎朋友另一租婆心，一晚上MSN随心所欲破坏一直支离破碎一名婆婆哦所以我咯色儿名字体系，咯好一早睡早起早睡早起哦所以一早睡早起一样租婆婆婆好心情租婆日子",
+              "price": "123.00",
+              "part": "Door frame",
+              "site": "left side,front",
+              "link": "https://rdev.zuzuche.com/mobile.php/order_vehicle/damage?order_id=90040339&order_type=pickup&id=25"
+            },
+            {
+              "remark": null,
+              "price": "1.00",
+              "part": "Rear bumper",
+              "site": "left",
+              "link": "https://rdev.zuzuche.com/mobile.php/order_vehicle/damage?order_id=90040339&order_type=pickup&id=27"
+            },
+            {
+              "remark": null,
+              "price": "1.00",
+              "part": "Roof ",
+              "site": "none",
+              "link": "https://rdev.zuzuche.com/mobile.php/order_vehicle/damage?order_id=90040339&order_type=pickup&id=28"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

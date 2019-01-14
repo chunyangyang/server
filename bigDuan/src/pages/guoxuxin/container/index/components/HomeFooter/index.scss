@@ -1,0 +1,42 @@
+
+.home-ft {
+    font-size: .24rem;
+    text-align: center;
+    line-height: 1.4;
+    padding-bottom: .3rem;
+    a ,p{
+        color: #fff;
+    }
+    ul {
+        font-size: .26rem;
+        margin: .4rem 0 .3rem;
+    }
+    li {
+        height: .28rem;
+        border-right: 1px solid #fff;
+        display: inline-block;
+        text-align: left;
+        width: 1.7rem;
+        position: relative;
+        .icon-about, .icon-custom {
+            position: absolute;
+        }
+       .icon-custom {
+            left: 0;
+            width: .34rem;
+        }
+        .icon-about {
+            left: .24rem;
+            width: .34rem;
+        }
+        &:first-child {
+            padding-left: .44rem;
+            padding-right: .08rem;
+            box-sizing: border-box;
+        }
+        &:last-child {
+            text-align: right;
+            border: none;
+        }
+    }
+}

@@ -1,0 +1,61 @@
+/* pages/countDown/countDown.wxss */
+.header{
+  margin: 20px 35px;
+  text-align: center;
+}
+.title{
+  font-size: 15px;
+  position: relative;
+  color: #282828;
+}
+.title::before{
+  content: "";
+  width: 75px;
+  height: 2px;
+  background-color: #EBEAEA;
+  /* EBEAEA */
+  position: absolute;
+  left: -75%;
+  top: 50%;
+}
+.title ::after{
+  content: "";
+  width: 75px;
+  height: 2px;
+  background-color: #EBEAEA;
+  position: absolute;
+  left: 110%;
+  top: 50%;
+}
+.timeWrap{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.timeWrap text{
+  font-size: 19px;
+}
+.timeWrap view{
+  width: 30px;
+  height: 50px;
+  background-color: #60B7F9;
+  margin:0 2px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+  color: #fff;
+  border-radius: 5px;
+}
+.useWrap{
+  margin-top: 70px;
+}
+.start{
+  width: 80%;
+  height: 35px;
+  background:rgba(96,183,249,1);
+  font-size: 15px;
+  line-height: 35px;
+}
+.start text{
+  color:rgba(254,254,254,1);
+}

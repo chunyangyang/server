@@ -1,0 +1,39 @@
+/* pages/carList/carList.wxss */
+/* pages/home/home.wxss */
+
+.top-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #ddd;
+  height: 120rpx;
+}
+
+.lists-box {
+  background: #f4f4f4;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130rpx;
+  background: #fff;
+  padding: 10rpx;
+}
+
+.item-icon {
+  flex: 1;
+  height: 100%;
+  background: #aaa;
+}
+
+.item-message {
+  flex: 3;
+  font-size: 28rpx;
+  padding-left: 10rpx;
+}
+
+.txt {
+  margin-left: 10rpx;
+}

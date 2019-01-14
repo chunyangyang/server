@@ -1,0 +1,12 @@
+
+<template name="bookTidl">
+    <view class="banner">
+        <view class="banner-txt">
+            <view>驾照升级通知！国际驾照翻译认证件现正</view>
+            <view>
+                <text>限时免费</text>办理，全球200国自驾通用！                                                                    
+            </view>
+        </view>
+        <button class="free-tidl" type="default" onTap="defaultTap" hover-class="defaultTap"> 免费升级驾照 </button>
+    </view>
+</template>

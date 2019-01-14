@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="">
+    <meta name="keywords" content="{seo.keyword}">
+    <meta name="description" content="{seo.description}">
+    <title>金钱猫</title>
+    {{> '../../../modules/public/head.hbs'}}
+    {{> '../../../modules/public/rem.hbs'}}
+    <link rel="stylesheet" href="../css/pay.css">
+</head>
+
+
+<body>
+    <script>
+        window.serverData = {
+          payImg:'http://pic40.photophoto.cn/20160707/0886088826799427_b.jpg',
+          show:false
+        }
+
+    </script>
+    <div id="root">
+        {{> '../../../modules/public/loading.hbs'}}
+    </div>
+    {{> '../../../modules/public/common.hbs'}}
+    {{> '../../../modules/public/fastclick.hbs'}}
+
+    <script src="../js/react-runtime.js"></script>
+    <script src="../js/pay.js"></script>
+</body>
+
+</html>

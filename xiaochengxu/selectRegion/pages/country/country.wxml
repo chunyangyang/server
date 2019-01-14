@@ -1,0 +1,85 @@
+<!--pages/country/country.wxml-->
+<view class='content'>
+  <view class='txt'>
+    中国驾照可在{{country}}自驾租车，取车时需要如下证件： 主驾驶员名下驾照原件+翻译认证件
+  </view>
+  <view class='lists'>
+    <view class='item'>
+      <view class='item-icon'>
+        <text class='icomoon icon-ic_driving'></text>
+      </view>
+      <view class='item-content'>
+
+        <view>中国驾照+国际驾照翻译认证件
+          <icon class="recommend"></icon>
+        </view>
+        <view>全球近200个国家车行认可，可多次使用，在线办理寄送到家租车免费赠送
+          <text>立即办理</text>
+        </view>
+
+      </view>
+    </view>
+    <view class='item'>
+      <view class='item-icon'>
+
+      </view>
+      <view class='item-content'>
+
+        <view>中国驾照+车行翻译件
+          <icon class="recommend"></icon>
+        </view>
+        <view>由租租车提供翻译件模板，在线翻译，下载后打印即可。
+        </view>
+
+      </view>
+    </view>
+    <view class='item'>
+      <view class='item-icon'>
+
+      </view>
+      <view class='item-content'>
+
+        <view>中国驾照+英文公证件
+          <icon class="recommend"></icon>
+        </view>
+        <view>驾照签发地或户籍所在地公证处办理的驾照证明文件，需5-10个工作日，费用约300元。
+        </view>
+
+      </view>
+    </view>
+    <view class='item'>
+      <view class='item-icon'>
+      </view>
+      <view class='item-content'>
+
+        <view>中国驾照+当地语言公证件 </view>
+        <view>可在您当地的公证处办理（通常需要身份证、驾照、户口本原件和复印件）。</view>
+
+      </view>
+    </view>
+     <view class='item'>
+      <view class='item-icon'>
+      </view>
+      <view class='item-content'>
+
+        <view>中国驾照+使馆认证件</view>
+        <view>获得当地语言驾照公证件后到大使馆办理，需盖上大使馆公章或大使签名。</view>
+
+      </view>
+    </view>
+     <view class='item'>
+      <view class='item-icon'>
+      </view>
+      <view class='item-content'>
+
+        <view>中国驾照+签发国当地驾照+国际驾照 </view>
+        <view>适合非中国大陆用户，因我国未加入《联合国道路交通公约》，中国大陆驾照无法办理。</view>
+
+      </view>
+    </view>
+  </view>
+  <view class='tips-message'>以上信息仅供参考，详情以租车预订页面的驾照要求为准。</view>
+  <view class='zuzuche-button'>
+    <button class='zuzuche'>搜索海外租车</button>
+  </view>
+</view>

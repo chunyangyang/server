@@ -1,0 +1,10 @@
+{
+  "pages": [
+     "pages/index/index", 
+    "pages/result/result",
+    "pages/add-todo/add-todo"
+  ],
+  "window": {
+    "defaultTitle": "违章查询"
+  }
+}

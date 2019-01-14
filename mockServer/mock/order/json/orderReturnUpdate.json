@@ -1,0 +1,57 @@
+{
+  "code": 0,
+  "message": "success",
+  "data": {
+    "checklist": {
+      "checked": true,
+      "disabled": "",
+      "value": "",
+      "styleType": "checkLink",
+      "type": "return_info",
+      "key": "return_info",
+      "editable": true,
+      "name": "Return Info",
+      "link": "",
+      "itemList": [
+        {
+          "name": "Actual Return Date",
+          "value": "2017-10-12 10:00",
+          "type": "dateBox",
+          "key": "date",
+          "start": "2017-10-10 10:00",
+          "end": "2016-12-08 13:10",
+          "editable": false
+        },
+        {
+          "name": "Return Fuel Mass",
+          "key": "ReturnFuelMass",
+          "value": "44",
+          "type": "fuelMass",
+          "unit": "%",
+          "editable": false,
+          "currentFuel": "7",
+          "totalFuel": "16"
+        },
+        {
+          "name": "Extra Fuel Fee",
+          "value": "0.00",
+          "type": "editBox",
+          "unit": "THB",
+          "editable": false
+        },
+        {
+          "name": "Mileage In",
+          "value": "",
+          "type": "editBox",
+          "unit": "km",
+          "editable": false,
+          "key": "mileage"
+        }
+      ]
+    },
+    "progressStatus": "return",
+    "checkedItem": "5",
+    "totalItem": "5",
+    "follow": "superadmin"
+  }
+}

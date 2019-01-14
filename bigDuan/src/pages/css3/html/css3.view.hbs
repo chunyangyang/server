@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author">
+    <meta name="keywords" content="{seo.keyword}">
+    <meta name="description" content="{seo.description}">
+    <title>test</title>
+    {{> '../../../modules/public/head.hbs'}}
+    {{> '../../../modules/public/rem.hbs'}}
+    <link rel="stylesheet" href="../css/css3.css">
+</head>
+<style>
+
+</style>
+
+<body>
+    <script>
+        window.serverData = {
+
+        }
+
+    </script>
+    <div id="root">
+        {{> '../../../modules/public/loading.hbs'}}
+    </div>
+    {{!-- {{> '../../../modules/public/common.hbs'}} --}}
+    {{> '../../../modules/public/fastclick.hbs'}}
+
+    <script src="../js/react-runtime.js"></script>
+    <script src="../js/css3.js"></script>
+</body>
+
+</html>

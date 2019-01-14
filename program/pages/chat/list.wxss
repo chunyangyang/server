@@ -1,0 +1,71 @@
+@import '../../common/text.wxss';
+@import '../../common/iconFont.wxss';
+page{
+  background-color: #eee;
+}
+.msgWrap{
+  padding: 15px 0;
+  margin: 2px 0;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+.msgImgBox{
+  width: 30px;
+  height: 30px;
+  margin: 0 20px;
+  background-color: #888;
+  border-radius: 50%;
+  float: left;
+  overflow: hidden;
+}
+.msgImg{
+  width: 100%;
+  height: 100%;
+  /* background:url("https://smb.fjsmb.com/static/commodity/img/user.png") no-repeat; */
+  background-size: 30px 30px;
+}
+.msgDescribe{
+  padding-right: 10px;
+  width: 80%;
+  box-sizing: border-box;
+}
+.msgUserBox{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.msgUser{
+  font-size: 12px;
+}
+.msgTime{
+  font-size: 9px;
+}
+.msgContent{
+  font-size: 10px;
+  color: #282828;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+.msgText{
+  width: 90%;
+}
+.msgCountIcon, .maxMsgCountIcon{
+  height: 15px;
+  background-color: red;
+  line-height: 15px;
+  text-align: center;
+  color: #fff;
+}
+.msgCountIcon{
+  width: 15px;
+  border-radius: 50%;
+}
+.maxMsgCountIcon{
+  width: 25px;
+  border-radius: 12px;
+}
+.distance{
+  font-size: 12px;
+}

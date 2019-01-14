@@ -1,0 +1,173 @@
+.share-popup {
+    padding: 0.35rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 0.24rem;
+    z-index: 1003;
+    &.change-enter {
+        animation: moveShow .3s;
+    }
+
+    &.change-leave {
+        animation: moveHide .3s;
+    }
+    .popup-wrap {
+        position: relative;
+        z-index: 20;
+        margin-top: 1.28rem;
+    }
+
+    .share-mask {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9;
+        background: rgba(0, 0, 0, 0.8);
+        font-size: 0.24rem;
+    }
+
+    .popup-header-star {
+        background: url("../../../images/share-star.png") no-repeat;
+        position: absolute;
+        top: 0.1rem;
+        width: 6.2rem;
+        height: 2.8rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background-size: contain;
+    }
+
+    .popup-header {
+        background: url("../../../images/share-header.png") no-repeat left bottom;
+        background-size: 100% auto;
+        height: 2.8rem;
+        width: 5.6rem;
+        margin: 0 auto;
+    }
+
+    .popup-content {
+        width: 5.6rem;
+        background: #ffffff;
+        padding: 0.6rem;
+        margin: 0 auto;
+        box-sizing: border-box;
+        border-bottom-right-radius: 0.18rem;
+        border-bottom-left-radius: 0.18rem;
+    }
+
+    .share-browser-link {
+        background: #eeeeee;
+        height: 0.7rem;
+        line-height: 0.7rem;
+        text-align: center;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        padding: 0 0.2rem;
+        box-sizing: border-box;
+    }
+
+    .share-browser-tip {
+        color: #333333;
+        font-size: 0.24rem;
+        text-align: left;
+        margin-top: 0.15rem;
+    }
+
+    .split-line {
+        margin: 0.25rem 0 0.10rem;
+        position: relative;
+        font-size: 0.20rem;
+        text-align: center;
+        .line {
+            border: 1px dashed #dcdcdc;
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            left: 0;
+            z-index: 1;
+            transform: translateY(-50%);
+        }
+
+        .text {
+            position: relative;
+            z-index: 11;
+            background: #ffffff;
+            padding: 0 0.1rem;
+            color: #999999;
+            font-size: 0.20rem;
+        }
+    }
+
+    .qr-code-box {
+        text-align: center;
+
+        .qr-code-img {
+            width: 2.32rem;
+            height: 2.32rem;
+        }
+
+        .lazy-img{
+            background: url('../../../images/loading-50.gif') no-repeat center center;
+        }
+    }
+
+    .share-code-tip {
+        color: #333333;
+        font-size: 0.24rem;
+        text-align: left;
+    }
+
+    .popup-tip {
+        position: relative;
+        padding-left: 0.40rem;
+        &:before {
+            content: ' ';
+            display: block;
+            width: 0.06rem;
+            height: 0.06rem;
+            border-radius: 50%;
+            background: #4e7cdd;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+    }
+
+    .popup-close {
+        width: 0.44rem;
+        height: 0.44rem;
+        display: block;
+        position: absolute;
+        background: url("../../../images/close.png") no-repeat;
+        background-size: contain;
+        margin-top: 0.6rem;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+}
+
+.copy-success{
+    position: fixed;
+    width: 3.2rem;
+    height: 0.8rem;
+    line-height:  0.8rem;
+    text-align: center;
+    font-size: 0.28rem;
+    color: #fff;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+    background: rgba(0,0,0,.7);
+    z-index: 110000;
+   
+}

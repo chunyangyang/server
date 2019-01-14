@@ -1,0 +1,5 @@
+<view class="content">
+    <image src="/image/no_store.png" class="xing"></image>
+    <text class="infos">{{data}}</text>
+</view>
+

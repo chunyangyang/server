@@ -1,0 +1,5 @@
+<!--pages/technician/releaseSuccess/releaseSuccess.wxml-->
+<import src="../../../template/submitSuccess/submitSuccess.wxml"/>
+<view>
+  <template is="submitSuccess"></template>
+</view>

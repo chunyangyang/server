@@ -1,0 +1,117 @@
+<view class="list">
+  <view class="tab">
+    <text class="{{curIndex==index?'active':''}}" bindtap='clicktab' wx:for="{{list}}" data-index="{{index}}" wx:key="id">{{item}}</text>
+  </view>
+  <swiper current='{{curIndex}}' bindchange='bindChange'>
+    <swiper-item>
+      <view class="li">
+        <image src="/image/pedicure1.png"></image>
+        <view class='detail'>
+          <view class="top">
+            <text>特价足疗</text>
+            <text>待服务</text>
+          </view>
+          <view class="content">
+            <view class="left">
+              <view>
+                <text>姓名:</text>
+                <text>xxxx</text>
+              </view>
+              <view>
+                <text>地址:</text>
+                <text>xxxxxxxxxxxx</text>
+              </view>
+              <view>
+                <text>电话:</text>
+                <text>xxxxxxx</text>
+              </view>
+            </view>
+            <view class="right">
+              <button>
+                <text class="iconfont icon-dizhi"></text>
+              </button>
+              <button>
+                <text class="iconfont icon-dianhua"></text>
+              </button>
+            </view>
+          </view>
+        </view>
+      </view>
+
+    </swiper-item>
+
+    <navigator url='./waiter/waiter'>
+      <swiper-item>
+        <view class="li">
+          <image src="/image/pedicure1.png"></image>
+          <view class='detail'>
+            <view class="top">
+              <text>特价足疗</text>
+              <text>待服务</text>
+            </view>
+            <view class="content">
+              <view class="left">
+                <view>
+                  <text>姓名:</text>
+                  <text>xxxx</text>
+                </view>
+                <view>
+                  <text>地址:</text>
+                  <text>xxxxxxxxxxxx</text>
+                </view>
+                <view>
+                  <text>电话:</text>
+                  <text>xxxxxxx</text>
+                </view>
+              </view>
+              <view class="right">
+                <button>
+                  <text class="iconfont icon-dizhi"></text>
+                </button>
+                <button>
+                  <text class="iconfont icon-dianhua"></text>
+                </button>
+              </view>
+            </view>
+          </view>
+        </view>
+      </swiper-item>
+    </navigator>
+
+    <swiper-item>
+      <view class="li">
+        <image src="/image/pedicure1.png"></image>
+        <view class='detail'>
+          <view class="top">
+            <text>特价足疗</text>
+            <text>已结束</text>
+          </view>
+          <view class="content">
+            <view class="left">
+              <view>
+                <text>姓名:</text>
+                <text>xxxx</text>
+              </view>
+              <view>
+                <text>地址:</text>
+                <text>xxxxxxxxxxxx</text>
+              </view>
+              <view>
+                <text>电话:</text>
+                <text>xxxxxxx</text>
+              </view>
+            </view>
+            <view class="right">
+              <button>
+                <text class="iconfont icon-dizhi"></text>
+              </button>
+              <button>
+                <text class="iconfont icon-dianhua"></text>
+              </button>
+            </view>
+          </view>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

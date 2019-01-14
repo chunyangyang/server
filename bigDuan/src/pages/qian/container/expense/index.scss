@@ -1,0 +1,75 @@
+@import '../../../../style/global.scss';
+body{
+    max-width: 750px;
+    // margin: 0 auto;
+}
+.expense-common {
+    background: #fff;
+    margin: .3rem auto
+}
+
+.expense-list {
+    width: 7rem;
+    margin: auto
+}
+
+.expense-list li {
+    color: #333;
+    font-size: .3rem;
+    height: .9rem;
+    line-height: .9rem;
+    border-bottom: 1px solid #dbdbdb
+}
+
+.expense-list li .right {
+    float: right
+}
+
+.expense-list li.active .left {
+    color: #fe6255
+}
+
+.expense-total {
+    font-size: .3rem;
+    text-align: right;
+    width: 7rem;
+    margin: auto;
+    padding: .24rem 0
+}
+
+.expense-total span {
+    color: #fc550d;
+    font-size: .42rem;
+    margin-left: .16rem
+}
+
+.expense-total span b {
+    font-size: .3rem
+}
+
+.expense-extra {
+    background: #fff;
+    margin-top: .3rem
+}
+
+.expense-tip {
+    color: #dd8e04;
+    font-size: .26rem;
+    line-height: 1.4;
+    width: 6.5rem;
+    margin: auto
+}
+
+.expense-btn {
+    color: #fff;
+    font-size: .36rem;
+    background: #fe6255;
+    width: 7rem;
+    height: .9rem;
+    line-height: .9rem;
+    margin: .36rem auto .6rem;
+    border: none;
+    display: block;
+    border-radius: .08rem;
+    cursor: pointer;
+}

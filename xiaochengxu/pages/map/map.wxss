@@ -1,0 +1,11 @@
+/* pages/map/map.wxss */
+map{
+  margin: 0 auto;
+}
+button{
+  margin-top: 20rpx;
+}
+input{
+  border: 1px solid #eee;
+  padding-left:8rpx;
+}

@@ -1,0 +1,14 @@
+<template name="lifeServer">
+    <view class="zzc-head">
+        <image class="img-box" src="/images/zzc_log.png" mode="widthFix" />
+        <view class="txt">
+            <view class="zzc-txt">租租车</view>
+            <view class="zzc-server">提供本服务</view>
+        </view>
+        <view class="right">
+            <view class="nav-link">
+                <navigator url="alipays://platformapi/startapp?appId=20000047&publicId=2014081400008008" redirect hover-class="className">查看</navigator>
+            </view>
+        </view>
+    </view>
+</template>

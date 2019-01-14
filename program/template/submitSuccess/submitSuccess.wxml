@@ -1,0 +1,8 @@
+<!-- 提交成功模板 -->
+<template name='submitSuccess'>
+  <view class='tipsWrap'>
+    <view class='box'></view>
+    <view class='tips'>{{tip}}</view>
+    <view bindtap='clickBack' class='returnBtn'>返回</view>
+  </view>
+</template>

@@ -1,0 +1,23 @@
+{
+  "code": 0,
+  "message": "success",
+  "data": {
+    "flight_no": "CX888",
+    "company": "Cathay Pacific",
+    "date": "2016-12-16",
+    "week": "Fri",
+    "status": "Landed",
+    "from_name": "起飞时间",
+    "from_hour_minute": "01:00",
+    "from_date_a": "AM",
+    "from_code": "HKG",
+    "from_terminal_name": "Terminal",
+    "from_terminal": "1",
+    "to_name": "Arrival",
+    "to_hour_minute": "06:00",
+    "to_date_a": "AM",
+    "to_code": "JFK",
+    "to_terminal_name": "Terminal",
+    "to_terminal": "7"
+  }
+}

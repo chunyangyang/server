@@ -1,0 +1,22 @@
+/*
+ * @Author: zhengchunyang 
+ * @Date: 2018-08-01 10:36:22 
+ * @Last Modified by: zhengchunyang
+ * @Last Modified time: 2019-01-12 22:27:35
+ */
+
+@import '../../../../style/global.scss';
+body{background-color: #fff;}
+body{
+    max-width: 750px;
+    // margin: 0 auto;
+}
+.about-layout {
+    background: #fff;
+    padding-bottom: 1rem;
+}
+
+.about-place {
+    height: .2rem;
+    background: #f5f5f5;
+}

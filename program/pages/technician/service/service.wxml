@@ -1,0 +1,56 @@
+<!--pages/technician/service/service.wxml-->
+<view class='service'>
+
+  <block wx:for='{{list}}' wx:key='key'>
+
+  <view class='service_main'>
+    <image class='service_img' src='{{item.image}}'></image>
+    <view class='serMain_view'>
+      <text class='serMain_text1'>{{item.title}}</text>
+
+      <view class='serMain_text2'>
+        <text class='serMain3_text1'>服务类型</text>
+        <text class='serMain3_text2'>{{item.item.mode_name}}</text>
+      </view>
+
+      <view class='serMain_text3'>
+        <text class='serMain3_text1'>服务方式</text>
+        <text class='serMain3_text2'>{{item.item.type_name}}</text>
+      </view>
+
+      <view class='serMain_text3'>
+        <text class='serMain3_text1'>服务时长</text>
+        <text class='serMain3_text2'>{{item.item.duration}}</text>
+      </view>
+
+      <view class='serMain_text'>
+        <view class='serMain_text4'>
+          <text class='serMain4_text'>￥</text>
+          <text>{{item.item.price}}</text>
+        </view>
+
+        <block wx:if="{{item.is_del == 1}}">
+        <button class='serMain_btu2'>
+          <text>已下架</text>
+        </button>
+        </block>
+
+        <block wx:else>
+      <button class='serMain_btu1'>
+          <text>已发布</text>
+        </button>
+      </block>
+
+      </view>
+    </view>
+  </view>
+
+  </block>
+
+
+</view>
+<view class='footer'>
+  <navigator url='../serviceRelease/serviceRelease' hover-class='none'>
+    <icon class="iconfont icon-add_icon footer_img"></icon>
+  </navigator>
+</view>

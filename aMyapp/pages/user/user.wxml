@@ -1,0 +1,20 @@
+<!--pages/user/user.wxml-->
+<view class='user-layout'>
+  <view class='top-user'>
+    <image src='/images/car.jpg'></image>
+  </view>
+  <view class='message-box'>
+    <view class='inline-box'>
+      <view>姓名</view>
+      <view>刘**</view>
+    </view>
+    <view class='inline-box'>
+      <view>电话</view>
+      <view>13999999999</view>
+    </view>
+    <view class='inline-box'>
+      <view>微信</view>
+      <view>ztrddd</view>
+    </view>
+  </view>
+</view>

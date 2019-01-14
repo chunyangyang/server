@@ -1,0 +1,14 @@
+.total{
+  padding-left: 2px;
+  padding-right: 2px;
+  width: 150px;
+  height: 32px;
+  border-radius: 10px;
+  background:rgba(0, 0, 0, 0.5);
+  text-align: center;
+  line-height: 32px;
+  transition: all .5s;
+  color: #fff;
+  font-size: 13px;
+  margin: 0 auto;
+}

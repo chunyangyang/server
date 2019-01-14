@@ -1,0 +1,76 @@
+
+.LOAD{
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  top:0;
+  overflow: hidden;
+  background:rgba(0 , 0, 0, .5);
+  z-index: 9999;
+}
+.loading{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+}
+.SUCCESS{
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  top:0;
+  overflow: hidden;
+  z-index: 9999;
+}
+.SUCCESS view{
+  width: 118px;
+  height: 131px;
+  background:rgba(0,0,0, .8);
+  border-radius: 5px;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  margin-top:-65.5px;
+  margin-left:-59px; 
+}
+.loadSuccess{
+  width: 46px;
+  height: 65px;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  margin-left: -23px;
+  margin-top: -32.5px;
+}
+.ERROR{
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  top:0;
+  overflow: hidden;
+  z-index: 9999;
+  
+}
+.ERROR view{
+  width: 118px;
+  height: 131px;
+  background:rgba(0,0,0, .8);
+  border-radius: 5px;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  margin-top:-65.5px;
+  margin-left:-59px; 
+}
+.error{
+  width: 118px;
+  height: 131px;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  margin-top:-65.5px;
+  margin-left:-59px; 
+}

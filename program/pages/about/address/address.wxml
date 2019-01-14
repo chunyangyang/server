@@ -1,0 +1,49 @@
+<view class='address'>
+
+
+  <block wx:for="{{list}}" wx:key="unique">
+    <view class='li' style="{{item.is_del == 1 ? 'display:none;' : ''}}">
+
+    <view bindtap='selectAddress' data-id='{{item.id}}'>
+     <view class="header">
+       <text class="name">{{item.name}}</text>
+        <text class="phone">{{item.phone}}</text>
+     </view>
+     <view class="adres">
+        <text>{{item.address}}</text>
+     </view>
+    </view>
+
+     <view class="bottom">
+       <!--
+       <view class="defalut" bindtap='defaultAddress' data-id='{{item.id}}'>
+          <text class="{{item.default == 1 ? 'iconfont':''}} icon-xuanxiangkuangqueding"></text>
+          <text >默认地址</text>
+       </view>
+       -->
+       <view class="right">
+          <navigator url="./addAress/addAress?id={{item.id}}">
+          <view class="set">
+              <text class="iconfont icon-icon-"></text>
+              <text>编辑</text>
+          </view>
+          </navigator>
+
+          <view class="del" bindtap='delAddress'  data-id='{{item.id}}'>
+               <text class="iconfont icon-shanchu"></text>
+               <text data-index="0" >删除</text>
+          </view>
+       </view>
+     </view>
+    </view>
+
+  </block>
+
+  <view class="btn">
+    <navigator class="add" url="./addAress/addAress">
+      <text class="iconfont  icon-add_icon"></text>
+      <text>添加新地址</text>
+    </navigator>
+  </view>
+    
+</view>

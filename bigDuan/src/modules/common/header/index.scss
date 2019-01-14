@@ -1,0 +1,73 @@
+.top-bar {
+    text-align: center;
+    height: 0.96rem;
+    line-height: 0.96rem;
+    background: #fbfbfb;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    z-index: 999;
+    border-bottom: 1px solid #dadada;
+    max-width: 750px;
+}
+
+.top-bar-con {
+    font-size: 0;
+}
+
+.top-bar-con .top-bar-left {
+    width: 0.96rem;
+    height: 0.96rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.top-bar-con .top-bar-left i {
+    background: url("./images/ico_back.png") no-repeat;
+    width: 0.96rem;
+    height: 0.96rem;
+    background-position: 50% 50%;
+    background-size: 0.5rem auto;
+    display: block;
+}
+
+.top-bar-con .top-bar-txt {
+    display: inline-block;
+    color: #424242;
+    font-size: 0.32rem;
+    margin-top: 0.02rem;
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: .96rem;
+    vertical-align: top
+}
+
+.top-bar-con .top-bar-right {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.top-bar-con .top-bar-right i {
+    display: block;
+    background: url("./images/ico_index.png") no-repeat;
+    width: 0.96rem;
+    height: 0.96rem;
+    background-position: 50% 50%;
+    background-size: 0.5rem auto;
+}
+
+
+.kong_h {
+    content: '';
+    height: 0.96rem !important;
+    position: relative;
+    display: block;
+}

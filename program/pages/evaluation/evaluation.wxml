@@ -1,0 +1,73 @@
+<!--pages/evaluation/evaluation.wxml-->
+<import src="../../template/submitSuccess/submitSuccess.wxml"/>
+
+<view class='evaluationWrap'>
+  <template is="submitSuccess" data='{{templateData}}'></template>
+  <view class='tab'>
+    <view bindtap='setTabIndex' data-index="0">
+      <text class='{{tabIndex == 0?"tabActive":""}}' >女技师</text>
+    </view>
+    <view bindtap='setTabIndex' data-index="1">
+      <text class='{{tabIndex == 1?"tabActive":""}}'>男技师</text>
+    </view>
+  </view>
+  <view class='contentWrap'>
+    <view class='contentList' wx:for='{{list}}' wx:key='index'>
+      <view class='userImg'>
+        <image src='https://smb.fjsmb.com/static/lib/img/product1.png'></image>
+      </view>
+      <view class='userMsgBox'>
+        <view class='userName'>
+          <text>{{item.userName}}</text>  
+          <view class='sexIcon'>
+            <image wx:if='{{tabIndex == 0}}' src='/image/woman.png'></image>
+            <image wx:else src='/image/man.png'></image>
+          </view>
+        </view>
+        <view class='fontSize12'>技师技能 ： <text>中式精油按摩</text> </view>
+        <view class='fontSize12'>距离我 ： <text class='range'>1.0Km</text></view>
+        <view class='fontSize12 userEvaluation'>
+          <text>用户评价</text>
+          <view class='starsBox'>
+            <view class='stars' wx:for='{{item.starCount}}' wx:key='index'>
+              <image src='/image/star.png'></image>
+            </view>
+            <text class='evaluationCount'>{{item.fraction}}</text>
+            <!-- <text>暂无评价</text> -->
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='contentList'>
+      <view class='userImg'>
+        <image src='/image/am.png'></image>
+      </view>
+      <view class='userMsgBox'>
+        <view class='userName'>
+          <text>昵称不超过六个字</text>  
+          <view class='sexIcon'>
+            <image wx:if='{{tabIndex == 0}}' src='/image/woman.png'></image>
+            <image wx:else src='/image/man.png'></image>
+          </view>
+        </view>
+        <view class='fontSize12'>技师技能 ： <text>中式精油按摩</text> </view>
+        <view class='fontSize12'>距离我 ： <text class='range'>1.0Km</text></view>
+        <view class='fontSize12 userEvaluation'>
+          <text>用户评价</text>
+          <view class='starsBox'>
+            <view class='stars'>
+              <image src='/image/star.png'></image>
+            </view>
+            <view class='stars'>
+              <image src='/image/star.png'></image>
+            </view>
+            <view class='stars'>
+              <image src='/image/star.png'></image>
+            </view>
+            <text class='evaluationCount'>8.0</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

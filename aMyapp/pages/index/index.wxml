@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="container">
+ <view>输入想买车品牌</view>
+ <input class='car-type' type='text' placeholder='请输入品牌'></input>
+ <button bindtap='clickSearch'>查询</button>
+</view>

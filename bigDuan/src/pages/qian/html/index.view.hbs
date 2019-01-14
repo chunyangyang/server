@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="">
+    <meta name="keywords" content="{seo.keyword}">
+    <meta name="description" content="{seo.description}">
+    <title>金钱猫</title>
+    {{> '../../../modules/public/head.hbs'}}
+    {{> '../../../modules/public/rem.hbs'}}
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+
+<body>
+    <script>
+    let host = '//www.huoxsq.cn';
+       window.serverData = {
+            imagesData:{
+                header:{
+                    logo:host+"/public/img/dda6945df9c243950693b623b3bb43be.png",
+                    moneyIcon:host+"/public/img/adc488edf3ae3ab065b3cd536fb3c320.png",
+                    banner:host+"/public/img/0250ad0e20a133b02d87127d14250310.png"
+                },
+                footer:{
+                    server:host+"/public/img/4de6f97a785dc312721212f48a8a081b.png",
+                    ours:host+"/public/img/1f2fc46fc4daac541bbf7958456faf1d.png",
+                    ICP:'Copyright ©2018 <a href="http://www.miitbeian.gov.cn">陕ICP备18013235号</a>',
+                }
+            },
+            slideData:[
+                {
+                    name:'韦**',
+                    money:'50000',
+                    time:'1小时前',
+                    address:'湖南娄底',
+                },
+                {
+                    name:'2**',
+                    money:'50000',
+                    time:'2小时前',
+                    address:'湖南娄底',
+                },
+                {
+                    name:'3**',
+                    money:'50000',
+                    time:'3小时前',
+                    address:'湖南娄底',
+                },
+            ]
+        }
+    </script>
+    <div id="root">
+        {{> '../../../modules/public/loading.hbs'}}
+    </div>
+    {{> '../../../modules/public/common.hbs'}}
+    {{> '../../../modules/public/fastclick.hbs'}}
+
+    <script src="../js/react-runtime.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

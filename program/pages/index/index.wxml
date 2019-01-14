@@ -1,0 +1,94 @@
+<!--index.wxml-->
+<Tips hidden="{{hiddenAlertTips}}" text="是否获取用户信息"/>
+<view>
+<view class='head'>
+  <view class='new dis1'>
+    <view class='new-dwei dis1' bindtap='doLocation'>
+      <image style='width: 11px;height:15px;' src='/image/dingwei.png'></image>
+      <text>{{location.city+location.district}}</text>
+    </view>
+    <block>
+      <view class='sou dis1'>
+        <image style='width: 16px;height: 15px;padding:0 5px;' src='/image/sou.png'></image>
+        <input style='' class='sou-input' value='{{inputValue}}' placeholder='请搜索您想要的服务' type='text' placeholder-style='color:white' confirm-type='search' bindconfirm='onBlur' bindinput='onFocus'></input>
+        <view class='sou_btu' style='display:{{display}}' bindtap='onClick'>X</view>
+      </view>
+    </block>
+  </view>
+  <view class="swiper-container">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{duration}}" current="{{swiperCurrent}}" bindchange="changeGoodsSwip" class="swiperBox">
+      
+      <block wx:for="{{topBroadcast}}" wx:key="unique">
+        <swiper-item>
+          <image mode='widthFix' src="{{item.image}}" style='width: 100%; height: 125px;' bindtap="swipclick" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  
+</view>
+
+<view class='math dis1'>
+  <block wx:for="{{typeSetting}}" wx:key="key">
+    <navigator url='./nominate/nominate?type_id={{item.id}}' hover-class='none'>
+      <view class='fuwu' data-id='{{item.id}}'>
+        <view class='math_d'>
+          <image style='width: 40pt; height: 40pt; float: left;' src='{{item.image}}' mode='widthFix'></image>
+          <text>{{item.name}}</text>
+        </view>
+      </view>
+    </navigator>
+  </block>
+</view>
+
+<view class='recommend'>
+  <navigator url='./nominate/nominate?sort=new' hover-class='none'>
+    <view class='rec dis1'>
+      <text>新品推荐</text>
+      <image class='img_rec' style='' src='/image/js2.png'></image>
+    </view>
+  </navigator>
+  <view class='rec_viem dis3' >
+    <block wx:for="{{newServiceList}}" wx:key="key">
+      <navigator url='./detail/detail?id={{item.id}}' hover-class='none'>
+        <image class='rec_img dis3' src='{{item.image}}' mode='widthFix' data-id='{{item.id}}'></image>
+      </navigator>
+    </block>
+  </view>
+</view>
+
+<view class='recommend'>
+  <navigator url='./nominate/nominate?sort=sort' hover-class='none'>
+    <view class='rec dis1'>
+      <text>套餐推荐</text>
+      <image class='img_rec' style='' src='/image/js2.png'></image>
+    </view>
+  </navigator>
+  <view class='rec_viem dis3' >
+    <block wx:for="{{topServiceList}}" wx:key="key">
+      <navigator url='./detail/detail?id={{item.id}}' hover-class='none'>
+        <image class='rec_img dis3' src='{{item.image}}' mode='widthFix' data-id='{{item.id}}'></image>
+      </navigator>
+    </block>
+  </view>
+</view>
+
+<view class='recommend'>
+  <navigator url='./nominate/nominate_js' hover-class='none'>
+    <view class='rec dis1'>
+      <text>技师推荐</text>
+      <image class='img_rec' style='' src='/image/js2.png'></image>
+    </view>
+  </navigator>
+  <view class='rec_viem dis3' >
+    <block wx:for="{{topTechnicianList}}" wx:key="key">
+      <navigator url='./nominate/nominate?technician={{item.id}}' hover-class='none'>
+        <image class='rec_img dis3' src='{{item.avatar}}' mode='widthFix' data-id='{{item.id}}' ></image>
+      </navigator>
+    </block>
+  </view>
+</view>
+</view>
+<!-- 数据成功/失败/加载 -->
+<!-- <import src="/template/loading/loading" />
+<template is="error" /> -->

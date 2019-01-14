@@ -1,0 +1,31 @@
+.tips{
+  position: fixed;
+  top:50%;
+  left:50%;
+  margin-left: -30%;
+  margin-top: -10%;
+  width: 60%;
+  height: 20%;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 12px #ccc;
+  z-index: 99
+}
+.content{
+  font-weight: bold;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.bottom{
+  display: flex;
+  padding: 2px;
+  height: 30%;
+  
+}
+button{
+  height: 30px;
+  line-height: 30px;
+}

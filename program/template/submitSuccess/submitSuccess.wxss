@@ -1,0 +1,23 @@
+.tipsWrap{
+  text-align: center;
+}
+.box{
+  width: 117px;
+  height: 96px;
+  margin: 60px auto 0;
+  background-color: #888;
+}
+.tips{
+  font-size: 15px;
+  color: #707070;
+  margin: 20px 0;
+}
+.returnBtn{
+  width: 100px;
+  font-size: 15px;
+  line-height: 30px;
+  background-color: #60B7F9;
+  color: #fff;
+  margin: 0 auto;
+  border-radius: 10px;
+}

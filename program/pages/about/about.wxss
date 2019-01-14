@@ -1,0 +1,171 @@
+page{
+  background: #FAF9F9;
+}
+.about{
+  width: 100%;
+  
+}
+
+.about text{
+ color: #282828;
+
+}
+.about .title{
+  margin-left: 15px;
+  font-size:12px;
+}
+
+.userInfo{
+  box-sizing: border-box;
+  padding: 33px 15px 30px 15px;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  margin-bottom: 5px;
+}
+.userInfo .userImg{
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  margin-right: 20px;
+  overflow: hidden;
+  background:url("https://smb.fjsmb.com/static/commodity/img/user.png") no-repeat;
+  background-size: 44px 44px;
+}
+.userInfo .username{
+  font-size: 14px;
+  font-weight: bold;
+}
+.myOrder{
+ box-sizing: border-box;
+ background: #fff;
+}
+.myOrder .listHeader{
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #FAF9F9;
+}
+
+.listHeader .check{
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  height:40px;
+  position: relative;
+}
+.check text:nth-child(1){
+  font-size: 9px;
+  color: #999999;
+  margin-right:10px; 
+}
+.check text:nth-child(2){
+  width: 6px;
+  height:11px;
+  background: url('http://smb.fjsmb.com/static/lib/img/back.png') no-repeat center center;
+  background-size: 6px 11px;
+  transform: rotate(180deg);
+}
+.check .biaoqian{
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  right:5px;
+  top:2px;
+  background: #FE0202;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 9px;
+  line-height: 15px;
+  text-align: center; 
+}
+.myOrder .orderlist{
+  height: 66px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.orderlist navigator{
+  width: 66rpx;
+  height: 79rpx;
+  text-align: center;
+  position: relative;
+}
+.orderlist navigator text{
+  margin: 0 auto;
+}
+.orderlist navigator text:nth-child(1){
+  width: 17px;
+  height: 17px;
+  display: block;
+  position: relative;
+}
+.orderlist navigator text:nth-child(2){
+ color: #707070;
+ font-size: 9px;
+}
+.orderlist .biao{
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  right:-2px;
+  top:-7px;
+  background: #FE0202;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 9px;
+  line-height: 15px;
+  text-align: center;
+}
+
+
+.orderlist navigator:nth-child(1) text:nth-child(1){
+  background: url('http://smb.fjsmb.com/static/lib/img/service.png') no-repeat center center;
+  background-size: 17px 17px;
+}
+.orderlist navigator:nth-child(2) text:nth-child(1){
+  background: url('http://smb.fjsmb.com/static/lib/img/pay.png') no-repeat center center;
+  background-size: 17px 17px;
+}
+.orderlist navigator:nth-child(3) text:nth-child(1){
+  background: url('http://smb.fjsmb.com/static/lib/img/evaluate.png') no-repeat center center;
+  background-size: 17px 17px;
+}
+.list{
+  margin-top: 5px;
+}
+.list .listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  background: #fff;
+  border-bottom: 1px solid #faf9f9;
+}
+.list .listItem text:nth-child(2){
+  margin-right: 15px;
+  width: 6px;
+  height:11px;
+  background: url('http://smb.fjsmb.com/static/lib/img/back.png') no-repeat center center;
+  background-size: 6px 11px;
+  transform: rotate(180deg);
+}
+.list button::after{
+  border:0;
+}
+.list button{
+  padding:0;
+}
+.switch{
+  margin:15px auto;
+}
+.switch button{
+  background: #61B7F9;
+  width: 345px;
+  height: 31px;
+  color: #fff;
+  border-radius: 5px;
+  line-height: 31px;
+  font-size:13px; 
+}

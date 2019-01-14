@@ -1,0 +1,43 @@
+<!--pages/home/home.wxml-->
+<view class="home-layout">
+  <view class="top-box" bindtap="sendServer">
+    <image class='img-box' src='/images/blanck.png' mode="aspectFit"></image>
+    <text>发布服务</text>
+  </view>
+  <view class='lists-box'>
+    <view class='item'>
+      <image class='item-icon' src='/images/tou.jpg'></image>
+      <view class='item-message'>
+        <view>
+          <text>销售品牌:</text>
+          <text class='txt'>大众</text>
+        </view>
+        <view>
+          <text>从业时间:</text>
+          <text class='txt'>3年</text>
+        </view>
+        <view>
+          <text>服务级别:</text>
+          <text class='txt'>金牌顾问</text>
+        </view>
+      </view>
+    </view>
+    <view class='item'>
+      <image class='item-icon' src='/images/tou.jpg'></image>
+      <view class='item-message'>
+        <view>
+          <text>销售品牌:</text>
+          <text class='txt'>大众</text>
+        </view>
+        <view>
+          <text>从业时间:</text>
+          <text class='txt'>3年</text>
+        </view>
+        <view>
+          <text>服务级别:</text>
+          <text class='txt'>金牌顾问</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

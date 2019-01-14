@@ -1,0 +1,97 @@
+<!--pages/orderDetails/orderDetails.wxml-->
+<view class='orderDetails'>
+  <view class='order'>
+    <view class='order_main1'>
+      <text class='main1_text1'>{{detail.username}}</text>
+      <text class='main1_text2'>{{detail.phone}}</text>
+    </view>
+    <view class='order_main2'>
+      <text class='main2_text1'>地址：</text>
+      <text class='main2_text2'>{{detail.address}}</text>
+    </view>
+    <view class='order_main4'>
+      <text class='main4_text1'>上门时间：</text>
+      <text class='main4_text2'>{{detail.start_time}}</text>
+    </view>   
+  </view>
+
+  <view class='details'>
+    <view class='details_main1'>
+      <view class='main1'>
+        <image src='{{detail.service.image}}'></image>
+        <view class='main1_view'>
+          <text class='m1View_text1'>{{detail.service.title}}</text>
+          <view class='m1View_view1'>
+            <text class='view1_text1'>推拿理疗类型:</text>
+            <text class='view1_text2'>{{detail.item.mode_name}}</text>
+          </view>
+          <view class='m1View_view2'>
+            <text class='view2_text1'>服务方式:</text>
+            <text class='view2_text2'>{{detail.item.type_name}}</text>
+          </view>
+          <view class='m1View_view2'>
+            <text class='view2_text1'>服务时长:</text>
+            <text class='view2_text2'>{{detail.item.duration}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class='details_main2'>
+    <navigator url='/pages/chat/chat?to_uid={{detail.service.uid}}'>
+      <view class='main2_title'>联系技师</view>
+      </navigator>
+
+      <view class='main2_view'>
+        <view class='m2View_text1'>
+          <view class='m2VT1_text1'>
+            <text class='m2VT1_text2'>订单编号：</text>
+            <text class=''>{{detail.order_id}}</text>
+          </view>
+          <view class='m2VT1_text2'>
+            <text class='m2VT1_t2'>下单时间：</text>
+            <text class=''>{{detail.add_time}}</text>
+          </view>          
+        </view>
+        <view class='m2View_text2'>
+          <text class='m2VT2_text1'>支付方式：</text>
+          <text class='m2VT2_text2'>在线支付</text>          
+        </view>
+      </view>
+    </view>
+    <view class='details_main3'>
+      <view class='main3_view1'>
+        <text class='m3view1_text1'>支付金额</text>
+        <text class='m3view1_text2'>￥{{detail.price}}</text>
+      </view>
+      <view class='main3_view2'>
+        <text class='m3view2_text1'>实付款：</text>
+        <text class='m3view2_text2'>{{detail.price}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='footer'>
+  <!--
+    <block wx:if="{{detail.status == 1}}">
+      <button class='footer_btu1' bindtap='cancelOrder'><text>取消订单</text></button>
+    </block>
+    -->
+
+    <block wx:if="{{detail.status == 0 || detail.status == 4}}">
+      <navigator url='../order/order?id={{detail.item.id}}'>
+        <button class='footer_btu2'><text>立即下单</text></button>
+      </navigator>
+    </block>
+
+    <block wx:else>
+
+    <navigator url='../detail?id={{detail.service.id}}'>
+      <button class='footer_btu2'><text>再次预订</text></button>
+    </navigator>
+    
+    </block>
+
+
+  </view>
+</view>

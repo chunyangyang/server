@@ -1,0 +1,20 @@
+<view class="addressInfo">
+  <form  class="add" bindsubmit="formSubmit" >
+    <label>
+      <text>姓名</text><input type="text" name="name" value="{{name}}"></input>
+    </label>
+     <label>
+      <text>联系电话</text><input type="text" name="phone" value="{{phone}}"></input>
+    </label>
+     <label>
+      <text>所在地址</text>
+      <view class="select" bindtap="clickPick">
+        <text>{{location.address}}</text><text></text>
+      </view>
+    </label>
+     <label class="save">
+      <button formType="submit">保存</button>
+     </label>
+  </form>
+</view>
+

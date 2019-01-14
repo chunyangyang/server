@@ -1,0 +1,80 @@
+page{
+  background: #FAF9F9;
+ 
+}
+.tabItem{
+  background: #fff;
+  display: flex;
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 5px;
+  height: 144px;
+  
+}
+.tabItem image{
+  width:160px;
+  height: 103px;
+  margin: 15px 15px 21px 20px;
+  background: #ccc;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.tabItem .orderDetail{
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  margin-right: 15px ;
+  box-sizing: border-box;
+}
+.tabItem .orderDetail .top{
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-start;
+  margin-top: 16px;
+  padding-bottom: 4px;
+  font-weight: bold;
+  border-bottom: 1px solid #D5D4D4;
+}
+.tabItem .orderDetail .top navigator{
+  font-size: 0;
+}
+.tabItem .orderDetail .top text{
+  color: #60B7F9;
+  font-size: 15px;
+  
+}
+
+.content{
+ display:  flex;
+ flex-direction: column;
+}
+.content .Servicetime{
+  font-size: 10px;
+  line-height: 20px;
+}
+.content .Servicetime:first-child{
+  margin-top: 15px;
+}
+.content .Servicetime text:first-child{
+  margin-right: 15px;
+  
+}
+.content .time{
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+.content .price{
+  display: flex;
+  justify-content: flex-end;
+  color: #FF1010;
+  font-size: 15px;
+  font-weight: bold;
+}
+.collectionCancelBtn{
+  
+  font-size: 10px;
+  background-color: #61B7F9;
+  color: #fff;
+  margin: 0;
+  padding: 0 4px;
+}

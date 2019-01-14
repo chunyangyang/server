@@ -1,0 +1,4 @@
+<!--pages/upload/upload.wxml-->
+<view class='text'>图片上传Api</view>
+<image class='tplImages' src='{{imgSrc}}'></image>
+<button bindtap='chooseWxImage'>上传图片</button>

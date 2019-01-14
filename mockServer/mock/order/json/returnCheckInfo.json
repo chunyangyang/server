@@ -1,0 +1,127 @@
+{
+  "code": 0,
+  "message": "success",
+  "data": {
+    "progressStatus": "return",
+    "checkedItem": 0,
+    "totalItem": 2,
+    "follow": "Alice",
+    "is_follow_user": true,
+    "show_change_follow": true,
+    "checkList": [
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "Return Info",
+        "value": "",
+        "link": "test",
+        "key": "return_info",
+        "styleType": "checkLink",
+        "itemList": [
+          {
+            "key": "date",
+            "name": "Actual Return Date",
+            "value": "2016-10-10 12:00",
+            "type": "dateBox",
+            "disabled": true
+          },
+          {
+            "key": "lastReturnFee",
+            "name": "Last Return Fee",
+            "value": "140",
+            "unit": "THB",
+            "type": "editBox",
+            "disabled": true
+          },
+          {
+            "key": "afterServiceFee",
+            "name": "After Hours Service Fee",
+            "value": "50",
+            "unit": "THB",
+            "type": "editBox",
+            "disabled": true
+          },
+          {
+            "key": "fuelMass",
+            "name": "Return Fuel Mass",
+            "value": "90",
+            "unit": "%",
+            "type": "fuelMass",
+            "disabled": true
+          },
+          {
+            "key": "fuel",
+            "name": "Fuel",
+            "value": "50",
+            "unit": "THB",
+            "type": "editBox",
+            "disabled": false
+          },
+          {
+            "key": "mileage",
+            "name": "Mileage In",
+            "value": "140",
+            "unit": "KM",
+            "type": "editBox",
+            "disabled": true
+          }
+        ]
+      },
+      {
+        "checked": true,
+        "disabled": false,
+        "name": "Vehicle Condition",
+        "value": "",
+        "link": "",
+        "styleType": "checkText",
+        "addLink": "/theme/mobile/static/v3/dist-dev/pages/VehicleCheck.html",
+        "itemList": [
+          {
+            "name": "Pick up",
+            "value": "",
+            "type": "vehiclePart",
+            "editable": false,
+            "list": [
+              {
+                "part": "right gate",
+                "remark": "有两条刮痕",
+                "charge": "",
+                "id": "",
+                "link": "123"
+              },
+              {
+                "part": "right gate",
+                "remark": "有两条刮痕",
+                "charge": "",
+                "id": "",
+                "link": "123123"
+              }
+            ]
+          },
+          {
+            "name": "Return",
+            "value": "",
+            "type": "vehiclePart",
+            "editable": true,
+            "list": [
+              {
+                "part": "right gate",
+                "remark": "有两条刮痕",
+                "charge": "",
+                "id": "",
+                "link": "123"
+              },
+              {
+                "part": "right gate",
+                "remark": "有两条刮痕",
+                "charge": "",
+                "id": "",
+                "link": "123123"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

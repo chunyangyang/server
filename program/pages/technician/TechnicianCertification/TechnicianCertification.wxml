@@ -1,0 +1,39 @@
+<view>
+ <form bindsubmit='bindSubmit'>
+  <view class="header">
+    <view class="picture flex">
+        <text class="title">头像</text>
+          <view class="right">
+            <image src="{{src1}}" class="avatar" catchtap="upload1"  lazy-load="true" mode="aspectFit"></image>
+            <!-- <text class="iconfont  icon-jia" catchtap="upload1" hidden="{{hidden1}}"></text> -->
+          </view>
+    </view>
+    <view class="name flex" >
+      <text class="title">姓名</text>
+      <input type="text" placeholder='请填写您的正确姓名' placeholder-style="text-align:right" value="" name="name"></input>
+    </view>
+    <view class="phoneNumber flex">
+      <text class="title">手机号</text>
+      <text class="phone">{{phone}}</text>
+      <button value="" open-type="getPhoneNumber" bindgetphonenumber='getPhoneNumber'>获取手机号</button>
+    </view>
+    <view class="wxNumer flex">
+      <text class="title">微信号</text>
+      <input type="text" placeholder='请填写您的微信号' placeholder-style="text-align:right" name="weixin" value=""></input>
+    </view>
+  </view>   
+  <view class="uploadZ">
+            <image src="{{src2}}"  catchtap="upload2" mode="{{mode}}" lazy-load="true" bindload='bindLoad' ></image>
+            <text class="iconfont  icon-jia" catchtap="upload2" hidden="{{hidden2}}"></text>
+            <text class="text" hidden="{{hidden2}}" >请添加身份证正面照片</text>
+  </view>
+  <view class="uploadB">
+            <image src="{{src3}}"  catchtap="upload3" mode="{{mode}}" lazy-load="true" bindload='bindLoad' ></image>
+            <text class="iconfont  icon-jia" catchtap="upload3" hidden="{{hidden3}}"></text>
+            <text class="text" hidden="{{hidden3}}" >请添加身份证背面照片</text>
+  </view>
+  <view class="confirm">
+    <button formType="submit">完成</button>
+  </view>
+  </form>
+</view>

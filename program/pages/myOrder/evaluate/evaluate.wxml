@@ -1,0 +1,53 @@
+<view class="jiantou" >
+  <image src="/image/jiantou.png" wx:if="{{count>0}}"></image>
+</view>
+
+<block wx:for="{{list}}" wx:key="unique">
+
+<navigator url="/pages/index/detail/orderDetails/orderDetails?order_id={{item.order_id}}" hover-class='none'>
+
+  <view class="tabItem"
+    hidden="{{hidden!=3}}"
+    data-index="{{index}}"
+    bindtouchstart="touchstart" 
+    bindtouchend="touchend"
+    style="{{item.textStyle}}" >
+  <image src="{{item.image}}" lazy-load="true"></image>
+    <view class="orderDetail">
+      <view class="top">
+        <text>{{item.title}}</text>
+       
+      </view>
+      <view class="content">
+
+        <view class="Servicetime">
+          <text>服务类型:</text>
+          <text>{{item.mode_name}}</text>
+        </view>
+
+        <view class="Servicetime">
+          <text>服务时长:</text>
+          <text>{{item.duration}}</text>
+        </view>
+
+        <view class="Servicetime">
+          <text>服务方式:</text>
+          <text>{{item.type_name}}</text>
+        </view>
+        <view class="bottom">
+          <view class="price">
+            <text class="money">￥{{item.price}}</text>
+          </view>
+          <block wx:if="{{item.status == 2}}">
+            <view class="reserve">
+              <navigator  url="/pages/myOrder/myevaluate/myevaluate?index={{curIndex}}&order_id={{item.order_id}}" hover-class='none'>立即评价</navigator>
+            </view>
+          </block>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</navigator>
+
+</block>

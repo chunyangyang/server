@@ -1,0 +1,195 @@
+/*
+ * @Author: zhengchunyang 
+ * @Date: 2018-08-01 10:36:22 
+ * @Last Modified by: zhengchunyang
+ * @Last Modified time: 2019-01-12 22:26:57
+ */
+
+ @import '../../../../style/global.scss';
+ .index-layout {
+    min-height: 100%;
+    background-color: #4148fa;
+    // background-image: url(../img/a162442….png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+ }
+ body{
+    max-width: 750px;
+    // margin: 0 auto;
+}
+ #root, body, html {
+    height: 100%;
+}
+ .mt5 {
+     margin-top: 5px;
+ }
+ 
+ .clearfix:after,
+ .clearfix:before {
+     clear: both;
+     display: block;
+     content: "";
+     height: 0;
+     left: 0;
+     visibility: hidden;
+ }
+ 
+ .clearfix {
+     zoom: 1;
+ }
+ 
+ .fl {
+     float: left;
+ }
+ 
+ .fr {
+     float: right;
+ }
+ 
+ .fn-hide {
+     display: none !important;
+ }
+ .home-mn {
+    height: 4.6rem;
+    padding-top: .4rem;
+    position: relative;
+    .captcha {
+        font-size: .3rem;
+        position: absolute;
+        right: .4rem;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        border-radius: .04rem;
+        border: none;
+        color: #386ccc;
+        background: transparent;
+    }
+   .home-inp-first {
+        margin-bottom: .36rem;
+    }
+    .home-inp {
+        width: 6rem;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: .4rem;
+        .home-inp-tel {
+            width: .25rem;
+            height: .4rem;
+            left: .4rem;
+            background-image: url(../../images/phone.png);
+        }
+        .home-inp-code {
+            width: .37rem;
+            height: .28rem;
+            left: .34rem;
+            background-image: url(../../images/xin.png);
+        }
+        input {
+            float: left;
+            display: block;
+            border: none;
+            width: 100%;
+            font-size: .3rem;
+            height: .9rem;
+            border-radius: .9rem;
+            padding: 0 0 0 .9rem;
+            box-sizing: border-box;
+            background-color: #fff;
+        }
+        .home-inp-place {
+            width: .02rem;
+            background: #999;
+            height: .46rem;
+            position: absolute;
+            right: 2.2rem;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+    }
+}
+.btn-borrow {
+    color: #79540d;
+    font-size: .36rem;
+    width: 6rem;
+    height: .9rem;
+    background: #e3ce40;
+    border: none;
+    display: block;
+    margin: auto;
+    font-weight: 400;
+    border-radius: .9rem;
+    -webkit-box-shadow: 0 0.04rem 0.08rem rgba(68,121,226,.4);
+    box-shadow: 0 0.04rem 0.08rem rgba(68,121,226,.4);
+    position: absolute;
+    bottom: .3rem;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    a{
+        color: #fff;
+        &:hover{
+            color: #fff;
+        }
+    }
+}
+.home-mn .home-inp .home-inp-code, .home-mn .home-inp .home-inp-tel {
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: block;
+}
+
+.home-acount {
+    text-align: center;
+    height: 2.92rem;
+    position: relative
+}
+
+.home-acount img {
+    width: 3.41rem;
+    position: absolute;
+    bottom: .2rem;
+    left: 0;
+    right: 0;
+    margin: auto
+}
+
+.home-acount h3,.home-acount h5 {
+    font-weight: 400
+}
+
+.home-acount h3 {
+    color: #333;
+    font-size: .32rem;
+    margin-bottom: .4rem
+}
+
+.home-acount h3 span {
+    font-size: .34rem
+}
+
+.home-acount h5 {
+    color: #b7b7b7;
+    font-size: .24rem
+}
+
+.home-acount .money {
+    color: #518aed;
+    font-size: .9rem;
+    position: absolute;
+    top: 1.34rem;
+    width: 100%
+}
+
+.home-acount .count {
+    color: #5a95f5;
+    font-size: .4rem;
+    margin-top: .5rem
+}
