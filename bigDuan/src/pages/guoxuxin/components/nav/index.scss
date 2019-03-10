@@ -1,0 +1,31 @@
+#root .logo {
+    width: 120px;
+    height: 31px;
+    background: url('../../images/ppt_logo.png') no-repeat center;
+    background-size: contain;
+    margin: 16px 276px 16px 0;
+    float: left;
+}
+
+.ant-layout-header.header{
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+    padding: 0;
+    height: 68px;
+    line-height: 68px;
+}
+.ant-menu.ant-menu-dark .ant-menu-item-selected, .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
+    background-color: #1890ff;
+    color: #FFF;
+    font-weight: 600;
+}
+.ant-menu-dark .ant-menu-item, .ant-menu-dark .ant-menu-item-group-title, .ant-menu-dark .ant-menu-item > a{
+    color: #333;
+
+}
+.ant-menu.ant-menu-dark .ant-menu-item:hover{
+    color: #333;
+}
+.ant-menu.ant-menu-dark .ant-menu-item-selected:hover{
+    color: #fff;
+}

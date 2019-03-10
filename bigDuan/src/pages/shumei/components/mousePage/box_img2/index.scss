@@ -1,0 +1,29 @@
+.box-img2 {
+    background: #fff;
+    padding-bottom: 150px;
+    .serve-box {
+        width: 1200px;
+        padding-top: 95px;
+
+        .title {
+            text-align: center;
+            color: #555555;
+            font-size: 20px;
+            margin-bottom: 54px;
+
+            h2 {
+                font-size: 24px;
+            }
+
+            .title2 {
+                padding-top: 60px;
+            }
+        }
+    }
+
+    .img-box {
+        width: 1142px;
+        height: 482px;
+        background: url(../../../images/mouse_img2.png) no-repeat;
+    }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>数媒网</title>
+    {{> '../../../modules/public/head.hbs'}}
+    {{!-- {{> '../../../modules/public/rem.hbs'}} --}}
+    <link rel="stylesheet" href="../css/xiaohongshuPage.css">
+</head>
+
+
+<body>
+    <script>
+        window.serverData = {
+
+        }
+    </script>
+    {{!-- <div id="root"> --}}
+        {{!-- 头部导航 --}}
+        {{> '../components/head/index.hbs'}}
+        {{!-- banner --}}
+        {{> '../components/xiaohongshuPage/banner/index.hbs'}}
+      
+            
+        {{!-- footer --}}
+        {{> '../components/footer/index.hbs'}}
+    {{!-- </div> --}}
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="../js/xiaohongshuPage.js"></script>
+</body>
+
+</html>

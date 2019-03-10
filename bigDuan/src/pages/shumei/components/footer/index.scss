@@ -1,0 +1,102 @@
+.footer {
+    background: #464C57;
+    // height: 650px;
+    color: #fff;
+
+    .footer-content {
+        width: 1200px;
+        padding-top: 75px;
+    }
+
+    .list {
+        margin-bottom: 100px;
+
+        li {
+            float: left;
+            margin-right: 66px;
+        }
+
+        .title {
+            font-size: 18px;
+            margin-bottom: 17px;
+            // font-weight: 600;
+        }
+
+        .imgbox {
+            width: 156px;
+            height: 207px;
+            &.news{
+                background: url(../../images/news_wx_server.png) no-repeat;
+            }
+            &.baidu{
+                background: url(../../images/baidu_wx_server.png) no-repeat;
+            }
+            background-color: red;
+        }
+
+        .linkbox {
+            text-align: center;
+            font-size: 14px;
+
+            a {
+                display: block;
+                color: #999;
+                margin-bottom: 12px;
+            }
+        }
+
+        .serve {
+            margin-left: 79px;
+            text-align: center;
+            .phone {
+                font-family: MicrosoftYaHei-Bold;
+                font-size: 24px;
+                font-weight: 600;
+                
+            }
+            .message{
+                font-size: 18px;
+            }
+            .qq{
+                width: 163px;
+                height: 28px;
+                font-size: 14px;
+                background: url(../../images/qq_icon.png) no-repeat -6px 0px;
+                background-color: #343942;
+                margin-bottom: 8px;
+                margin-top: 28px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #999999;
+            }
+            .bai{
+                width: 163px;
+                height: 28px;
+                font-size: 14px;
+                background: url(../../images/qq_icon.png) no-repeat -6px 0px;
+                background-color: #343942;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #999999;
+            }
+        }
+    }
+
+    .text {
+        font-size: 18px;
+        text-align: center;
+        padding-bottom: 27px;
+        color: #999999;
+    }
+}
+
+.lo {
+    background: #3E444F;
+    height: 100px;
+    text-align: center;
+    padding-top: 27px;
+    color: #999999;
+
+}

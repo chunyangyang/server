@@ -1,0 +1,39 @@
+.banner {
+    height: 500px;
+    background: url('../../../images/baike_banner.jpg') no-repeat center;
+
+    // background: red;
+    .banner-content-box {
+        width: 1200px;
+        font-family: MicrosoftYaHei;
+        color: #FFFFFF;
+        overflow: hidden;
+
+        .content {
+            margin: 168px 0 0 64px;
+        }
+
+        .blod {
+            font-size: 36px;
+        }
+
+        .normal {
+            font-size: 20px;
+        }
+
+        .contact {
+            width: 130px;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            background: #3790FF;
+            font-size: 18px;
+            color: #FFFFFF;
+            margin-top: 36px;
+
+            i {
+                font-size: 16px;
+            }
+        }
+    }
+}

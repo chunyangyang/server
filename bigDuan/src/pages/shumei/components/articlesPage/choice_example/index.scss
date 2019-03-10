@@ -1,0 +1,67 @@
+.choice-example {
+    width: 100%;
+    // height: 746px;
+    background-color: #FAFBFE;
+    .example-content-box {
+        padding: 94px 30px 126px;
+        width: 1200px;
+        box-sizing: border-box;
+    }
+
+    .title {
+        text-align: center;
+        color: #333;
+        font-size: 20px;
+        margin-bottom: 60px;
+
+        h2 {
+            font-size: 24px;
+        }
+    }
+
+    .show {
+        .content {
+            padding-top: 60px;
+            .show-content {
+                display: none;
+                width: 1155px;
+                height: 450px;
+               
+                &.putong{
+                    background: url(../../../images/articles_putong.png) no-repeat center;
+                }
+                &.zhuangye{
+                    background: url(../../../images/articles_putong.png) no-repeat center;
+                }
+                &.gaoji{
+                    background: url(../../../images/articles_putong.png) no-repeat center;
+                }
+            }
+        }
+    }
+
+    .control-box {
+        color: #333;
+
+        ul {
+            display: flex;
+            align-items: flex-end;
+            border-bottom: 1px solid #E5E5E5;
+            justify-content: center;
+
+            li {
+                // height: 100%;
+                text-align: center;
+                // line-height: 60px;
+                margin: 0 55px;
+                padding-bottom: 12px;
+                cursor: pointer;
+
+                &.active {
+                    color: #3790FF;
+                    border-bottom: 1px solid #3790FF;
+                }
+            }
+        }
+    }
+}

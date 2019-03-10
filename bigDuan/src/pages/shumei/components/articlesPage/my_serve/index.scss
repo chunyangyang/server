@@ -1,0 +1,71 @@
+.my_serve {
+    background: #FAFBFE;
+
+    .serve-box {
+        width: 1200px;
+        padding-top: 95px;
+
+        .title {
+            text-align: center;
+            color: #555555;
+            font-size: 20px;
+            margin-bottom: 54px;
+
+            h2 {
+                font-size: 24px;
+            }
+
+            .title2 {
+                padding-top: 60px;
+            }
+        }
+
+        ul {
+            // padding-left: 64px;
+            display: flex;
+            // align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            li {
+                width: 33%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin-bottom: 78px;
+
+                .icon {
+                    // margin-bottom: 20px;
+                    width: 150px;
+                    height: 150px;
+                }
+
+                .icon1 {
+                    background: url(../../../images/articles_bianjituandu.png) no-repeat;
+                }
+
+                .icon2 {
+                    background: url(../../../images/articles_seoicon.png) no-repeat;
+                }
+
+                .icon3 {
+                    background: url(../../../images/articles_fuwujingyan.png) no-repeat;
+                }
+
+              
+                .bold {
+                    font-size: 20px;
+                    color: #333;
+                    margin-bottom: 10px;
+                }
+                .normal {
+                    font-size: 14px;
+                    color: #333;
+                    width: 236px;
+                    text-align: center;
+                }
+
+            }
+        }
+    }
+}

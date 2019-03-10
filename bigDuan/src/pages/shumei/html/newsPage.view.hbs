@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>数媒网</title>
+    {{> '../../../modules/public/head.hbs'}}
+    {{!-- {{> '../../../modules/public/rem.hbs'}} --}}
+    <link rel="stylesheet" href="../common/swiper/swiper.min.css">
+
+    <link rel="stylesheet" href="../css/newsPage.css">
+</head>
+
+
+<body>
+    <script>
+        window.serverData = {
+
+        }
+    </script>
+    {{!-- <div id="root"> --}}
+    {{!-- 头部导航 --}}
+    {{> '../components/head/index.hbs'}}
+    {{!-- banner --}}
+    {{> '../components/newsPage/banner/index.hbs'}}
+    {{> '../components/newsPage/my_advantages/index.hbs'}}
+    {{> '../components/newsPage/my_serve/index.hbs'}}
+    {{> '../components/newsPage/box_img/index.hbs'}}
+    {{> '../components/newsPage/choice_company/index.hbs'}}
+    {{> '../components/newsPage/choice_example/index.hbs'}}
+    {{> '../components/newsPage/my_taocan/index.hbs'}}
+    {{> '../components/newsPage/box_img2/index.hbs'}}
+    {{> '../components/newsPage/my_serve2/index.hbs'}}
+    {{!-- footer --}}
+    {{> '../components/footer/index.hbs'}}
+    {{!-- </div> --}}
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="../common/swiper/swiper.min.js"></script>
+
+    <script src="../js/newsPage.js"></script>
+</body>
+
+</html>

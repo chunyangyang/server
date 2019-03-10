@@ -3,7 +3,7 @@
  * @Author: zhengchunyang 
  * @Date: 2018-09-10 12:15:31 
  * @Last Modified by: zhengchunyang
- * @Last Modified time: 2018-12-20 18:51:11
+ * @Last Modified time: 2019-01-26 13:47:24
  */
 import './index.scss';
 import React, { Component } from 'react';
@@ -31,12 +31,20 @@ export default class Index extends Component {
 
                     <div className='message-content'>
                         <div className='box'>
-                            <div className='head'>祖祠重建介绍</div>
+                            <div className='head'>祖祠重建暨牌坊建设</div>
                             <div className='content-box'>
                                 <div className='title-box'><span className='title'> 工期</span></div>
                                 <div className='content'>2018年3月 至 208年12月</div>
                             </div>
                             <div className='content-box'>
+                                <div className='title-box'>
+                                    <span className='title'>公账资金</span>
+                                </div>
+                                <div>总入账：740400</div>
+                                <div>总支出：452070</div>
+                                <div>目前账户剩余：288330</div>
+                            </div>
+                            {/* <div className='content-box'>
                                 <div className='title-box'>
                                     <span className='title'>理事会成员</span>
                                     <span className='tips'>按姓名笔画排序</span>
@@ -52,28 +60,28 @@ export default class Index extends Component {
                                     <span className='name'>郑**</span>
                                     <span className='name'>郑**</span>
                                 </div>
-                            </div>
+                            </div> */}
+                            {/* <div className='content-box'>
+                                <div className='title-box'>
+                                    <span className='title'>捐地基人员</span>
+                                    <span className='tips'>感谢以下人员</span>
+                                </div>
+                                <div className='content'>                              
+                                    <span className='name'>郑**</span>
+                                    <span className='name'>郑**</span>
+                                    <span className='name'>郑**</span>
+                                    <span className='name'>郑**</span>
+                                    <span className='name'>郑**</span>
+                                    <span className='name'>郑**</span>
+                                    <span className='name'>郑**</span>
+                                    <span className='name'>郑**</span>
+                                    <span className='name'>郑**</span>
+                                </div>
+                            </div> */}
                             <div className='content-box'>
                                 <div className='title-box'>
-                                    <span className='title'> 捐地人员</span>
-                                    <span className='tips'>按姓名笔画排序</span>
-                                </div>
-                                <div className='content'>
-                                    <span className='name'>郑**</span>
-                                    <span className='name'>郑**</span>
-                                    <span className='name'>郑**</span>
-                                    <span className='name'>郑**</span>
-                                    <span className='name'>郑**</span>
-                                    <span className='name'>郑**</span>
-                                    <span className='name'>郑**</span>
-                                    <span className='name'>郑**</span>
-                                    <span className='name'>郑**</span>
-                                </div>
-                            </div>
-                            <div className='content-box'>
-                                <div className='title-box'>
-                                    <span className='title'> 捐款人员</span>
-                                    <span className='tips'>按捐款日期排序</span>
+                                    <span className='title'>捐款明星</span>
+                                    <span className='tips'>感谢大家慷慨解囊</span>
                                 </div>
 
                                 <div className='content'>
@@ -119,13 +127,18 @@ export default class Index extends Component {
                                     <span className="name">郑青林</span>
                                     <span className="name">郑金莲</span>
                                     <span className="name">郑圣</span>
+                                    <span className="name">郑六斤</span>
                                     <span className="name">罗会新</span>
                                     <span className="name">罗会平</span>
-                                    <span className="name">郑小林</span>
-                                    <span className="name">郑小洋</span>
+                                    <span className="name">郑小林(大)</span>
+                                    <span className="name">郑小阳</span>
                                     <span className="name">郑小平</span>
-                                    <span className="name"></span>
-
+                                    <span className="name">郑志华</span>
+                                    <span className="name">郑纯阳</span>
+                                    <span className="name">郑青平</span>
+                                    <span className="name">郑海波</span>
+                                    <span className="name">郑小军</span>
+                                    <span className="name">郑文文</span>
                                 </div>
                             </div>
 

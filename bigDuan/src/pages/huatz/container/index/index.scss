@@ -2,7 +2,7 @@
  * @Author: zhengchunyang 
  * @Date: 2018-08-01 10:36:22 
  * @Last Modified by: zhengchunyang
- * @Last Modified time: 2018-12-20 18:50:40
+ * @Last Modified time: 2019-01-26 13:20:30
  */
 
  @import '../../../../style/global.scss';
@@ -74,19 +74,20 @@
         align-items: center;
         justify-content: center;
         margin-bottom: .3rem;
-        &:before,&:after{
-            content: '';
-            height: 0.04rem;
-            background-color: #222;
-            width: 1rem;
-            position: absolute;
-        }
-        &:before{
-            left: 0.52rem;
-        }
-        &:after{
-            right:0.52rem;
-        }
+        color: red;
+        // &:before,&:after{
+        //     content: '';
+        //     height: 0.04rem;
+        //     background-color: #222;
+        //     width: 1rem;
+        //     position: absolute;
+        // }
+        // &:before{
+        //     left: 0.52rem;
+        // }
+        // &:after{
+        //     right:0.52rem;
+        // }
     }
     .message-content{
         background-color: #917462;
@@ -109,7 +110,7 @@
             margin-bottom: .2rem;
         }
         .tips{
-            color:#917462;
+            color:red;
             font-size: .2rem;
             margin-left: .2rem;
         }

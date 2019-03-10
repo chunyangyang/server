@@ -1,0 +1,67 @@
+.my_serve {
+    background: #FAFBFE;
+
+    .serve-box {
+        width: 1200px;
+        padding-top: 95px;
+
+        .title {
+            text-align: center;
+            color: #555555;
+            font-size: 20px;
+            margin-bottom: 54px;
+
+            h2 {
+                font-size: 24px;
+            }
+
+            .title2 {
+                padding-top: 60px;
+            }
+        }
+
+        ul {
+            // padding-left: 64px;
+            display: flex;
+            // align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            li {
+                width: 25%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin-bottom: 78px;
+
+                .icon {
+                    margin-bottom: 20px;
+                    width: 180px;
+                    height: 180px;
+                }
+
+                .icon1 {
+                    background: url(../../../images/news_advantages_fabunes.png) no-repeat;
+                }
+
+                .icon2 {
+                    background: url(../../../images/news_advantages_baozhang.png) no-repeat;
+                }
+
+                .icon3 {
+                    background: url(../../../images/news_advantages_fabu.png) no-repeat;
+                }
+
+                .icon4 {
+                    background: url(../../../images/news_advantages_onetoone.png) no-repeat;
+                }
+
+                .normal {
+                    font-size: 14px;
+                    color: #333;
+                }
+
+            }
+        }
+    }
+}

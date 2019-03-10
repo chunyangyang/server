@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>数媒网</title>
+    {{> '../../../modules/public/head.hbs'}}
+    {{!-- {{> '../../../modules/public/rem.hbs'}} --}}
+    <link rel="stylesheet" href="../css/zhihuPage.css">
+</head>
+
+
+<body>
+    <script>
+        window.serverData = {
+
+        }
+    </script>
+    {{!-- <div id="root"> --}}
+    {{!-- 头部导航 --}}
+    {{> '../components/head/index.hbs'}}
+    {{!-- banner --}}
+    {{> '../components/zhihuPage/banner/index.hbs'}}
+    {{> '../components/zhihuPage/my_advantages/index.hbs'}}
+    {{> '../components/zhihuPage/my_serve/index.hbs'}}
+    {{> '../components/zhihuPage/box_img/index.hbs'}}
+    {{> '../components/zhihuPage/box_img2/index.hbs'}}
+    {{> '../components/zhihuPage/box_img3/index.hbs'}}
+    {{> '../components/zhihuPage/choice_example/index.hbs'}}
+
+    {{!-- footer --}}
+    {{> '../components/footer/index.hbs'}}
+    {{!-- </div> --}}
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="../js/zhihuPage.js"></script>
+</body>
+
+</html>

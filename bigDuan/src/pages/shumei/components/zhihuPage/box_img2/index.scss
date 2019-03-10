@@ -1,0 +1,29 @@
+.box-img2 {
+    // padding-bottom: 150px;
+    background-color: #FAFBFE;
+    height: 531px;
+    .serve-box {
+        width: 1200px;
+        padding-top: 95px;
+
+        .title {
+            text-align: center;
+            // color: #fff;
+            font-size: 20px;
+            margin-bottom: 54px;
+
+            h2 {
+                font-size: 24px;
+            }
+
+            .title2 {
+                padding-top: 60px;
+            }
+        }
+    }
+    .img-box{
+        width: 1159px;
+        height: 472px;
+        background: url(../../../images/zhihu_img3.png) no-repeat;
+    }
+}

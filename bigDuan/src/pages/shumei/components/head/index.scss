@@ -1,0 +1,75 @@
+.head {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.50);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.50);
+    z-index: 9999;
+    .nav {
+        // height: 100%;
+        // width: 1190px;
+        width: 1200px;
+        display: flex;
+        align-items: center;
+    }
+
+    .log {
+        // width: 64px;
+        height: 50px;
+        margin-right: 184px;
+        background: url(../../images/shumei_logo.png) no-repeat left center;
+        background-size: contain;
+        // background-color: red;
+        a{
+            font-size: 24px;
+            color: #FFFFFF;
+            padding-left: 85px;
+            display: block;
+            height: 100%;
+            line-height: 50px;
+        }
+    }
+
+    .nav-box {
+        // background-color: red;
+        height: 100%;
+        // line-height: 60px;
+        line-height: 58px;
+        a {
+            display: block;
+            color: #fff;
+        }
+        li{
+            float: left;
+            height: 100%;
+            padding: 0 12px;
+            &:hover{
+              font-weight: 600;
+            }
+            &.active{
+               border-bottom: 2px solid #3790FF;
+            }
+        }
+    }
+    .contact{
+        display: flex;
+        align-items: center;
+        .icon{
+            width: 24px;
+            height: 27px;
+            background: url(../../images/phone.png) no-repeat left;
+            // background-color: #1674E9;
+        }
+        .text{
+            background: #3790FF;
+            padding: 0 12px;
+            line-height: 27px;
+            color: #fff;
+            font-size: 14px;
+        }
+    }
+}

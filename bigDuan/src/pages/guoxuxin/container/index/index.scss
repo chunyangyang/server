@@ -2,7 +2,7 @@
  * @Author: zhengchunyang 
  * @Date: 2018-08-01 10:36:22 
  * @Last Modified by: zhengchunyang
- * @Last Modified time: 2019-01-13 18:45:39
+ * @Last Modified time: 2019-01-19 22:32:02
  */
 
  @import '../../../../style/global.scss';
@@ -16,39 +16,15 @@
  }
  #root, body, html {
     height: 100%;
-    background: #f0f2f5;
+    background: #f1f2f9;
 }
 .w{
     width: 1200px;
     margin: 0 auto;
 }
-#root .logo {
-    width: 120px;
-    height: 31px;
-    background: red;
-    margin: 16px 24px 16px 0;
-    float: left;
-  }
-  .ant-layout-header{
-    background-color: rgb(255, 255, 255);
-    margin-bottom: 20px;
-    padding: 0;
-    height: 70px;
-    line-height: 70px;
-  }
-.ant-menu.ant-menu-dark .ant-menu-item-selected, .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
-    background-color: #1890ff;
-    color: #FFF;
-}
-.ant-menu-dark .ant-menu-item, .ant-menu-dark .ant-menu-item-group-title, .ant-menu-dark .ant-menu-item > a{
-    color: #333;
 
-}
-.ant-menu.ant-menu-dark .ant-menu-item:hover{
-    color: #333;
-}
-.ant-menu.ant-menu-dark .ant-menu-item-selected:hover{
-    color: #fff;
+.ant-layout{
+    background-color: #f1f2f9;
 }
 // 走马灯
 .ant-carousel .slick-slide {

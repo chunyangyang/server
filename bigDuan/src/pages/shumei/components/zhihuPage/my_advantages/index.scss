@@ -1,0 +1,61 @@
+.my_advantages {
+    background: #fff;
+
+    .advantages-box {
+        width: 1200px;
+        padding: 95px 0 100px;
+
+        .title {
+            text-align: center;
+            // color: #fff;
+            font-size: 20px;
+            margin-bottom: 62px;
+
+            h2 {
+                font-size: 24px;
+            }
+        }
+
+        ul {
+            display: flex;
+            // align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding-left: 40px;
+
+            li {
+                width: 285px;
+                height: 150px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                // color:#fff;
+
+                &.icon1 {
+                    background: url(../../../images/zhihu_delete.jpg) no-repeat;
+                }
+
+                &.icon3 {
+                    background: url(../../../images/zhihu_dianzang.jpg) no-repeat;
+                }
+
+                &.icon6 {
+                    background: url(../../../images/zhihu_paiming.jpg) no-repeat;
+                }
+
+                &.icon8 {
+                    background: url(../../../images/zhihu_quanqiu.jpg) no-repeat;
+                }
+
+                .normal {
+                    font-size: 14px;
+                    // width: 270px;
+                    padding: 0 20px;
+                }
+
+            }
+        }
+    }
+}
