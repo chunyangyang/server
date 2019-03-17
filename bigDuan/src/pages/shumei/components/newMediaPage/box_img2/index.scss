@@ -1,0 +1,32 @@
+.box-img2 {
+    // padding-bottom: 150px;
+    background-color: #FAFBFE;
+    // height: 531px;
+    padding-bottom: 100px;
+
+    .serve-box {
+        width: 1200px;
+        padding-top: 95px;
+
+        .title {
+            text-align: center;
+            // color: #fff;
+            font-size: 20px;
+            margin-bottom: 42px;
+
+            h2 {
+                font-size: 24px;
+            }
+
+            .title2 {
+                padding-top: 60px;
+            }
+        }
+    }
+
+    .img-box {
+        width: 1035px;
+        height: 514px;
+        background: url(../../../images/newMedia_img2.png) no-repeat;
+    }
+}

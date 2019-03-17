@@ -2,7 +2,7 @@
  * @Author: zhengchunyang 
  * @Date: 2019-01-27 13:28:31 
  * @Last Modified by: zhengchunyang
- * @Last Modified time: 2019-03-10 14:18:00
+ * @Last Modified time: 2019-03-17 13:28:38
  */
 import './index.scss';
 export default function head() {
@@ -44,6 +44,10 @@ export default function head() {
         case 'xiaohongshuPage.html':
             $(naveBox[5]).addClass('active');
             window.router ='xiaohongshuPage';
+            break;
+        case 'contactPage.html':
+            $(naveBox[9]).addClass('active');
+            window.router ='contactPage';
             break;
         default:
             $(naveBox[0]).addClass('active');

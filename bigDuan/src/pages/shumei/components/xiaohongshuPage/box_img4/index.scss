@@ -1,0 +1,36 @@
+.box-img4 {
+    // padding-bottom: 150px;
+    background: url(../../../images/xiaohongshu_img5.png) no-repeat bottom center;
+    background-color: #fff;
+    // height: 531px;
+    padding-bottom: 100px;
+    .serve-box {
+        width: 1200px;
+        padding-top: 95px;
+
+        .title {
+            text-align: center;
+            // color: #fff;
+            font-size: 20px;
+            margin-bottom: 42px;
+
+            h2 {
+                font-size: 24px;
+            }
+
+            .title2 {
+                padding-top: 60px;
+            }
+        }
+    }
+    .img-box1{
+        width: 938px;
+        height: 447px;
+        background: url(../../../images/xiaohongshu_img4.png) no-repeat;
+    }
+    .img-box2{
+        width: 1168px;
+        height: 980px;
+        background: url(../../../images/xiaohongshu_img6.png) no-repeat;
+    }
+}

@@ -28,37 +28,41 @@
             flex-wrap: wrap;
 
             li {
-                width: 25%;
+                width: 33%;
                 display: flex;
                 align-items: center;
                 flex-direction: column;
                 margin-bottom: 78px;
 
                 .icon {
-                    margin-bottom: 20px;
-                    width: 180px;
-                    height: 180px;
+                    // margin-bottom: 20px;
+                    width: 150px;
+                    height: 150px;
                 }
 
                 .icon1 {
-                    background: url(../../../images/news_advantages_fabunes.png) no-repeat;
+                    background: url(../../../images/zhihu_fenghu.png) no-repeat;
                 }
 
                 .icon2 {
-                    background: url(../../../images/news_advantages_baozhang.png) no-repeat;
+                    background: url(../../../images/newMedia_serve_news.png) no-repeat;
                 }
 
                 .icon3 {
-                    background: url(../../../images/news_advantages_fabu.png) no-repeat;
+                    background: url(../../../images/zhihu_tuandui.png) no-repeat;
                 }
 
-                .icon4 {
-                    background: url(../../../images/news_advantages_onetoone.png) no-repeat;
+              
+                .bold {
+                    font-size: 20px;
+                    color: #333;
+                    margin-bottom: 10px;
                 }
-
                 .normal {
                     font-size: 14px;
                     color: #333;
+                    width: 236px;
+                    text-align: center;
                 }
 
             }

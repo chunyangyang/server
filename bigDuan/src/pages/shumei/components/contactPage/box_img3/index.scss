@@ -1,0 +1,29 @@
+.box-img3 {
+    background: #fff;
+    padding-bottom: 98px;
+    .serve-box {
+        width: 1200px;
+        padding-top: 95px;
+
+        .title {
+            text-align: center;
+            color: #555555;
+            font-size: 20px;
+            margin-bottom: 40px;
+
+            h2 {
+                font-size: 24px;
+            }
+
+            .title2 {
+                padding-top: 60px;
+            }
+        }
+    }
+
+    .img-box {
+        width: 1140px;
+        height: 306px;
+        background: url(../../../images/baike_img3.png) no-repeat;
+    }
+}

@@ -1,6 +1,7 @@
 .box-img1 {
     background: #fff;
-    padding-bottom: 150px;
+    padding-bottom: 90px;
+
     .serve-box {
         width: 1200px;
         padding-top: 95px;
@@ -9,7 +10,7 @@
             text-align: center;
             color: #555555;
             font-size: 20px;
-            margin-bottom: 54px;
+            margin-bottom: 40px;
 
             h2 {
                 font-size: 24px;
@@ -22,12 +23,14 @@
     }
 
     .img-box1 {
-        width: 1159px;
-        height: 472px;
+        width: 1140px;
+        height: 465px;
+        margin-bottom: 102px;
         background: url(../../../images/zhihu_img1.png) no-repeat;
     }
+
     .img-box2 {
-        width: 1127px;
+        width: 1179px;
         height: 365px;
         background: url(../../../images/zhihu_img2.png) no-repeat;
     }
