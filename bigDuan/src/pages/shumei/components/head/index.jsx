@@ -2,7 +2,7 @@
  * @Author: zhengchunyang 
  * @Date: 2019-01-27 13:28:31 
  * @Last Modified by: zhengchunyang
- * @Last Modified time: 2019-03-17 13:28:38
+ * @Last Modified time: 2019-03-17 15:02:29
  */
 import './index.scss';
 export default function head() {
@@ -11,7 +11,7 @@ export default function head() {
     for (let i=0; i<naveBox.length; i++) {
         $(naveBox[i]).removeClass('active');
     }
-    let router = location.pathname.split('/')[2];
+    let router = location.pathname.split('/')[3];
     switch (router) {
         case 'newsPage.html':
             $(naveBox[1]).addClass('active');

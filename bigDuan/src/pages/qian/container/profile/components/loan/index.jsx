@@ -218,11 +218,14 @@ class Loan extends React.Component {
                         </div>
                     )}
                 <div className="contact-box">
-                    <div className='text'>联系我们:</div>
+                    {/* <div className='text'>联系我们:</div>
                     <div className="contact-box-item">
                         <div className='wechat'><span></span>{contactWechat}</div>
                         <div className='qq'><span></span>{contactQQ}</div>
-					</div>
+                       
+                    </div> */}
+                    <div className='text'>客服电话:</div>
+                    <div>{contactQQ}</div> 
                 </div>
                 <Modal
                     visible={false && visiableModal}

@@ -106,6 +106,7 @@ function ChoicePay({
                     <span>￥</span>
                     {matchQuotaRight}
                 </h3>
+                <p className='time'>（还款可选3~12月）</p>
             </div>
             <div className="choice-row">借款金额</div>
             <ul className="choice-list">
@@ -377,7 +378,7 @@ class Pay extends React.Component {
                     <div className="modal-text">
                         <div className='pay-tab'>
                             <span className={payType == 1 ? 'active' : ''} onClick={() => this.changePay(1)}>微信付款</span>
-                            <span className={payType == 2 ? 'active' : ''} onClick={() => this.changePay(2)}>支付宝付款</span>
+                            {/* <span className={payType == 2 ? 'active' : ''} onClick={() => this.changePay(2)}>支付宝付款</span> */}
                         </div>
                         <div className='img-box'>
                             {
@@ -390,6 +391,7 @@ class Pay extends React.Component {
 
                         <div className='text'>
                             {payType == 1 ? '可长按保存或者截图微信打开' : '可长按保存或者截图支付宝打开'}
+                            <br/>付款时请备注注册手机号码，以便及时下款
                         </div>
                     </div>
                 </Modal>

@@ -2,8 +2,8 @@ import './index.scss';
 import React from 'react';
 
 export default function HomeFooter() {
-    const {server,ours,ICP,phone}=window.serverData.imagesData.footer;
-    let contactPone =  'tel:18617145010'
+    const {server,ours,ICP,contactPone}=window.serverData.imagesData.footer;
+  
     return (
         <div className="home-ft">
             <ul>
