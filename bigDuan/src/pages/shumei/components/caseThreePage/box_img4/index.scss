@@ -1,0 +1,30 @@
+.box-img4 {
+    background: #fff;
+    padding-bottom: 200px;
+
+    .serve-box {
+        width: 1134px;
+        // padding-top: 118px;
+
+        .title {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 48px;
+            border-left: 2px solid #3790FF;
+            line-height: 1;
+            padding-left: 10px;
+
+            h2 {
+                font-size: 24px;
+                font-weight: 600;
+            }
+        }
+    }
+    .img-box {
+        width: 885px;
+        height:479px;
+        background: url(../../../images/case_three_img9.png) no-repeat;
+
+    }
+   
+}

@@ -1,0 +1,18 @@
+.my_advantages {
+    background: #fff;
+
+    .advantages-box {
+        width: 1134px;
+        padding: 96px 0 55px; 
+        .list{
+            padding-left: 48px;
+            margin-bottom: 25px;
+            .title{
+                color: #3790FF;
+                margin-left: -44px;
+                display: inline-block;
+                width: 44px;
+            }
+        }  
+    }
+}

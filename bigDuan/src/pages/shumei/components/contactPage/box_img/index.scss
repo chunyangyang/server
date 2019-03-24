@@ -4,13 +4,13 @@
 
     .serve-box {
         width: 1200px;
-        padding-top: 80px;
+        padding-top: 95px;
 
         .title {
             text-align: center;
             color: #555555;
             font-size: 20px;
-            margin-bottom: 40px;
+            margin-bottom: 86px;
 
             h2 {
                 font-size: 24px;
@@ -22,12 +22,49 @@
         }
     }
 
-    .img-box1 {
+    .img-box {
         width: 1140px;
-        height: 563px;
-        // margin-bottom: 102px;
-        background: url(../../../images/baike_img1.png) no-repeat;
+        height: 438px;
+        padding-left: 14px;
+        box-sizing: border-box;
+        background: url(../../../images/contact_img1.png) no-repeat center 110px;
     }
 
-    
+    .item {
+        width: 234px;
+        display: inline-block;
+        color: #555555;
+        text-align: center;
+        .title-2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .content {
+            font-size: 14px;
+        }
+
+        &.top-1 {
+            position: relative;
+            top: 212px;
+        }
+        &.top-2 {
+            position: relative;
+            top: 142px;
+            left: 10px;
+        }
+        &.top-3 {
+            position: relative;
+            top: 84px;
+            left: 18px;
+        }
+        &.top-4 {
+            position: relative;
+            top: 0px;
+            left: 36px;
+        }
+       
+    }
+
 }

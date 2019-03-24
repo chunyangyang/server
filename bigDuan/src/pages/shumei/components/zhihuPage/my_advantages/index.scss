@@ -50,11 +50,14 @@
                 }
 
                 .normal {
-                    font-size: 14px;
+                    font-size: 20px;
                     // width: 270px;
                     padding: 0 20px;
+                    span{
+                        color: #3790FF;
+                        font-weight: 600;
+                    }
                 }
-
             }
         }
     }

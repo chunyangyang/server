@@ -1,5 +1,4 @@
 .choice-company {
-    // height: 408px;
     background-color: #FAFBFE;
     padding: 70px 0;
     box-sizing: border-box;
@@ -21,6 +20,8 @@
 
 .swiper-container {
     width: 1200px;
+    padding: 0 40px;
+    box-sizing: border-box;
     height: 100%;
     .swiper-slide{
         background-color: #FAFBFE;
@@ -49,7 +50,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 30px;
+    // padding: 0 30px;
     box-sizing: border-box;
 
     .company-logo {
@@ -62,32 +63,40 @@
 
         span {
             width: 252px;
-            height: 114px;
-           margin-bottom: 40px;
+            height: 114px;  
+            margin-bottom: 40px;       
         }
         .icon1{
             background: url(../../../images/index_logo1.png) no-repeat;
+            background-size: contain;
         }
         .icon2{
             background: url(../../../images/index_logo2.png) no-repeat;
+            background-size: contain;
         }
         .icon3{
             background: url(../../../images/index_logo3.png) no-repeat;
+            background-size: contain;
         }
         .icon4{
             background: url(../../../images/index_logo4.png) no-repeat;
+            background-size: contain;
         }
         .icon5{
             background: url(../../../images/index_logo5.png) no-repeat;
+            background-size: contain;
         }
         .icon6{
             background: url(../../../images/index_logo6.png) no-repeat;
+            background-size: contain;
         }
         .icon7{
             background: url(../../../images/index_logo7.png) no-repeat;
+            background-size: contain;
         }
         .icon8{
             background: url(../../../images/index_logo8.png) no-repeat;
+            background-size: contain;
         }
     }
 }

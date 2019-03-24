@@ -1,11 +1,11 @@
 .box-img2 {
     // padding-bottom: 150px;
-    background-color: #FAFBFE;
+    background-color: #fff;
     // height: 531px;
-    padding-bottom: 112px;
+    padding-bottom: 30px;
     .serve-box {
         width: 1200px;
-        padding-top: 92px;
+        padding-top: 75px;
 
         .title {
             text-align: center;
@@ -24,7 +24,40 @@
     }
     .img-box{
         width: 1140px;
-        height: 498px;
-        background: url(../../../images/baike_img2.png) no-repeat;
+        // height: 498px;
+        .item{
+            width: 380px;
+            height: 240px;
+            position: relative;
+            float: left;
+            &.active::before{
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0,0,0,.8);
+              
+            }
+        }
+        .icon1{
+            background: url(../../../images/contact_office_img1.png) no-repeat center;
+        }
+        .icon2{
+            background: url(../../../images/contact_office_img2.png) no-repeat center;
+        }
+        .icon3{
+            background: url(../../../images/contact_office_img3.png) no-repeat center;
+        }
+        .icon4{
+            background: url(../../../images/contact_office_img5.png) no-repeat center;
+        }
+        .icon5{
+            background: url(../../../images/contact_office_img5.png) no-repeat center;
+        }
+        .icon6{
+            background: url(../../../images/contact_office_img6.png) no-repeat center;
+        }
     }
 }

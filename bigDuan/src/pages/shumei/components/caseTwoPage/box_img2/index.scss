@@ -1,0 +1,42 @@
+.box-img2 {
+    background: #fff;
+  
+
+    .serve-box {
+        width: 1134px;
+        padding-top: 90px;
+        padding-bottom: 214px;
+        .title {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 42px;
+            border-left: 2px solid #3790FF;
+            line-height: 1;
+            padding-left: 10px;
+
+            h2 {
+                font-size: 24px;
+                font-weight: 600;
+            }
+        }
+    }
+    
+    .img-box1 {
+        width: 1140px;
+        height: 209px;
+        margin-bottom: 74px;
+        background: url(../../../images/casetwo_img3.png) no-repeat;
+    }
+    .img-box2 {
+        width: 1140px;
+        height: 722px;
+        margin-bottom: 142px;
+        background: url(../../../images/casetwo_img4.png) no-repeat center;     
+    }
+    .img-box3 {
+        width: 1188px;
+        height: 466px;
+        background: url(../../../images/casetwo_img5.png) no-repeat center;     
+    }
+
+}

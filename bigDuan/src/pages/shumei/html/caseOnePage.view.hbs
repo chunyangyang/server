@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>数媒网</title>
+    {{> '../../../modules/public/head.hbs'}}
+    <link rel="stylesheet" href="../css/caseOnePage.css">
+</head>
+
+
+<body>
+    <script>
+        window.serverData = {
+
+        }
+    </script>
+    {{!-- <div id="root"> --}}
+    {{!-- 头部导航 --}}
+    {{> '../components/head/index.hbs'}}
+    {{!-- banner --}}
+    {{> '../components/caseOnePage/banner/index.hbs'}}
+    {{> '../components/caseOnePage/my_advantages/index.hbs'}}
+    {{> '../components/caseOnePage/box_img/index.hbs'}}
+
+    {{!-- footer --}}
+    {{> '../components/footer/index.hbs'}}
+    {{!-- </div> --}}
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="../js/caseOnePage.js"></script>
+</body>
+
+</html>

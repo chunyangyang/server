@@ -8,7 +8,8 @@
 .swiper-container {
     width: 1200px;
     height: 100%;
-
+    padding: 0 40px;
+    box-sizing: border-box;
     .swiper-button-next {
         width: 23px;
         height: 43px;
@@ -33,7 +34,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 30px;
+    // padding: 0 30px;
     box-sizing: border-box;
 
     .company-logo {
@@ -46,32 +47,39 @@
 
         span {
             width: 252px;
-            height: 114px;
-           
+            height: 114px;         
         }
         .icon1{
             background: url(../../../images/index_logo1.png) no-repeat;
+            background-size: contain;
         }
         .icon2{
             background: url(../../../images/index_logo2.png) no-repeat;
+            background-size: contain;
         }
         .icon3{
             background: url(../../../images/index_logo3.png) no-repeat;
+            background-size: contain;
         }
         .icon4{
             background: url(../../../images/index_logo4.png) no-repeat;
+            background-size: contain;
         }
         .icon5{
             background: url(../../../images/index_logo5.png) no-repeat;
+            background-size: contain;
         }
         .icon6{
             background: url(../../../images/index_logo6.png) no-repeat;
+            background-size: contain;
         }
         .icon7{
             background: url(../../../images/index_logo7.png) no-repeat;
+            background-size: contain;
         }
         .icon8{
             background: url(../../../images/index_logo8.png) no-repeat;
+            background-size: contain;
         }
     }
 }

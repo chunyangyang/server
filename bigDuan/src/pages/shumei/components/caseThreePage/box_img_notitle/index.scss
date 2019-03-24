@@ -1,0 +1,31 @@
+.box-img-no-1 {
+    background: #fff;
+    // padding-bottom: 100px;
+
+    .serve-box {
+        width: 1140px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 40px;
+        box-sizing: border-box;
+    }
+   .line{
+       width: 2px;
+       height: 435px;
+       background-color: #eee;
+       margin:  0 128px 0 117px;
+   }
+    .img-box1 {
+        width: 335px;
+        height:414px;
+        background: url(../../../images/case_three_img1.png) no-repeat;
+
+    }
+    .img-box2 {
+        width: 477px;
+        height:367px;
+        background: url(../../../images/case_three_img2.png) no-repeat;
+
+    }
+
+}

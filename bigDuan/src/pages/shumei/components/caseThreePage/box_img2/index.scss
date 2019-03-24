@@ -1,0 +1,93 @@
+.box-img2 {
+    background: #fff;
+
+    .serve-box {
+        width: 1134px;
+        padding-top: 255px;
+
+        .title {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 97px;
+            border-left: 2px solid #3790FF;
+            line-height: 1;
+            padding-left: 10px;
+
+            h2 {
+                font-size: 24px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .img-box {
+        width: 1140px;
+
+        .img1 {
+            width: 468px;
+            height: 390px;
+            background: url(../../../images/case_three_img6.png) no-repeat;
+        }
+
+        .img2 {
+            width: 468px;
+            height: 390px;
+            background: url(../../../images/case_three_img7.png) no-repeat;
+        }
+    }
+
+    .text {
+        padding: 144px 0 148px 40px;
+
+        span {
+            color: #FF2500;
+        }
+    }
+
+    .message-box {
+        width: 1050px;
+        padding-bottom: 258px;
+
+        .message {
+            width: 480px;
+            height: 230px;
+            padding: 27px 0 45px;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            box-sizing: border-box;
+            position: relative;
+
+            p {
+                padding-left: 98px;
+
+                i {
+                    width: 100px;
+                    display: inline-block;
+                    vertical-align: 4px;
+                }
+            }
+
+            span {
+                color: #FF2500;
+                font-size: 28px;
+            }
+
+            .head-msg {
+                text-align: center;
+                padding-left: 0;
+                margin-bottom: 30px;
+            }
+
+            .icon {
+                width: 30px;
+                height: 38px;
+                position: absolute;
+                right: 176px;
+                bottom: 114px;
+                background: url(../../../images/case_three_red_row.png) no-repeat center;
+                background-size: contain;
+            }
+        }
+    }
+
+}

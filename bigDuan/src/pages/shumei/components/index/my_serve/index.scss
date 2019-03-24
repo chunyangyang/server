@@ -25,11 +25,13 @@
 
             li {
                 width: 33%;
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                margin-bottom: 78px;
-
+                a{                  
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    margin-bottom: 78px;
+                }
+               
                 .icon {
                     margin-bottom: 20px;
                 }
