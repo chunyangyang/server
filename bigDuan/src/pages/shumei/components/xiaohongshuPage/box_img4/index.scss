@@ -4,6 +4,7 @@
     background-color: #fff;
     // height: 531px;
     padding-bottom: 100px;
+
     .serve-box {
         width: 1200px;
         padding-top: 95px;
@@ -23,14 +24,145 @@
             }
         }
     }
-    .img-box1{
-        width: 938px;
+
+    .img-box1 {
+        width: 1004px;
         height: 447px;
         background: url(../../../images/xiaohongshu_img4.png) no-repeat;
+        background-size: contain;
     }
-    .img-box2{
+
+    .img-box2 {
         width: 1168px;
-        height: 980px;
-        background: url(../../../images/xiaohongshu_img6.png) no-repeat;
+        // height: 980px;
+        // background: url(../../../images/xiaohongshu_img6.png) no-repeat;
+    }
+
+    .mod_body {
+        margin-bottom: 20px;
+        position: relative;
+        padding-left: 13px;
+
+        .xiaohongshu_seven_nav {
+            // padding: 0px 3px 40px;
+            // overflow: hidden;
+
+            li {
+                width: 355px;
+                // height: 824px;
+                position: relative;
+                cursor: pointer;
+                float: left;
+                margin: 0px 0px 0px 39px;
+                // border-radius: 20px;
+                box-shadow: 0px 0px 10px rgba(212, 218, 224, 0.6);
+                background-color: #fff;
+
+                &:first-child {
+                    margin-left: 0px;
+                }
+
+                .seven_wrap {
+                    // padding: 0px 0px 100px;
+                }
+
+                .seven_head {
+                    height: 102px;
+                    text-align: center;
+                    background: #555;
+
+                    .seven_price {
+                        padding-top: 40px;
+                        line-height: 30px;
+                        overflow: hidden;
+                        font-size: 24px;
+                        color: #fff;
+                        font-weight: bold;
+                    }
+                }
+
+                .seven_deac {
+                    // overflow: hidden;
+                    // color: #8d8d8d;
+                    padding: 24px 10px 10px 16px;
+                    margin-left: 16px;
+
+                    // background-color: red;
+                    .seven_deac_title {
+                        // font-weight: bold;
+                        line-height: 24px;
+                        font-size: 18px;
+                        margin-bottom: 10px;
+                        position: relative;
+
+                        .text-yellow {
+                            color: #ff9b3b;
+                        }
+
+                        &:before {
+                            content: '';
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 12.5px 0 12.5px 15px;
+                            border-color: transparent transparent transparent #ff8800;
+                            position: absolute;
+                            left: -32px;
+                            top: 0;
+                        }
+                    }
+
+                    p {
+                        padding: 0px;
+                        margin: 0px;
+                        line-height: 22px;
+                    }
+
+                }
+
+                .seven_btn {
+                    width: 230px;
+                    height: 58px;
+                    text-align: center;
+                    margin: 94px auto 28px;
+
+                    a.btn-danger {
+                        width: 100%;
+                        display: block;
+                        height: 100%;
+                        line-height: 58px;
+                        font-size: 18px;
+                        padding: 0px;
+                        color: #fff;
+                        background: #ffd200; /* Old browsers */
+                        background: -moz-linear-gradient(left, #ffd200 0%, #ff6700 100%); /* FF3.6-15 */
+                        background: -webkit-linear-gradient(left, #ffd200 0%,#ff6700 100%); /* Chrome10-25,Safari5.1-6 */
+                        background: linear-gradient(to right, #ffd200 0%,#ff6700 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd200', endColorstr='#ff6700',GradientType=1 ); /* IE6-9 */
+                        &:hover{
+                            background: #ffd200; /* Old browsers */
+                            background: -moz-linear-gradient(left, #ff6700 0%,#ffd200  100%); /* FF3.6-15 */
+                            background: -webkit-linear-gradient(left, #ff6700 0%,#ffd200 100%); /* Chrome10-25,Safari5.1-6 */
+                            background: linear-gradient(to right, #ff6700 0%,#ffd200 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6700', endColorstr='#ffd200',GradientType=1 ); /* IE6-9 */
+                         
+                        }
+                    }
+                }
+
+                .icon-label {
+                    text-align: center;
+                    padding-left: 10px;
+                    width: 74px;
+                    height: 71px;
+                    display: block;
+                    position: absolute;
+                    left: -6px;
+                    top: -3px;
+                    // background-color: yellow;
+                    background: url(../../../images/xiaohongshu_tuijian.png) no-repeat;
+                }
+            }
+        }
     }
 }
