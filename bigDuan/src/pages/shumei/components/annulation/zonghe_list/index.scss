@@ -1,0 +1,114 @@
+.zonghe-list {
+    width: 1200px;
+    background-color: #F9F9F9;
+    padding: 16px 140px 20px 40px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    .list-img{
+        width: 100px;
+        height: 148px;
+        &.img1{
+            background: url(../../../images/taocan1_meiti.png) no-repeat;
+            background-color: #fff;
+        }
+        &.img2{
+            background: url(../../../images/taocan1_menhu.png) no-repeat;
+            background-color: #fff;
+        }
+        &.img3{
+            background: url(../../../images/taocan1_it.png) no-repeat;
+            background-color: #fff;
+        }
+        &.img4{
+            background: url(../../../images/taocan1_shangye.png) no-repeat;
+            background-color: #fff;
+        }
+        &.img5{
+            background: url(../../../images/taocan1_fangchan.png) no-repeat;
+            background-color: #fff;
+        }
+        &.img6{
+            background: url(../../../images/taocan1_nvxing.png) no-repeat;
+            background-color: #fff;
+        }
+        &.img7{
+            background: url(../../../images/taocan1_jiankang.png) no-repeat;
+            background-color: #fff;
+        }
+        &.img8{
+            background: url(../../../images/taocan1_youxi.png) no-repeat;
+            background-color: #fff;
+        }
+        &.img9{
+            background: url(../../../images/taocan1_you.png) no-repeat;
+            background-color: #fff;
+        }
+        &.img10{
+            background: url(../../../images/taocan1_jiaoyu.png) no-repeat;
+            background-color: #fff;
+        }
+        &.img11{
+            background: url(../../../images/taocan1_muying.png) no-repeat;
+            background-color: #fff;
+        }
+       
+    }
+    .list-message{
+        width: 760px;
+        margin-left: 33px;
+    }
+    h2 {
+        color: #555;
+        font-size: 18px;
+        padding-left: 8px;
+        border-left: 3px solid #3790ff;
+        position: relative;
+        margin-bottom: 8px;
+        font-weight: 600;
+        line-height: 1;
+        span{
+            color: #FFB528;
+        }
+        &::after {
+            content: '';
+            width: 100%;
+            height: 1px;
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            // background-image: linear-gradient(-90deg,  0%, rgba(216, 216, 216, 0.00) 100%);
+            background-image: linear-gradient(-90deg, rgba(216, 216, 216, 0.00) 0%,#BBBBBB 100%);
+        }
+    }
+
+    .content {
+        padding: 20px 0 0;
+
+        li {
+            float: left;
+            width: 150px;
+            font-size: 12px;
+            color: #555555;
+            margin-bottom: 20px;
+            span{
+                display: inline-block;
+                vertical-align: middle;
+                width: 15px;
+                height: 15px;
+                background: url(../../../images/annulation_select_icon.png) no-repeat center;
+                background-size: contain; 
+            }
+        }
+    }
+    .link-me{
+        a{
+            display: block;
+            color: #fff;
+            background-color: #3790FF;
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+        }
+    }
+}
