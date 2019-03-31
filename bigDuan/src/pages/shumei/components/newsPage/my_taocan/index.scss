@@ -1,5 +1,5 @@
 .my_taocan {
-    background-color: #f2f2f2;
+    background-color: #fff;
 
     .serve-box {
         width: 1200px;
@@ -24,75 +24,151 @@
             flex-wrap: wrap;
 
             li {
-                width: 16.6%;
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                margin-bottom: 78px;
-
+                width: 16.6%;              
+                margin-bottom: 58px;
+                padding: 10px 0;
+                a{
+                    color: #333;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                }
+                &:hover {
+                    background-color: #555555;
+                    a{
+                        color: #fff;
+                    }
+                    .icon1 {
+                        background: url(../../../images/news_advantages_zhonghe.png) no-repeat;
+                        background-size: contain;
+                    }
+    
+                    .icon2 {
+                        background: url(../../../images/news_advantages_home.png) no-repeat;
+                        background-size: contain;
+                    }
+    
+                    .icon3 {
+    
+                        background: url(../../../images/news_advantages_iticon.png) no-repeat;
+                        background-size: contain;
+                    }
+    
+                    .icon4 {
+    
+                        background: url(../../../images/news_advantages_caijin.png) no-repeat;
+                        background-size: contain;
+                    }
+    
+                    .icon5 {
+    
+                        background: url(../../../images/news_advantages_muying.png) no-repeat;
+                        background-size: contain;
+                    }
+    
+                    .icon6 {
+    
+                        background: url(../../../images/news_advantages_nvxing.png) no-repeat;
+                        background-size: contain;
+                    }
+    
+                    .icon7 {
+                        background: url(../../../images/news_advantages_yibiao.png) no-repeat;
+                        background-size: contain;
+                    }
+    
+                    .icon8 {
+                        background: url(../../../images/news_advantages_news.png) no-repeat;
+                        background-size: contain;
+                    }
+    
+                    .icon9 {
+                        background: url(../../../images/news_advantages_yiliao.png) no-repeat;
+                        background-size: contain;
+                    }
+    
+                    .icon10 {
+                        background: url(../../../images/news_advantages_yishu.png) no-repeat;
+                        background-size: contain;
+                    }
+    
+                    .icon11 {
+                        background: url(../../../images/news_advantages_youxi.png) no-repeat;
+                        background-size: contain;
+                    }
+    
+                    .icon12 {
+                        background: url(../../../images/news_advantages_alltao.png) no-repeat;
+                        background-size: contain;
+                    }
+                }
                 .icon {
                     margin-bottom: 20px;
                     width: 40px;
-                    height:40px;
-                  
+                    height: 40px;                   
                 }
 
                 .icon1 {
-                    background: url(../../../images//news_advantages_zhonghe.png) no-repeat;
+                    background: url(../../../images/news_advantages_zhonghe1.png) no-repeat;
                     background-size: contain;
                 }
 
-                .icon2 {               
-                    background: url(../../../images/news_advantages_home.png) no-repeat;
+                .icon2 {
+                    background: url(../../../images/news_advantages_home1.png) no-repeat;
                     background-size: contain;
                 }
 
                 .icon3 {
-                
-                    background: url(../../../images/news_advantages_iticon.png) no-repeat;
+
+                    background: url(../../../images/news_advantages_iticon1.png) no-repeat;
                     background-size: contain;
                 }
 
                 .icon4 {
-                
-                    background: url(../../../images/news_advantages_caijin.png) no-repeat;
+
+                    background: url(../../../images/news_advantages_caijin1.png) no-repeat;
                     background-size: contain;
                 }
 
                 .icon5 {
-                   
-                    background: url(../../../images/news_advantages_muying.png) no-repeat;
+
+                    background: url(../../../images/news_advantages_muying1.png) no-repeat;
                     background-size: contain;
                 }
 
                 .icon6 {
-                   
-                    background: url(../../../images/news_advantages_nvxing.png) no-repeat;
+
+                    background: url(../../../images/news_advantages_nvxing1.png) no-repeat;
                     background-size: contain;
                 }
 
                 .icon7 {
-                    background: url(../../../images/news_advantages_yibiao.png) no-repeat;
+                    background: url(../../../images/news_advantages_yibiao1.png) no-repeat;
                     background-size: contain;
                 }
+
                 .icon8 {
-                    background: url(../../../images/news_advantages_news.png) no-repeat;
+                    background: url(../../../images/news_advantages_news1.png) no-repeat;
                     background-size: contain;
                 }
+
                 .icon9 {
-                    background: url(../../../images/news_advantages_yiliao.png) no-repeat;
+                    background: url(../../../images/news_advantages_yiliao1.png) no-repeat;
                     background-size: contain;
                 }
+
                 .icon10 {
-                    background: url(../../../images/news_advantages_yishu.png) no-repeat;
+                    background: url(../../../images/news_advantages_yishu1.png) no-repeat;
                     background-size: contain;
                 }
+
                 .icon11 {
-                    background: url(../../../images/news_advantages_youxi.png) no-repeat;
+                    background: url(../../../images/news_advantages_youxi1.png) no-repeat;
                     background-size: contain;
                 }
+
                 .icon12 {
-                    background: url(../../../images/news_advantages_alltao.png) no-repeat;
+                    background: url(../../../images/news_advantages_alltao1.png) no-repeat;
                     background-size: contain;
                 }
 

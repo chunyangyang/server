@@ -8,39 +8,33 @@
     <meta name="description" content="">
     <title>数媒网</title>
     {{> '../../../modules/public/head.hbs'}}
-    {{!-- {{> '../../../modules/public/rem.hbs'}} --}}
     <link rel="stylesheet" href="../common/swiper/swiper.min.css">
     <link rel="stylesheet" href="../css/index.css">
 </head>
 
 
 <body>
-    <script>
-        window.serverData = {
+    {{!-- 头部导航 --}}
+    {{> '../components/head/index.hbs'}}
+    {{!-- banner --}}
+    {{> '../components/index/banner/index.hbs'}}
+    {{!-- one --}}
+    {{> '../components/index/list_one/index.hbs'}}
+    {{!-- my_serve --}}
+    {{> '../components/index/my_serve/index.hbs'}}
+    {{!-- myYoushi --}}
+    {{> '../components/index/my_advantages/index.hbs'}}
+    {{!-- all_choice --}}
+    {{> '../components/index/all_choice/index.hbs'}}
+    {{!-- choice_company --}}
+    {{> '../components/index/choice_company/index.hbs'}}
+    {{!-- choice_example --}}
+    {{> '../components/index/choice_example/index.hbs'}}
+    {{> '../components/alertLinkServe/index.hbs'}}
 
-        }
-    </script>
-    {{!-- <div id="root"> --}}
-        {{!-- 头部导航 --}}
-        {{> '../components/head/index.hbs'}}
-        {{!-- banner --}}
-        {{> '../components/index/banner/index.hbs'}}
-        {{!-- one --}}
-        {{> '../components/index/list_one/index.hbs'}}
-        {{!-- my_serve --}}
-        {{> '../components/index/my_serve/index.hbs'}}
-        {{!-- myYoushi --}}
-        {{> '../components/index/my_advantages/index.hbs'}}
-        {{!-- all_choice --}}
-        {{> '../components/index/all_choice/index.hbs'}}
-        {{!-- choice_company --}}
-        {{> '../components/index/choice_company/index.hbs'}}
-        {{!-- choice_example --}}
-        {{> '../components/index/choice_example/index.hbs'}}
-
-        {{!-- footer --}}
-        {{> '../components/footer/index.hbs'}}
-    {{!-- </div> --}}
+    {{!-- footer --}}
+    {{> '../components/footer/index.hbs'}}
+    {{> '../components/alertLinkServe/index.hbs'}}
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="../common/swiper/swiper.min.js"></script>
     <script src="../js/index.js"></script>

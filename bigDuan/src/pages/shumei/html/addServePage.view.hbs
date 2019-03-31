@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>数媒网</title>
+    {{> '../../../modules/public/head.hbs'}}
+    {{!-- {{> '../../../modules/public/rem.hbs'}} --}}
+    <link rel="stylesheet" href="../css/addServePage.css">
+</head>
+<style>
+    body {
+        background-color: #fff;
+    }
+
+</style>
+
+<body>
+    <div id="page">
+        <div class="chatonline-header">
+            <div class="chatonline-header-inner clearfix">
+                <div class="log fl"><a href="/shumei/html/indexPage.html">数媒网</a></div>
+                <div class="chat-line"></div>
+                <p>在线咨询</p>
+            </div>
+        </div>
+        <div class="chatonline-bottom"></div>
+
+        <div class="chatonline-adviser">
+            数媒网-销售顾问：
+            <span id="_name">郭旭新</span>
+        </div>
+        <div class="chatonline-contact clearfix">
+            <span class="chatonline-phone"></span>
+            <span class="num" id="_mobile">18665594799</span>
+        </div>
+        <div class="chatonline-contact clearfix">
+            <span class="chatonline-qq"></span>         
+            <span class="num" id="_qq">2231255768</span>
+        </div>
+        <span class="chatonline-qr-code"></span>
+    
+        <p class="chatonline-scan">扫码加销售顾问微信好友</p>
+        <a class="chatonline-click-communicate" id="_cart2"
+            href="javascript:window.open('https://wpa.qq.com/msgrd?v=3&amp;uin=2231255768&amp;site=qq&amp;menu=yes', '_blank', 'height=502, width=644,toolbar=no,scrollbars=no,menubar=no,status=no');">点击在线沟通</a>
+
+    </div>
+      {{> '../components/alertLinkServe/index.hbs'}}
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="../js/addServePage.js"></script>
+</body>
+
+</html>

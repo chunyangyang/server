@@ -13,7 +13,7 @@
 
         li {
             float: left;
-            margin-right: 66px;
+            margin-right: 52px;
         }
 
         .title {
@@ -25,12 +25,15 @@
         .imgbox {
             width: 156px;
             height: 207px;
-            &.news{
+
+            &.news {
                 background: url(../../images/news_wx_server.png) no-repeat;
             }
-            &.baidu{
+
+            &.baidu {
                 background: url(../../images/baidu_wx_server.png) no-repeat;
             }
+
             background-color: red;
         }
 
@@ -42,44 +45,77 @@
                 display: block;
                 color: #999;
                 margin-bottom: 12px;
+
+                &:hover {
+                    color: #e8bc65;
+                }
             }
         }
 
         .serve {
-            margin-left: 79px;
+            margin-left: 68px;
             text-align: center;
+
             .phone {
                 font-family: MicrosoftYaHei-Bold;
                 font-size: 24px;
                 font-weight: 600;
-                
+
             }
-            .message{
+
+            .message {
                 font-size: 18px;
             }
-            .qq{
+
+            .qq {
                 width: 163px;
                 height: 35px;
                 font-size: 14px;
-                background: url(../../images/qq_icon.png) no-repeat -8px 4px;
-                background-color: #343942;
+                background-color: #3790FF;
                 margin-bottom: 8px;
                 margin-top: 28px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                color: #e8bc65;
+
+                span {
+                    display: inline-block;
+                    width: 12px;
+                    height: 13px;
+                    background: url(../../images/qq_icon.png) no-repeat;
+                    margin-right: 10px;
+                }
+
+                &:hover {
+                    color: #e8bc65;
+                }
+
+                color: #fff;
             }
-            .bai{
+
+            .bai {
                 width: 163px;
                 height: 35px;
                 font-size: 14px;
-                background: url(../../images/qq_icon.png) no-repeat -8px 4px;
-                background-color: #343942;
+                background-color: #3790FF;
                 display: flex;
-                justify-content: center;
+                // justify-content: center;
                 align-items: center;
-                color: #e8bc65;
+                span {
+                    display: inline-block;
+                    width: 12px;
+                    height: 13px;
+                    background: url(../../images/qq_icon.png) no-repeat;
+                    margin-right: 38px;
+                    position: relative;
+                    left: 29px;
+                
+                }
+                &:hover {
+                    color: #e8bc65;
+                }
+
+                color: #fff;
             }
         }
     }

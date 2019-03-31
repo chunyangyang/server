@@ -1,0 +1,48 @@
+.all-choice {
+    background:url(../../../images/index_all_choice_bgc.png) no-repeat center;
+    height: 400px;
+    .all-choice-box {
+        width: 1200px;
+        padding: 95px 0 88px;
+
+        .title {
+            text-align: center;
+            color: #fff;
+            font-size: 20px;
+            margin-bottom: 55px;
+            h2 {
+                font-size: 24px;
+            }
+        }
+
+        ul {
+            display: flex;
+            // align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding-left: 40px;
+            li {
+                width: 33%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                color:#fff;
+              
+                .bold {
+                    font-family: MicrosoftYaHei-Bold;
+                    font-size: 48px;
+                    color: #FFBC4B;
+                    font-weight: 700;
+                }
+
+                .normal {
+                    font-family: MicrosoftYaHeiLight;
+                    font-size: 20px;
+                    color: #FFFFFF;
+                    text-align: center;
+                }
+
+            }
+        }
+    }
+}

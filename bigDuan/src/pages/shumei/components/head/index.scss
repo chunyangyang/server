@@ -20,7 +20,7 @@
     .log {
         // width: 64px;
         height: 50px;
-        margin-right: 184px;
+        margin-right: 172px;
         background: url(../../images/shumei_logo.png) no-repeat left center;
         background-size: contain;
         // background-color: red;
@@ -35,10 +35,9 @@
     }
 
     .nav-box {
-        // background-color: red;
         height: 100%;
-        // line-height: 60px;
         line-height: 58px;
+        padding-right: 12px;
         a {
             display: block;
             color: #fff;
