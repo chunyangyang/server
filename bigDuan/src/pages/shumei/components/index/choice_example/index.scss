@@ -47,7 +47,7 @@
                 .icon-4{
                     // background: url(../../../images/index_example_zhengxing.jpg) no-repeat;
                     background: url(../../../images/index_example_4.png) no-repeat;
-                    background-size: contain;
+                    background-size: cover;
                 }
 
                 .right {
@@ -101,6 +101,7 @@
                     cursor: pointer;
                     &.active {
                         background: rgba(94, 123, 255, .1);
+                        border-bottom:1px solid #397EFF;
                     }
                 }
             }
