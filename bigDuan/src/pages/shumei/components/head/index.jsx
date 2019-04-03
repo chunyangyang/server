@@ -7,51 +7,59 @@
 import './index.scss';
 export default function head() {
     let naveBox = $('.J-nav-box li');
-  
-    for (let i=0; i<naveBox.length; i++) {
+
+    for (let i = 0; i < naveBox.length; i++) {
         $(naveBox[i]).removeClass('active');
     }
     let router = location.pathname.split('/')[3];
     switch (router) {
         case 'newsPage.html':
             $(naveBox[1]).addClass('active');
-            window.router ='newsPage';
+            window.router = 'newsPage';
             break;
-        case 'mousePage.html':
+        case 'annulationTwoPage.html':
             $(naveBox[2]).addClass('active');
-            window.router ='mousePage';
-            break;
-        case 'articlesPage.html':
-            $(naveBox[3]).addClass('active');
-            window.router ='articlesPage';
+            window.router = 'annulationTwoPage';
             break;
         case 'baikePage.html':
-            $(naveBox[8]).addClass('active');
-            window.router ='baikePage';
-            break;
-        case 'newMediaPage.html':
-            $(naveBox[6]).addClass('active');
-            window.router ='newMediaPage';
-            break;
-        case 'searchPage.html':
-            $(naveBox[7]).addClass('active');
-            window.router ='searchPage';
+            $(naveBox[3]).addClass('active');
+            window.router = 'baikePage';
             break;
         case 'zhihuPage.html':
             $(naveBox[4]).addClass('active');
-            window.router ='zhihuPage';
+            window.router = 'zhihuPage';
             break;
         case 'xiaohongshuPage.html':
             $(naveBox[5]).addClass('active');
-            window.router ='xiaohongshuPage';
+            window.router = 'xiaohongshuPage';
+            break;
+        case 'searchPage.html':
+            $(naveBox[6]).addClass('active');
+            window.router = 'searchPage';
+            break;
+        case 'articlesPage.html':
+            $(naveBox[7]).addClass('active');
+            window.router = 'articlesPage';
+            break;
+        case 'mousePage.html':
+            $(naveBox[8]).addClass('active');
+            window.router = 'mousePage';
+            break;
+        case 'newMediaPage.html':
+            $(naveBox[9]).addClass('active');
+            window.router = 'newMediaPage';
+            break;
+        case 'annulationPage.html':
+            $(naveBox[10]).addClass('active');
+            window.router = 'annulationPage';
             break;
         case 'contactPage.html':
-            $(naveBox[9]).addClass('active');
-            window.router ='contactPage';
+            $(naveBox[0]).addClass('active');
+            window.router = 'contactPage';
             break;
         default:
             $(naveBox[0]).addClass('active');
-            window.router ='index';
+            window.router = 'index';
             break;
     }
 

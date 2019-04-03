@@ -1,6 +1,7 @@
 .wb-menu {
     text-align: center;
     font-size: 12px;
+
     li {
         height: 75px;
         line-height: 1.5em;
@@ -12,53 +13,62 @@
         text-align: center;
         font-size: 16px;
         margin: 10px 15px;
+
         a {
             color: #45a537;
             display: block;
         }
+
         p {
             margin-bottom: 5px;
         }
-        .icon{
+
+        .icon {
             display: inline-block;
         }
-     
-        .r1{          
+
+        .r1 {
             width: 37px;
             height: 39px;
             background: url(../../../images/r1.png) no-repeat;
-          
+
         }
-        .r2{
-           
+
+        .r2 {
+
             width: 38px;
             height: 39px;
             background: url(../../../images/r2.png) no-repeat;
         }
-        .r3{
-           
+
+        .r3 {
+
             width: 49px;
             height: 40px;
             background: url(../../../images/r3.png) no-repeat;
         }
-        
-        &.active{
+
+        &.active {
             background-color: #45a537;
-            a{
+
+            a {
                 color: #fff;
             }
-            .r1{          
+
+            .r1 {
                 background: url(../../../images/r11.png) no-repeat;
             }
-            .r2{
+
+            .r2 {
                 background: url(../../../images/r12.png) no-repeat;
             }
-            .r3{
+
+            .r3 {
                 background: url(../../../images/r13.png) no-repeat;
             }
         }
     }
-   
+
 }
 
 // content
@@ -66,14 +76,17 @@
     margin-top: 30px;
     font-size: 12px;
     padding-bottom: 80px;
+
     .wb-box {
         overflow: hidden;
         display: none;
     }
+
     .wbb-left {
         width: 145px;
         margin-right: 20px;
         float: left;
+
         li {
             height: 80px;
             font-size: 16px;
@@ -82,34 +95,42 @@
             border: 1px solid #e4e4e4;
             border-top: 0px solid #e4e4e4;
             cursor: pointer;
+
             &:first-child {
                 border-top: 1px solid #e4e4e4;
             }
         }
+
         a {
             color: #000;
             text-decoration: none;
             outline: none;
         }
+
         .wl-cur {
             border-left: 1px solid #45a537 !important;
             border-right: 0px solid #45a537 !important;
             background: url(../../../images/wl.png) no-repeat 135px center;
+
             a {
                 color: #45a537;
             }
         }
     }
+
     .wbb-right {
         float: left;
         padding: 3px 0;
         width: 980px;
+
         ul {
             display: none;
+
             &:first-child {
                 display: block;
             }
         }
+
         li {
             width: 280px;
             float: left;
@@ -119,27 +140,33 @@
             margin-bottom: 20px;
             border-radius: 10px;
             cursor: pointer;
-            &:hover{
+
+            &:hover {
                 border: 1px solid #45a537;
             }
+
             &:nth-child(3n+1) {
                 margin-left: 0;
             }
-            .wx-top{
+
+            .wx-top {
                 dl {
                     display: inline-block;
                     vertical-align: middle;
                     margin-left: 10px;
                 }
+
                 dt {
                     font-size: 15px;
                     text-align: center;
                     color: #45a537;
                 }
+
                 p {
                     color: #666;
                 }
-            } 
+            }
+
             .wx-icon {
                 border: 5px solid #eeeeee;
                 width: 75px;
@@ -148,16 +175,19 @@
                 position: relative;
                 display: inline-block;
                 vertical-align: middle;
+
                 div {
                     width: 75px;
                     height: 75px;
                     overflow: hidden;
                     border-radius: 100%;
-                    img {
+                    img{
                         width: 75px;
                         height: 75px;
                     }
+
                 }
+
                 em {
                     position: absolute;
                     right: 0;
@@ -166,42 +196,48 @@
                     height: 21px;
                     background-color: #fff;
                     z-index: 100;
-                    display: block;                 
+                    display: block;
                     border-radius: 100%;
-                    img {
+                    img{
                         width: 15px;
                         height: 15px;
-                        margin: 3px;
                     }
                 }
             }
+
             .wx-bottom {
                 margin-top: 10px;
                 border-top: 1px solid #eee;
                 padding-top: 10px;
+
                 dl {
                     display: inline-block;
                     width: 32%;
                     text-align: center;
+
                     em {
                         display: block;
                     }
                 }
+
                 dt {
                     margin: 5px 0;
                     color: #666;
                 }
+
                 dd {
                     font-weight: bold;
                 }
+
                 .more {
                     width: 88px;
                     height: 28px;
                     background-color: #45a537;
                     text-align: center;
                     line-height: 28px;
-                    border-radius: 25px;                  
+                    border-radius: 25px;
                     margin: 15px auto;
+
                     a {
                         color: white;
                         display: block;
@@ -210,6 +246,7 @@
             }
         }
     }
+
     .wbb-more {
         border-left: 1px solid #ececec;
         float: right;
@@ -220,6 +257,7 @@
         height: 480px;
         margin: 10px 0;
         position: relative;
+
         a {
             width: 15px;
             top: 50%;
