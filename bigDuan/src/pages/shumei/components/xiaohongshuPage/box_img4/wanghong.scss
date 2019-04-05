@@ -1,7 +1,12 @@
 .wb-menu {
     text-align: center;
     font-size: 12px;
-
+    img {
+        vertical-align: middle;
+        font-size: 0;
+        border: 0;
+        outline: none;
+    }
     li {
         height: 75px;
         line-height: 1.5em;
@@ -15,7 +20,7 @@
         margin: 10px 15px;
 
         a {
-            color: #45a537;
+            color: #3790ff;
             display: block;
         }
 
@@ -49,7 +54,7 @@
         }
 
         &.active {
-            background-color: #45a537;
+            background-color: #3790ff;
 
             a {
                 color: #fff;
@@ -76,7 +81,12 @@
     margin-top: 30px;
     font-size: 12px;
     padding-bottom: 80px;
-
+    img {
+        vertical-align: middle;
+        font-size: 0;
+        border: 0;
+        outline: none;
+    }
     .wb-box {
         overflow: hidden;
         display: none;
@@ -108,12 +118,12 @@
         }
 
         .wl-cur {
-            border-left: 1px solid #45a537 !important;
-            border-right: 0px solid #45a537 !important;
-            background: url(../../../images/wl.png) no-repeat 135px center;
+            border-left: 1px solid #3790ff !important;
+            border-right: 0px solid #3790ff !important;
+            background: url(../../../images/wl.png) no-repeat 133px center;
 
             a {
-                color: #45a537;
+                color: #3790ff;
             }
         }
     }
@@ -142,7 +152,7 @@
             cursor: pointer;
 
             &:hover {
-                border: 1px solid #45a537;
+                border: 1px solid #3790ff;
             }
 
             &:nth-child(3n+1) {
@@ -159,7 +169,7 @@
                 dt {
                     font-size: 15px;
                     text-align: center;
-                    color: #45a537;
+                    color: #3790ff;
                 }
 
                 p {
@@ -201,6 +211,7 @@
                     img{
                         width: 15px;
                         height: 15px;
+                        margin: 3px;
                     }
                 }
             }
@@ -232,7 +243,7 @@
                 .more {
                     width: 88px;
                     height: 28px;
-                    background-color: #45a537;
+                    background-color: #3790ff;
                     text-align: center;
                     line-height: 28px;
                     border-radius: 25px;
@@ -264,7 +275,7 @@
             display: block;
             position: absolute;
             transform: translateY(-50%);
-            color: #45a537;
+            color: #3790ff;
         }
     }
 }

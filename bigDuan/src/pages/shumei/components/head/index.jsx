@@ -13,13 +13,17 @@ export default function head() {
     }
     let router = location.pathname.split('/')[3];
     switch (router) {
+        case 'indexPage.html':
+            $(naveBox[0]).addClass('active');
+            window.router = 'indexPage';
+            break;
         case 'newsPage.html':
             $(naveBox[1]).addClass('active');
             window.router = 'newsPage';
             break;
-        case 'annulationTwoPage.html':
+        case 'annulationPage.html':
             $(naveBox[2]).addClass('active');
-            window.router = 'annulationTwoPage';
+            window.router = 'annulationPage';
             break;
         case 'baikePage.html':
             $(naveBox[3]).addClass('active');
@@ -49,18 +53,18 @@ export default function head() {
             $(naveBox[9]).addClass('active');
             window.router = 'newMediaPage';
             break;
-        case 'annulationPage.html':
+        case 'annulationTwoPage.html':
             $(naveBox[10]).addClass('active');
-            window.router = 'annulationPage';
+            window.router = 'annulationTwoPage';
             break;
         case 'contactPage.html':
             $(naveBox[0]).addClass('active');
             window.router = 'contactPage';
             break;
-        default:
-            $(naveBox[0]).addClass('active');
-            window.router = 'index';
-            break;
+        // default:
+        //     $(naveBox[0]).addClass('active');
+        //     window.router = 'index';
+        //     break;
     }
 
 }
