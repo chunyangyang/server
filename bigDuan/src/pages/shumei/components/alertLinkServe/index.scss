@@ -8,6 +8,7 @@
     background: url(../../images/alert-link-img.png) no-repeat;
     display: none;
     z-index: 9999;
+
     .alert-list {
         margin: 106px 100px 0;
 
@@ -27,6 +28,10 @@
 
             &:nth-child(2n) {
                 margin-right: 0;
+            }
+
+            &:nth-child(3) {
+                margin-right: 56px;
             }
         }
 
@@ -74,5 +79,18 @@
         height: 22px;
         cursor: pointer;
         // background-color: red;
+    }
+}
+
+.popu-fiexd-server {
+    width: 168px;
+    height: 475px;
+    background: url(../../images/communicate_right_bg.png) no-repeat;
+    z-index: 11;
+    position: fixed;
+    right: 0px;
+    top: 116px;
+    a{
+      color: #333;
     }
 }

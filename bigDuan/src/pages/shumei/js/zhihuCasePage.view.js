@@ -2,13 +2,13 @@
  * @Author: zhengchunyang 
  * @Date: 2019-01-27 13:21:52 
  * @Last Modified by: zhengchunyang
- * @Last Modified time: 2019-03-31 22:06:57
+ * @Last Modified time: 2019-04-11 09:47:38
  */
 import '../../../style/pc.scss';
 import head from '../components/head/index';
-import banner from '../components/caseOnePage/banner/index';
-import myAdvantages from '../components/caseOnePage/my_advantages/index';
-import boxImages from '../components/caseOnePage/box_img/index';
+import banner from '../components/zhihuCasePage/banner/index';
+import boxImages from '../components/zhihuCasePage/box_img/index';
+import boxImages2 from '../components/zhihuCasePage/box_img2/index';
 
 import footer from '../components/footer/index';
 import alertLinkServe from '../components/alertLinkServe/index';
@@ -17,7 +17,7 @@ $(function(){
     alertLinkServe();
     head();
     banner();
-    myAdvantages();
     boxImages();
+    boxImages2();
     footer();
 });

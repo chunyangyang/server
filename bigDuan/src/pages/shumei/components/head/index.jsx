@@ -58,7 +58,7 @@ export default function head() {
             window.router = 'annulationTwoPage';
             break;
         case 'contactPage.html':
-            $(naveBox[0]).addClass('active');
+            // $(naveBox[0]).addClass('active');
             window.router = 'contactPage';
             break;
         // default:
