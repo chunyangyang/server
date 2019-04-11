@@ -1,0 +1,157 @@
+.ind_remen {
+    background-color: #fcfcfc;
+    padding-top: 40px;
+    position: relative;
+    padding-bottom: 80px;
+
+    .bd {
+        width: 1200px;
+    }
+
+    .ind_reimg {
+        width: 100%;
+        height: 160px;
+        text-align: center;
+        font-size: 24px;
+
+        .en {
+            color: #3790FF;
+            letter-spacing: 4px;
+            margin-bottom: 10px;
+        }
+
+        .cn {
+            letter-spacing: 2px;
+        }
+    }
+
+    .ind_rem_title {
+        width: 340px;
+        height: 45px;
+        line-height: 45px;
+        margin: 0 auto;
+        font-weight: bold;
+        font-size: 18px;
+
+        a {
+            display: block;
+            width: 150px;
+            height: 45px;
+            text-align: center;
+            border: 1px solid #f6f6f6;
+            border-radius: 10px;
+            font-size: 18px;
+            color: #585858;
+            background: #f6f6f6;
+
+            &.active {
+                background: #3790FF;
+                color: #fff;
+            }
+        }
+    }
+
+    .ind_remen_con {
+        .ind_rem_dl {
+            width: 320px;
+            margin: 40px 35px 0 43px;
+            // height: 450px;
+            border: 1px solid rgba(0, 0, 0, .1);
+            border-radius: 5px;
+            cursor: pointer;
+            overflow: hidden;
+            float: left;
+
+            &:hover {
+                border: 1px solid #3790FF;
+
+                .rem_dt_title {
+                    background-color: #3790FF;
+                    color: #fff;
+                }
+            }
+
+            .rem_dt_title {
+                text-align: center;
+                font-size: 18px;
+                background-color: #c3cdd4;
+                width: 100%;
+                height: 50px;
+                line-height: 50px;
+                color: #fff;
+            }
+
+            .load {
+                height: 40px;
+                text-align: center;
+                color: #3170ff;
+            }
+
+            .rem_dt_foot {
+                text-align: center;
+                font-size: 18px;
+                background-color: #E9EBF3;
+                width: 100%;
+                height: 50px;
+                line-height: 50px;
+            }
+
+            .Purchase {
+                text-align: center;
+                font-size: 18px;
+                background-color: #E9EBF3;
+                width: 100%;
+                height: 50px;
+                line-height: 50px;
+
+                a {
+                    display: block;
+                    width: 100px;
+                    height: 30px;
+                    line-height: 30px;
+                    margin: 0 auto;
+                    background: #3070FF;
+                    font-size: 16px;
+                    color: white;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        .rem_pp {
+            width: 100%;
+            height: 260px;
+            padding: 10px 0 0 0;
+            position: relative;
+            overflow: hidden;
+            &.scroll{
+              overflow-y: scroll;
+            }
+            .rem_info {
+                width: 100%;
+                /* line-height: 30px; */
+                font-size: 14px;
+                padding: 10px 10px;
+                position: relative;
+                box-sizing: border-box;
+                span {
+                    display: block;
+                    float: left;
+                    height: 50px;
+                }
+            }
+        }
+
+        .remen_g {
+            width: 10%;
+        }
+
+        .remen_t {
+            width: 70%;
+        }
+
+        .remen_s {
+            width: 20%;
+        }
+    }
+}
