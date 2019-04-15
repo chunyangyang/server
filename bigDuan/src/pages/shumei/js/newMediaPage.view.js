@@ -2,7 +2,7 @@
  * @Author: zhengchunyang 
  * @Date: 2019-01-27 13:21:52 
  * @Last Modified by: zhengchunyang
- * @Last Modified time: 2019-04-01 23:27:55
+ * @Last Modified time: 2019-04-15 12:03:04
  */
 import '../../../style/pc.scss';
 import head from '../components/head/index';
@@ -13,6 +13,7 @@ import boxImages from '../components/newMediaPage/box_img/index';
 import boxImages2 from '../components/newMediaPage/box_img2/index';
 import boxImages3 from '../components/newMediaPage/box_img3/index';
 import boxImages4 from '../components/newMediaPage/box_img4/index';
+import boxImages5 from '../components/newMediaPage/box_img5/index';
 import choiceExample from '../components/newMediaPage/choice_example/index';
 
 import footer from '../components/footer/index';
@@ -27,6 +28,8 @@ $(function(){
     boxImages();
     boxImages2();
     boxImages3();
+    boxImages4();
+    boxImages5();
     choiceExample();
     footer();
 });

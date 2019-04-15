@@ -23,7 +23,8 @@
 
     .img-box {
         width: 1140px;
-        height: 306px;
+        height: 346px;
         background: url(../../../images/baike_img3.png) no-repeat;
+        background-size: contain;
     }
 }

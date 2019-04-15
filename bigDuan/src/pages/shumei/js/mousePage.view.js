@@ -2,7 +2,7 @@
  * @Author: zhengchunyang 
  * @Date: 2019-01-27 13:21:52 
  * @Last Modified by: zhengchunyang
- * @Last Modified time: 2019-03-31 22:07:22
+ * @Last Modified time: 2019-04-13 16:19:36
  */
 import '../../../style/pc.scss';
 import head from '../components/head/index';
@@ -32,5 +32,5 @@ $(function(){
     boxImages4();
     choiceExample();
     footer()
-    console.log(123)
+    // console.log(123)
 })

@@ -1,0 +1,19 @@
+.box-img5 {
+    height: 140px;
+    background: url(../../../images/baike_zhixun_bgc.png) no-repeat center;
+    padding-top: 40px;
+    box-sizing: border-box;
+    .serve-box {
+        width: 250px;
+        height: 56px;
+        line-height: 56px;
+        text-align: center;
+        background-color: #FFB528;
+       
+        font-size: 18px;
+        a{
+            display: block;
+            color: #fff;
+        }
+    }
+}

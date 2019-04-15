@@ -1,0 +1,37 @@
+.box-img4 {
+  background: #fff;
+  .serve-box {
+      width: 1134px;
+      // padding-top: 90px;
+      padding-bottom: 120px;
+      .title {
+          color: #333;
+          font-size: 20px;
+          margin-bottom: 40px;
+          border-left: 2px solid #3790FF;
+          line-height: 1;
+          padding-left: 10px;
+
+          h2 {
+              font-size: 24px;
+              font-weight: 600;
+          }
+      }
+  }
+  
+  .img-box1{
+      width: 1140px;
+      height:699px;
+      margin-bottom: 160px;
+      background: url(../../../images/searchCase_img4.png) no-repeat;
+      background-size: contain;
+  }
+  .img-box2{
+      width: 1140px;
+      height:742px;
+      // margin-bottom: 74px;
+      background: url(../../../images/searchCase_img5.png) no-repeat;
+      background-size: contain;
+  }
+ 
+}

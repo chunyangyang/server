@@ -9,7 +9,9 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
-    "vue": "^2.6.6"
+    "vue": "^2.6.6",
+    "vue-router": "^3.0.3",
+    "vue-wechat-title": "^2.0.5"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.5.0",

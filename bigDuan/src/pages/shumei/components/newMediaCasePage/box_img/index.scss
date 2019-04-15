@@ -1,0 +1,76 @@
+.box-img {
+    background: #fff;
+
+
+    .serve-box {
+        width: 1134px;
+        padding-top: 90px;
+
+        // padding-bottom: 214px;
+        .title {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 40px;
+            border-left: 2px solid #3790FF;
+            line-height: 1;
+            padding-left: 10px;
+            margin-left: 10px;
+            h2 {
+                font-size: 24px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .img-box1 {
+        width: 1140px;
+        height: 606px;
+        padding-bottom: 112px;
+
+        .icon1 {
+            width: 462px;
+            height: 589px;
+            background: url(../../../images/newMediaCase_img1.jpg) no-repeat;
+            margin-right: 42px;
+        }
+
+        .icon2 {
+            width: 636px;
+            height: 606px;
+            background: url(../../../images/newMediaCase_img2.jpg) no-repeat;
+        }
+
+    }
+
+    .img-box2 {
+        width: 1140px;
+        height: 955px;
+        padding-bottom: 112px;
+
+        .icon1 {
+            width: 408px;
+            height: 955px;
+            background: url(../../../images/newMediaCase_img3.jpg) no-repeat;
+            margin-right: 112px;
+        }
+
+        .icon2 {
+            width: 542px;
+            height: 947px;
+            background: url(../../../images/newMediaCase_img4.jpg) no-repeat;
+        }
+    }
+
+    .img-box3 {
+        width: 1140px;
+        height: 685px;
+        padding-bottom: 112px;
+
+        .icon1 {
+            width: 442px;
+            height: 685px;
+            background: url(../../../images/newMediaCase_img5.jpg) no-repeat;
+        }
+    }
+
+}

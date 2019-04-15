@@ -2,7 +2,7 @@
     // padding-bottom: 150px;
     background-color: #FAFBFE;
     // height: 531px;
-    padding-bottom: 112px;
+    padding-bottom: 80px;
     .serve-box {
         width: 1200px;
         padding-top: 92px;
@@ -24,7 +24,8 @@
     }
     .img-box{
         width: 1140px;
-        height: 498px;
+        height: 568px;
         background: url(../../../images/baike_img2.png) no-repeat;
+        background-size: contain;
     }
 }

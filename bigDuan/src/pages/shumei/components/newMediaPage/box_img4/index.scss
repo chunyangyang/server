@@ -1,19 +1,29 @@
 .box-img4 {
-    height: 140px;
-    background: url(../../../images/baike_zhixun_bgc.png) no-repeat center;
-    padding-top: 40px;
-    box-sizing: border-box;
+    background: #fff;
+    padding-bottom: 100px;
     .serve-box {
-        width: 250px;
-        height: 56px;
-        line-height: 56px;
-        text-align: center;
-        background-color: #FFB528;
-       
-        font-size: 18px;
-        a{
-            display: block;
-            color: #fff;
+        width: 1200px;
+        padding-top: 95px;
+
+        .title {
+            text-align: center;
+            color: #555555;
+            font-size: 20px;
+            margin-bottom: 40px;
+
+            h2 {
+                font-size: 24px;
+            }
+
+            .title2 {
+                padding-top: 60px;
+            }
         }
+    }
+
+    .img-box {
+        width: 1140px;
+        height: 550px;
+        background: url(../../../images/newMedia_img4.png) no-repeat;
     }
 }
