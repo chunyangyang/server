@@ -28,6 +28,10 @@
             color: #fff;
             padding: 18px 0;
             text-align: center;
+            strong{
+              color: #0000ff;
+              font-weight: bolder;
+            }
         }
 
         .text {
@@ -74,13 +78,17 @@
             height: 45px;
             background: #3790FF;
             margin: 0 auto 120px;
-
+            border-radius: 4px;
+            &:hover{
+              background: #3184ec;
+            }
             a {
                 font-size: 18px;
                 color: #FFFFFF;
                 display: block;
                 text-align: center;
                 line-height: 45px;
+               
             }
         }
     }

@@ -110,6 +110,10 @@
             height: 30px;
             text-align: center;
             line-height: 30px;
+            border-radius: 4px;
+            &:hover{
+              background: #3184ec;
+            }
         }
     }
 }

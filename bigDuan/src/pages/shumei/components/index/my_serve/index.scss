@@ -22,14 +22,18 @@
             // align-items: center;
             justify-content: center;
             flex-wrap: wrap;
-
+            padding-bottom: 20px;
             li {
                 width: 33%;
+                &:hover{
+                  background-color: #f6f6f6;
+                }
                 a{                  
                     display: flex;
                     align-items: center;
                     flex-direction: column;
-                    margin-bottom: 78px;
+                    padding-top: 20px;
+                    margin-bottom: 68px;
                 }
                
                 .icon {
